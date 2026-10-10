@@ -12,12 +12,10 @@
 
   <title>Usama Zafar | Academic Website</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="profile.jpg?v=6">
-  <link rel="shortcut icon" type="image/jpeg" href="profile.jpg?v=6">
-  <link rel="apple-touch-icon" href="profile.jpg?v=6">
+  <link rel="icon" type="image/jpeg" href="profile.jpg?v=7">
+  <link rel="shortcut icon" type="image/jpeg" href="profile.jpg?v=7">
+  <link rel="apple-touch-icon" href="profile.jpg?v=7">
 
-  <!-- SEO -->
   <meta
     name="description"
     content="Academic website of Usama Zafar, Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan."
@@ -33,7 +31,6 @@
     href="https://theusamazafar.github.io/"
   >
 
-  <!-- Social preview -->
   <meta property="og:type" content="profile">
 
   <meta
@@ -56,7 +53,6 @@
     content="https://theusamazafar.github.io/profile.jpg"
   >
 
-  <!-- Font -->
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -73,7 +69,6 @@
     rel="stylesheet"
   >
 
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -127,17 +122,10 @@
     body {
       background: var(--background);
       color: var(--text);
-
-      font-family:
-        "Lato",
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: "Lato", Arial, Helvetica, sans-serif;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.56;
-
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
@@ -220,7 +208,7 @@
     }
 
 
-    /* PAGE LAYOUT */
+    /* PAGE */
 
     .academic-layout {
       display: grid;
@@ -343,6 +331,28 @@
 
     .highlight-item a {
       font-size: 0.74rem;
+    }
+
+
+    /* VISITOR COUNTER */
+
+    .visitor-counter {
+      margin-top: 23px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .visitor-counter-title {
+      color: #444444;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .visitor-counter img {
+      max-width: 100%;
+      height: auto;
+      border: 0;
     }
 
 
@@ -688,7 +698,8 @@
       }
 
       .academic-layout {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-top: 24px;
         padding-bottom: 40px;
       }
@@ -709,7 +720,7 @@
         grid-row: 1;
       }
 
-      .sidebar > div:not(.sidebar-highlights) {
+      .sidebar > div:not(.sidebar-highlights):not(.visitor-counter) {
         grid-column: 2;
         grid-row: 1;
       }
@@ -772,6 +783,26 @@
       .highlight-date {
         margin: 0;
         font-size: 0.74rem;
+      }
+
+      /*
+        The counter is moved by JavaScript from the sidebar
+        to the bottom of the main content on mobile.
+      */
+
+      .visitor-counter {
+        width: 100%;
+        margin-top: 28px;
+        padding-top: 17px;
+      }
+
+      .visitor-counter-title {
+        font-size: 0.88rem;
+        margin-bottom: 10px;
+      }
+
+      .visitor-counter img {
+        max-width: 170px;
       }
 
       .main-content {
@@ -971,7 +1002,6 @@
 </head>
 
 
-
 <body>
 
 
@@ -981,13 +1011,9 @@
 
     <nav class="navbar">
 
-      <a
-        class="site-name"
-        href="#home"
-      >
+      <a class="site-name" href="#home">
         Usama Zafar
       </a>
-
 
       <button
         class="menu-button"
@@ -997,47 +1023,16 @@
         ☰
       </button>
 
+      <ul class="nav-links" id="navLinks">
 
-      <ul
-        class="nav-links"
-        id="navLinks"
-      >
-
-        <li>
-          <a href="#publications">
-            Publications
-          </a>
-        </li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#awards">Awards</a></li>
 
         <li>
-          <a href="#research">
-            Research
-          </a>
-        </li>
-
-        <li>
-          <a href="#education">
-            Education
-          </a>
-        </li>
-
-        <li>
-          <a href="#teaching">
-            Teaching
-          </a>
-        </li>
-
-        <li>
-          <a href="#awards">
-            Awards
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="cv.pdf"
-            target="_blank"
-          >
+          <a href="cv.pdf" target="_blank">
             CV
           </a>
         </li>
@@ -1060,7 +1055,10 @@
 
   <!-- SIDEBAR -->
 
-  <aside class="sidebar">
+  <aside
+    class="sidebar"
+    id="sidebar"
+  >
 
 
     <img
@@ -1087,9 +1085,11 @@
         <li>
 
           <span class="side-icon">
+
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2L2 7l10 5 10-5-10-5zm-7 9v6h2v-5l5 2.5 5-2.5v5h2v-6l-7 3.5L5 11zm3 6v2h8v-2H8z"/>
             </svg>
+
           </span>
 
           <span>
@@ -1102,9 +1102,11 @@
         <li>
 
           <span class="side-icon">
+
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M3 5h18v14H3V5zm9 7L5.5 7h13L12 12zm0 2.2L5 8.8V17h14V8.8l-7 5.4z"/>
             </svg>
+
           </span>
 
           <a href="mailto:usamazafar@alum.ccu.edu.tw">
@@ -1117,14 +1119,17 @@
         <li>
 
           <span class="side-icon">
+
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C17.7 5 18.7 5.3 18.7 5.3c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v2.8c0 .3.2.6.8.5A11.5 11.5 0 0 0 12 .7z"/>
             </svg>
+
           </span>
 
           <a
             href="https://github.com/theusamazafar"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
@@ -1135,15 +1140,18 @@
         <li>
 
           <span class="side-icon">
+
             <svg viewBox="0 0 64 64" fill="currentColor">
               <path d="M32 7L5 22l27 15 27-15L32 7z"/>
               <path d="M16 31v11c0 8 8 14 16 14s16-6 16-14V31l-16 9-16-9z"/>
             </svg>
+
           </span>
 
           <a
             href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Google Scholar
           </a>
@@ -1154,14 +1162,17 @@
         <li>
 
           <span class="side-icon">
+
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M5.3 3.7A2.3 2.3 0 1 1 .7 3.7a2.3 2.3 0 0 1 4.6 0zM1.1 7h4.3v13.8H1.1V7zm6.8 0H12v1.9h.1c.6-1.1 2-2.3 4.1-2.3 4.4 0 5.2 2.9 5.2 6.6v7.6h-4.3v-6.7c0-1.6 0-3.7-2.3-3.7-2.3 0-2.7 1.8-2.7 3.6v6.8H7.9V7z"/>
             </svg>
+
           </span>
 
           <a
             href="https://www.linkedin.com/in/theusamazafar/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
@@ -1172,8 +1183,15 @@
         <li>
 
           <span class="side-icon">
+
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <circle cx="12" cy="12" r="10"/>
+
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+
               <text
                 x="12"
                 y="15"
@@ -1185,12 +1203,15 @@
               >
                 iD
               </text>
+
             </svg>
+
           </span>
 
           <a
             href="https://orcid.org/0009-0008-9320-5019"
             target="_blank"
+            rel="noopener noreferrer"
           >
             ORCID
           </a>
@@ -1223,9 +1244,11 @@
           Published a systematic review on explainable AI
           for fraud detection in
           <em>Artificial Intelligence Review</em>.
+
           <a
             href="https://doi.org/10.1007/s10462-026-11516-7"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Paper ↗
           </a>
@@ -1251,7 +1274,7 @@
       <div class="highlight-item">
 
         <span class="highlight-date">
-          2025–2026
+          2025
         </span>
 
         <span>
@@ -1264,13 +1287,43 @@
     </div>
 
 
+
+    <!-- VISITOR COUNTER -->
+
+    <div
+      class="visitor-counter"
+      id="visitorCounter"
+    >
+
+      <div class="visitor-counter-title">
+        Visitors
+      </div>
+
+      <a
+        href="https://info.flagcounter.com/t8CR"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://s05.flagcounter.com/count2/t8CR/bg_FFFFFF/txt_000000/border_000000/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+          alt="Flag Counter"
+          border="0"
+        >
+      </a>
+
+    </div>
+
+
   </aside>
 
 
 
-  <!-- MAIN -->
+  <!-- MAIN CONTENT -->
 
-  <div class="main-content">
+  <div
+    class="main-content"
+    id="mainContent"
+  >
 
 
     <h1 class="main-name">
@@ -1289,9 +1342,11 @@
       <h2 class="section-title">
 
         <span class="section-icon">
+
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2L2 7l10 5 10-5-10-5zm-6 8v5c0 3.2 3 5.5 6 5.5s6-2.3 6-5.5v-5l-6 3-6-3z"/>
           </svg>
+
         </span>
 
         About Me
@@ -1306,6 +1361,7 @@
         <a
           href="https://www.ccu.edu.tw/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           National Chung Cheng University
         </a>,
@@ -1315,6 +1371,7 @@
         <a
           href="https://mis.ccu.edu.tw/p/412-1120-2075.php?Lang=zh-tw"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Prof. Fan Wu (吳帆)
         </a>.
@@ -1340,9 +1397,11 @@
       <h2 class="section-title">
 
         <span class="section-icon">
+
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M9 2h6v2h-1v5.3l5.6 8.1A3 3 0 0 1 17.1 22H6.9a3 3 0 0 1-2.5-4.6L10 9.3V4H9V2zm2.7 8.4L6.1 18.5c-.4.6 0 1.5.8 1.5h10.2c.8 0 1.2-.9.8-1.5l-5.6-8.1V4h-.6v6.4z"/>
           </svg>
+
         </span>
 
         Research Interests
@@ -1384,9 +1443,11 @@
       <h2 class="section-title">
 
         <span class="section-icon">
+
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2L2 7l10 5 10-5-10-5zm-6 8v5c0 3.2 3 5.5 6 5.5s6-2.3 6-5.5v-5l-6 3-6-3z"/>
           </svg>
+
         </span>
 
         Education
@@ -1476,9 +1537,11 @@
       <h2 class="section-title">
 
         <span class="section-icon">
+
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M4 3h7v18H4V3zm9 0h7v18h-7V3zM6 6v2h3V6H6zm0 4v2h3v-2H6zm9-4v2h3V6h-3zm0 4v2h3v-2h-3z"/>
           </svg>
+
         </span>
 
         Publications
@@ -1524,6 +1587,7 @@
                 <a
                   href="https://doi.org/10.1007/s10462-026-11516-7"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [DOI]
                 </a>
@@ -1531,6 +1595,7 @@
                 <a
                   href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [Scholar]
                 </a>
@@ -1551,6 +1616,7 @@
           <div class="status-title">
             Under Review
           </div>
+
 
           <div class="publication-list">
 
@@ -1577,6 +1643,7 @@
           <div class="status-title">
             Work in Progress
           </div>
+
 
           <div class="publication-list">
 
@@ -1622,6 +1689,7 @@
             Published
           </div>
 
+
           <div class="publication-list">
 
 
@@ -1665,6 +1733,7 @@
                 <a
                   href="https://aisel.aisnet.org/iceb2024/50"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [Paper]
                 </a>
@@ -1693,6 +1762,7 @@
                 <a
                   href="https://aisel.aisnet.org/iceb2023/27"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [Paper]
                 </a>
@@ -1721,6 +1791,7 @@
                 <a
                   href="https://doi.org/10.1109/COA50123.2021.9519944"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [DOI]
                 </a>
@@ -1742,8 +1813,8 @@
             Under Review
           </div>
 
-          <div class="publication-list">
 
+          <div class="publication-list">
 
             <article class="publication">
 
@@ -1760,7 +1831,6 @@
               </div>
 
             </article>
-
 
           </div>
 
@@ -1782,9 +1852,11 @@
       <h2 class="section-title">
 
         <span class="section-icon">
+
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M3 3h18v12H3V3zm2 2v8h14V5H5zm2 12h10v2H7v-2zm4-8h2v2h-2V9z"/>
           </svg>
+
         </span>
 
         Teaching & Academic Service
@@ -1937,9 +2009,11 @@
       <h2 class="section-title">
 
         <span class="section-icon">
+
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M7 2h10v3h3v3c0 3.1-2 5.7-5 6.6V17h3v2H6v-2h3v-2.4C6 13.7 4 11.1 4 8V5h3V2zm2 2v4c0 2.2 1.3 4 3 4s3-1.8 3-4V4H9zM6 7v1c0 1.6.7 3 1.8 3.9C7.3 10.8 7 9.5 7 8V7H6zm11 0v1c0 1.5-.3 2.8-.8 3.9A4.9 4.9 0 0 0 18 8V7h-1z"/>
           </svg>
+
         </span>
 
         Awards & Scholarships
@@ -1948,6 +2022,25 @@
 
 
       <div class="award-list">
+
+
+        <div class="award-item">
+
+          <div class="award-date">
+            2026
+          </div>
+
+          <div class="award-name">
+
+            CCU Outstanding Performance Award
+
+            <span class="award-place">
+              National Chung Cheng University
+            </span>
+
+          </div>
+
+        </div>
 
 
         <div class="award-item">
@@ -1972,7 +2065,7 @@
         <div class="award-item">
 
           <div class="award-date">
-            2025–2026
+            2025
           </div>
 
           <div class="award-name">
@@ -2098,6 +2191,70 @@
       );
 
     });
+
+
+  /*
+    VISITOR COUNTER POSITION
+
+    Desktop:
+    below Latest Highlights in the left sidebar.
+
+    Mobile:
+    moved below all main website content.
+  */
+
+  const visitorCounter =
+    document.getElementById("visitorCounter");
+
+  const sidebar =
+    document.getElementById("sidebar");
+
+  const mainContent =
+    document.getElementById("mainContent");
+
+  const counterOriginalParent =
+    visitorCounter.parentNode;
+
+
+  function positionVisitorCounter() {
+
+    if (window.innerWidth <= 680) {
+
+      if (
+        visitorCounter.parentNode !==
+        document.querySelector(".academic-layout")
+      ) {
+
+        document
+          .querySelector(".academic-layout")
+          .appendChild(visitorCounter);
+
+      }
+
+    } else {
+
+      if (
+        visitorCounter.parentNode !==
+        counterOriginalParent
+      ) {
+
+        counterOriginalParent
+          .appendChild(visitorCounter);
+
+      }
+
+    }
+
+  }
+
+
+  positionVisitorCounter();
+
+
+  window.addEventListener(
+    "resize",
+    positionVisitorCounter
+  );
 
 </script>
 
