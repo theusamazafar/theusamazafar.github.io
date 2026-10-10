@@ -12,31 +12,15 @@
 
   <title>Usama Zafar | Academic Website</title>
 
-  <!-- Browser tab icon -->
-
-  <link
-    rel="icon"
-    type="image/jpeg"
-    href="profile.jpg?v=3"
-  >
-
-  <link
-    rel="shortcut icon"
-    type="image/jpeg"
-    href="profile.jpg?v=3"
-  >
-
-  <link
-    rel="apple-touch-icon"
-    href="profile.jpg?v=3"
-  >
-
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="profile.jpg?v=4">
+  <link rel="shortcut icon" type="image/jpeg" href="profile.jpg?v=4">
+  <link rel="apple-touch-icon" href="profile.jpg?v=4">
 
   <!-- SEO -->
-
   <meta
     name="description"
-    content="Usama Zafar is a Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan. His research focuses on explainable AI, trustworthy AI, information systems, anomaly detection, FinTech, and applied machine learning."
+    content="Academic website of Usama Zafar, Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan."
   >
 
   <meta
@@ -49,13 +33,8 @@
     href="https://theusamazafar.github.io/"
   >
 
-
   <!-- Social preview -->
-
-  <meta
-    property="og:type"
-    content="profile"
-  >
+  <meta property="og:type" content="profile">
 
   <meta
     property="og:title"
@@ -78,8 +57,7 @@
   >
 
 
-  <!-- Fonts -->
-
+  <!-- Lato -->
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -92,13 +70,12 @@
   >
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   >
 
 
   <!-- Structured data -->
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -129,102 +106,74 @@
   <style>
 
     /* =========================================================
-       GENERAL
+       BASE
     ========================================================= */
 
     :root {
-
       --background: #ffffff;
-
-      --text: #505050;
-      --heading: #383838;
+      --text: #555555;
+      --heading: #343434;
       --muted: #777777;
-
-      --border: #ececec;
-
-      --link: #2887a1;
-      --link-hover: #17667a;
-
+      --light: #939393;
+      --border: #ededed;
+      --link: #267f98;
+      --link-hover: #155d70;
       --max-width: 1080px;
-
     }
 
 
     * {
-
       margin: 0;
       padding: 0;
-
       box-sizing: border-box;
-
       scroll-behavior: smooth;
-
     }
 
 
     html {
-
-      scroll-padding-top: 90px;
-
+      scroll-padding-top: 85px;
     }
 
 
     body {
-
       background: var(--background);
-
       color: var(--text);
 
       font-family:
-        "Source Sans 3",
-        "Helvetica Neue",
+        "Lato",
         Arial,
+        Helvetica,
         sans-serif;
 
-      font-size: 17px;
-
+      font-size: 16px;
       font-weight: 400;
-
-      line-height: 1.62;
+      line-height: 1.58;
 
       -webkit-font-smoothing: antialiased;
-
     }
 
 
     a {
-
       color: var(--link);
-
       text-decoration: none;
-
     }
 
 
     a:hover {
-
       color: var(--link-hover);
-
       text-decoration: underline;
-
     }
 
 
     img {
-
       display: block;
-
       max-width: 100%;
-
     }
 
 
     .container {
-
       width: min(92%, var(--max-width));
-
       margin: 0 auto;
-
     }
 
 
@@ -234,130 +183,98 @@
     ========================================================= */
 
     header {
-
       background: #ffffff;
-
       border-bottom: 1px solid var(--border);
-
     }
 
 
     .navbar {
-
-      height: 72px;
+      min-height: 70px;
 
       display: flex;
-
       align-items: center;
 
-      justify-content: flex-start;
-
-      gap: 56px;
-
+      gap: 58px;
     }
 
 
     .site-name {
+      min-width: 155px;
 
-      min-width: 160px;
+      color: #444444;
 
-      color: #484848;
-
-      font-family:
-        "Source Serif 4",
-        Georgia,
-        serif;
-
-      font-size: 1.06rem;
-
+      font-size: 1.02rem;
       font-weight: 600;
 
+      letter-spacing: -0.01em;
     }
 
 
     .site-name:hover {
-
-      color: #222;
-
+      color: #222222;
       text-decoration: none;
-
     }
 
 
     .nav-links {
-
       display: flex;
-
       align-items: center;
 
-      gap: 30px;
+      gap: 31px;
 
       list-style: none;
-
     }
 
 
     .nav-links a {
+      color: #777777;
 
-      color: #777;
-
-      font-size: 0.94rem;
-
+      font-size: 0.91rem;
       font-weight: 400;
 
       white-space: nowrap;
-
     }
 
 
     .nav-links a:hover {
-
-      color: #333;
-
+      color: #333333;
       text-decoration: none;
-
     }
 
 
     .menu-button {
-
       display: none;
 
       margin-left: auto;
 
-      border: 0;
-
+      border: none;
       background: transparent;
 
-      color: #555;
+      color: #555555;
 
-      font-size: 1.5rem;
+      font-size: 1.45rem;
 
       cursor: pointer;
-
     }
 
 
 
     /* =========================================================
-       MAIN LAYOUT
+       PAGE LAYOUT
     ========================================================= */
 
     .academic-layout {
-
       display: grid;
 
       grid-template-columns:
-        190px minmax(0, 1fr);
+        180px minmax(0, 1fr);
 
       column-gap: 48px;
 
-      padding-top: 40px;
-
-      padding-bottom: 58px;
-
       align-items: start;
 
+      padding-top: 38px;
+      padding-bottom: 55px;
     }
 
 
@@ -367,74 +284,46 @@
     ========================================================= */
 
     .sidebar {
-
-      width: 190px;
-
+      width: 180px;
     }
 
 
     .profile-photo {
-
-      width: 136px;
+      width: 128px;
 
       aspect-ratio: 35 / 45;
 
       height: auto;
 
       object-fit: cover;
-
       object-position: center top;
 
-      border: 1px solid #e1e1e1;
-
+      border: 1px solid #e0e0e0;
       border-radius: 0;
 
-      margin-bottom: 14px;
+      background: #eeeeee;
 
-      background: #eee;
-
+      margin-bottom: 13px;
     }
 
 
     .sidebar-name {
-
       color: var(--heading);
 
-      font-family:
-        "Source Serif 4",
-        Georgia,
-        serif;
-
-      font-size: 1.06rem;
-
+      font-size: 1.01rem;
       font-weight: 600;
 
-      margin-bottom: 1px;
-
-    }
-
-
-    .chinese-name {
-
-      color: #8b8b8b;
-
-      font-size: 0.83rem;
-
-      margin-bottom: 12px;
-
+      margin-bottom: 8px;
     }
 
 
     .sidebar-description {
+      color: #676767;
 
-      color: #666;
-
-      font-size: 0.86rem;
-
+      font-size: 0.84rem;
       line-height: 1.48;
 
       margin-bottom: 19px;
-
     }
 
 
@@ -444,184 +333,133 @@
     ========================================================= */
 
     .sidebar-links {
-
       list-style: none;
 
       display: flex;
-
       flex-direction: column;
 
-      gap: 9px;
-
+      gap: 8px;
     }
 
 
     .sidebar-links li {
-
       display: flex;
-
       align-items: flex-start;
 
-      gap: 9px;
+      gap: 8px;
 
-      color: #606060;
+      color: #626262;
 
-      font-size: 0.83rem;
-
+      font-size: 0.81rem;
       line-height: 1.35;
-
     }
 
 
     .sidebar-links a {
-
-      color: #606060;
-
+      color: #626262;
     }
 
 
     .sidebar-links a:hover {
-
-      color: #222;
-
+      color: #222222;
       text-decoration: none;
-
     }
 
 
     .side-icon {
-
       width: 15px;
-
       height: 15px;
-
       min-width: 15px;
 
       margin-top: 1px;
 
-      color: #5e5e5e;
-
+      color: #626262;
     }
 
 
     .side-icon svg {
-
       display: block;
 
       width: 100%;
-
       height: 100%;
-
     }
 
 
 
     /* =========================================================
-       SIDEBAR HIGHLIGHTS
+       LEFT HIGHLIGHTS
     ========================================================= */
 
     .sidebar-highlights {
-
-      margin-top: 27px;
-
-      padding-top: 19px;
+      margin-top: 24px;
+      padding-top: 17px;
 
       border-top: 1px solid var(--border);
-
     }
 
 
     .sidebar-highlights h3 {
+      color: #444444;
 
-      color: #484848;
-
-      font-family:
-        "Source Serif 4",
-        Georgia,
-        serif;
-
-      font-size: 0.96rem;
-
+      font-size: 0.9rem;
       font-weight: 600;
 
-      margin-bottom: 12px;
-
+      margin-bottom: 11px;
     }
 
 
     .highlight-item {
+      color: #6c6c6c;
 
-      margin-bottom: 13px;
+      font-size: 0.76rem;
+      line-height: 1.43;
 
-      color: #6a6a6a;
-
-      font-size: 0.79rem;
-
-      line-height: 1.45;
-
+      margin-bottom: 12px;
     }
 
 
     .highlight-item:last-child {
-
       margin-bottom: 0;
-
     }
 
 
     .highlight-date {
-
       display: block;
 
-      margin-bottom: 1px;
+      color: #4b4b4b;
 
-      color: #444;
-
-      font-size: 0.75rem;
-
+      font-size: 0.73rem;
       font-weight: 600;
 
+      margin-bottom: 1px;
     }
 
 
     .highlight-item a {
-
-      font-size: 0.77rem;
-
+      font-size: 0.74rem;
     }
 
 
 
     /* =========================================================
-       MAIN COLUMN
+       MAIN CONTENT
     ========================================================= */
 
     .main-content {
-
       min-width: 0;
-
     }
 
 
     .main-name {
-
       color: var(--heading);
 
-      font-family:
-        "Source Serif 4",
-        Georgia,
-        serif;
-
-      font-size: 1.95rem;
-
+      font-size: 1.9rem;
       font-weight: 600;
 
-      letter-spacing: -0.02em;
-
       line-height: 1.2;
+      letter-spacing: -0.025em;
 
-      margin-bottom: 29px;
-
+      margin-bottom: 27px;
     }
 
 
@@ -631,82 +469,58 @@
     ========================================================= */
 
     .section {
-
-      margin-bottom: 36px;
-
+      margin-bottom: 33px;
     }
 
 
     .section:last-child {
-
       margin-bottom: 0;
-
     }
 
 
     .section-title {
-
       display: flex;
-
       align-items: center;
 
-      gap: 9px;
+      gap: 8px;
 
       color: var(--heading);
 
-      font-family:
-        "Source Serif 4",
-        Georgia,
-        serif;
-
-      font-size: 1.33rem;
-
+      font-size: 1.24rem;
       font-weight: 600;
 
       line-height: 1.3;
 
-      margin-bottom: 12px;
-
+      margin-bottom: 11px;
     }
 
 
     .section-icon {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
 
-      width: 20px;
-
-      height: 20px;
-
-      min-width: 20px;
-
-      color: #666;
-
+      color: #676767;
     }
 
 
     .section-icon svg {
-
       width: 100%;
-
       height: 100%;
 
       display: block;
-
     }
 
 
     .section p {
+      font-size: 0.98rem;
 
-      margin-bottom: 13px;
-
-      font-size: 1rem;
-
+      margin-bottom: 12px;
     }
 
 
     .section p:last-child {
-
       margin-bottom: 0;
-
     }
 
 
@@ -716,58 +530,48 @@
     ========================================================= */
 
     .education-list {
-
       display: flex;
-
       flex-direction: column;
 
-      gap: 15px;
-
+      gap: 12px;
     }
 
 
     .education-item {
-
       display: grid;
 
       grid-template-columns:
-        112px 1fr;
+        108px 1fr;
 
-      gap: 12px;
-
+      gap: 11px;
     }
 
 
     .education-date {
+      color: #7a7a7a;
 
-      color: #777;
-
-      font-size: 0.85rem;
+      font-size: 0.83rem;
 
       padding-top: 1px;
-
     }
 
 
     .education-degree {
+      color: #454545;
 
-      color: #444;
-
+      font-size: 0.93rem;
       font-weight: 500;
 
-      line-height: 1.42;
-
+      line-height: 1.4;
     }
 
 
     .education-school {
+      color: #7a7a7a;
 
-      color: #777;
-
-      font-size: 0.87rem;
+      font-size: 0.84rem;
 
       margin-top: 1px;
-
     }
 
 
@@ -777,159 +581,111 @@
     ========================================================= */
 
     .publication-category {
-
-      margin-bottom: 34px;
-
+      margin-bottom: 23px;
     }
 
 
     .publication-category:last-child {
-
       margin-bottom: 0;
-
     }
 
 
     .category-title {
+      color: #373737;
 
-      color: #3f3f3f;
-
-      font-family:
-        "Source Serif 4",
-        Georgia,
-        serif;
-
-      font-size: 1.1rem;
-
+      font-size: 1rem;
       font-weight: 600;
 
-      padding-bottom: 6px;
-
-      margin-bottom: 18px;
-
-      border-bottom: 1px solid var(--border);
-
+      margin-bottom: 11px;
     }
 
 
     .status-group {
-
-      margin-bottom: 25px;
-
+      margin-bottom: 16px;
     }
 
 
     .status-group:last-child {
-
       margin-bottom: 0;
-
     }
 
 
     .status-title {
-
       color: #707070;
 
-      font-size: 0.76rem;
-
+      font-size: 0.78rem;
       font-weight: 600;
 
-      letter-spacing: 0.09em;
-
-      text-transform: uppercase;
-
-      margin-bottom: 11px;
-
+      margin-bottom: 6px;
     }
 
 
     .publication-list {
-
       display: flex;
-
       flex-direction: column;
 
-      gap: 18px;
-
+      gap: 11px;
     }
 
 
     .publication {
-
-      padding-bottom: 16px;
-
-      border-bottom: 1px solid var(--border);
-
-    }
-
-
-    .publication:last-child {
-
-      border-bottom: none;
-
-      padding-bottom: 0;
-
+      padding: 0;
+      margin: 0;
     }
 
 
     .publication-title {
+      color: #3f3f3f;
 
-      color: #404040;
-
-      font-size: 0.98rem;
-
+      font-size: 0.92rem;
       font-weight: 500;
 
-      line-height: 1.47;
+      line-height: 1.4;
 
-      margin-bottom: 3px;
-
+      margin-bottom: 2px;
     }
 
 
     .publication-authors {
+      color: #686868;
 
-      color: #666;
+      font-size: 0.84rem;
+      line-height: 1.4;
 
-      font-size: 0.89rem;
-
-      margin-bottom: 2px;
-
+      margin-bottom: 1px;
     }
 
 
     .publication-venue {
+      color: #777777;
 
-      color: #777;
-
-      font-size: 0.87rem;
-
+      font-size: 0.82rem;
       font-style: italic;
 
-      margin-bottom: 5px;
+      line-height: 1.4;
 
+      margin-bottom: 1px;
     }
 
 
     .publication-note {
+      color: #828282;
 
-      color: #777;
+      font-size: 0.8rem;
 
-      font-size: 0.86rem;
-
+      line-height: 1.35;
     }
 
 
     .publication-links {
-
       display: flex;
-
-      gap: 11px;
-
       flex-wrap: wrap;
 
-      font-size: 0.82rem;
+      gap: 8px;
 
+      margin-top: 2px;
+
+      font-size: 0.79rem;
     }
 
 
@@ -939,56 +695,48 @@
     ========================================================= */
 
     .teaching-list {
-
       display: flex;
-
       flex-direction: column;
 
-      gap: 13px;
-
+      gap: 11px;
     }
 
 
     .teaching-item {
-
       display: grid;
 
       grid-template-columns:
-        106px 1fr;
+        103px 1fr;
 
-      gap: 13px;
-
+      gap: 12px;
     }
 
 
     .teaching-date {
+      color: #777777;
 
-      color: #777;
-
-      font-size: 0.84rem;
+      font-size: 0.82rem;
 
       padding-top: 1px;
-
     }
 
 
     .teaching-name {
+      color: #454545;
 
-      color: #444;
-
+      font-size: 0.91rem;
       font-weight: 500;
 
+      line-height: 1.4;
     }
 
 
     .teaching-detail {
+      color: #7d7d7d;
 
-      color: #777;
-
-      font-size: 0.85rem;
+      font-size: 0.82rem;
 
       margin-top: 1px;
-
     }
 
 
@@ -998,58 +746,47 @@
     ========================================================= */
 
     .award-list {
-
       display: flex;
-
       flex-direction: column;
 
-      gap: 12px;
-
+      gap: 10px;
     }
 
 
     .award-item {
-
       display: grid;
 
       grid-template-columns:
-        90px 1fr;
+        88px 1fr;
 
-      gap: 13px;
-
+      gap: 12px;
     }
 
 
     .award-date {
+      color: #777777;
 
-      color: #777;
-
-      font-size: 0.84rem;
-
+      font-size: 0.82rem;
     }
 
 
     .award-name {
+      color: #454545;
 
-      color: #444;
-
+      font-size: 0.91rem;
       font-weight: 500;
-
     }
 
 
     .award-place {
-
       display: block;
 
-      color: #777;
+      color: #7d7d7d;
 
-      font-size: 0.85rem;
-
+      font-size: 0.82rem;
       font-weight: 400;
 
       margin-top: 1px;
-
     }
 
 
@@ -1059,15 +796,13 @@
     ========================================================= */
 
     footer {
-
       border-top: 1px solid var(--border);
 
-      color: #8a8a8a;
+      color: #8c8c8c;
 
-      font-size: 0.8rem;
+      font-size: 0.76rem;
 
-      padding: 22px 0 29px;
-
+      padding: 20px 0 27px;
     }
 
 
@@ -1079,40 +814,30 @@
     @media (max-width: 850px) {
 
       .navbar {
-
-        gap: 32px;
-
+        gap: 30px;
       }
 
 
       .nav-links {
-
-        gap: 19px;
-
+        gap: 18px;
       }
 
 
       .academic-layout {
-
         grid-template-columns:
-          165px 1fr;
+          158px 1fr;
 
-        column-gap: 34px;
-
+        column-gap: 32px;
       }
 
 
       .sidebar {
-
-        width: 165px;
-
+        width: 158px;
       }
 
 
       .profile-photo {
-
-        width: 128px;
-
+        width: 120px;
       }
 
     }
@@ -1126,143 +851,112 @@
     @media (max-width: 680px) {
 
       .navbar {
-
-        height: 66px;
-
+        min-height: 64px;
       }
 
 
       .site-name {
-
         min-width: 0;
-
       }
 
 
       .menu-button {
-
         display: block;
-
       }
 
 
       .nav-links {
-
         display: none;
 
         position: absolute;
 
-        top: 66px;
-
+        top: 64px;
         left: 0;
-
         right: 0;
 
         z-index: 1000;
 
         flex-direction: column;
-
         align-items: stretch;
 
         gap: 0;
 
-        background: #fff;
+        background: #ffffff;
 
         border-bottom: 1px solid var(--border);
-
       }
 
 
       .nav-links.active {
-
         display: flex;
-
       }
 
 
       .nav-links li {
-
         border-top: 1px solid #f1f1f1;
-
       }
 
 
       .nav-links a {
-
         display: block;
 
-        padding: 11px 5%;
-
+        padding: 10px 5%;
       }
 
 
       .academic-layout {
-
         grid-template-columns: 1fr;
 
-        row-gap: 31px;
+        row-gap: 28px;
 
-        padding-top: 30px;
-
+        padding-top: 28px;
       }
 
 
       .sidebar {
-
         width: 100%;
 
         display: grid;
 
         grid-template-columns:
-          115px 1fr;
+          112px 1fr;
 
-        gap: 18px;
-
+        gap: 17px;
       }
 
 
       .profile-photo {
-
-        width: 115px;
+        width: 112px;
 
         margin: 0;
-
       }
 
 
       .sidebar-highlights {
-
         grid-column: 1 / -1;
 
-        margin-top: 7px;
-
+        margin-top: 6px;
       }
 
 
       .main-name {
+        font-size: 1.65rem;
 
-        font-size: 1.75rem;
-
-        margin-bottom: 27px;
-
+        margin-bottom: 24px;
       }
 
 
       .section {
-
-        margin-bottom: 32px;
-
+        margin-bottom: 29px;
       }
 
 
       .education-item,
       .teaching-item,
       .award-item {
-
         grid-template-columns: 1fr;
 
         gap: 1px;
-
       }
 
     }
@@ -1272,23 +966,17 @@
     @media (max-width: 430px) {
 
       .sidebar {
-
         grid-template-columns: 1fr;
-
       }
 
 
       .profile-photo {
-
-        width: 128px;
-
+        width: 122px;
       }
 
 
       .sidebar-highlights {
-
         grid-column: auto;
-
       }
 
     }
@@ -1417,16 +1105,8 @@
       </div>
 
 
-      <div class="chinese-name">
-        扎法馬
-      </div>
-
-
       <p class="sidebar-description">
-
-        I work on explainable AI and its applications
-        in real-world information systems.
-
+        Ph.D. Candidate in Information Management.
       </p>
 
 
@@ -1472,7 +1152,9 @@
 
           </span>
 
-          <a href="mailto:usamazafar@alum.ccu.edu.tw">
+          <a
+            href="mailto:usamazafar@alum.ccu.edu.tw"
+          >
             Email
           </a>
 
@@ -1498,6 +1180,7 @@
           <a
             href="https://github.com/theusamazafar"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
@@ -1516,11 +1199,8 @@
               viewBox="0 0 64 64"
               fill="currentColor"
             >
-
               <path d="M32 7L5 22l27 15 27-15L32 7z"/>
-
               <path d="M16 31v11c0 8 8 14 16 14s16-6 16-14V31l-16 9-16-9z"/>
-
             </svg>
 
           </span>
@@ -1528,6 +1208,7 @@
           <a
             href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Google Scholar
           </a>
@@ -1554,6 +1235,7 @@
           <a
             href="https://www.linkedin.com/in/theusamazafar/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
@@ -1598,6 +1280,7 @@
           <a
             href="https://orcid.org/0009-0008-9320-5019"
             target="_blank"
+            rel="noopener noreferrer"
           >
             ORCID
           </a>
@@ -1613,7 +1296,7 @@
 
 
     <!-- =====================================================
-         LATEST HIGHLIGHTS — LEFT SIDE
+         LATEST HIGHLIGHTS
     ====================================================== -->
 
     <div class="sidebar-highlights">
@@ -1630,7 +1313,7 @@
           2026
         </span>
 
-        Published my systematic review on explainable AI
+        Published a systematic review on explainable AI
         for fraud detection in
         <em>Artificial Intelligence Review</em>.
 
@@ -1639,12 +1322,12 @@
         <a
           href="https://doi.org/10.1007/s10462-026-11516-7"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Paper ↗
         </a>
 
       </div>
-
 
 
       <div class="highlight-item">
@@ -1653,17 +1336,16 @@
           2026
         </span>
 
-        Best Presentation Award at
-        ICIME 2026, Yokohama.
+        Received the Best Presentation Award
+        at ICIME 2026 in Yokohama, Japan.
 
       </div>
-
 
 
       <div class="highlight-item">
 
         <span class="highlight-date">
-          2025–26
+          2025–2026
         </span>
 
         Chung Hwa Rotary Educational Foundation
@@ -1727,19 +1409,25 @@
         <a
           href="https://www.ccu.edu.tw/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           National Chung Cheng University
         </a>,
 
-        Taiwan. I conduct my doctoral research under the
-        supervision of
+        Taiwan, under the supervision of
 
         <a
           href="https://mis.ccu.edu.tw/p/412-1120-2075.php?Lang=zh-tw"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Prof. Fan Wu (吳帆)
         </a>.
+
+        My work sits at the intersection of artificial intelligence
+        and information systems, with an emphasis on how intelligent
+        systems can be evaluated and used responsibly in digital and
+        high-stakes decision environments.
 
       </p>
 
@@ -1778,23 +1466,12 @@
 
       <p>
 
-        I am interested in applying explainable and trustworthy
-        AI to information systems where model outputs affect
-        real decisions. My current work includes applications
-        in fraud detection, healthcare decision support,
-        anomaly detection, and AI-generated or manipulated
-        digital content.
-
-      </p>
-
-
-      <p>
-
-        I am especially interested in how explanations can
-        improve the transparency and usefulness of AI systems,
-        how reliability and fairness can be maintained when
-        data and environments change, and how people evaluate
-        and respond to AI-generated information.
+        My current projects apply explainable AI to healthcare
+        decision support, digital fraud, AI-generated content,
+        and autonomous AI agents. I study questions related to
+        model transparency, reliability, fairness over time,
+        and how users interpret and respond to AI-supported
+        information and decisions.
 
       </p>
 
@@ -1855,7 +1532,6 @@
         </div>
 
 
-
         <div class="education-item">
 
           <div class="education-date">
@@ -1877,7 +1553,6 @@
         </div>
 
 
-
         <div class="education-item">
 
           <div class="education-date">
@@ -1891,10 +1566,7 @@
             </div>
 
             <div class="education-school">
-
-              Government College University Faisalabad,
-              Pakistan
-
+              Government College University Faisalabad, Pakistan
             </div>
 
           </div>
@@ -1950,11 +1622,9 @@
         </h3>
 
 
-
         <!-- PUBLISHED -->
 
         <div class="status-group">
-
 
           <div class="status-title">
             Published
@@ -1966,58 +1636,42 @@
 
             <article class="publication">
 
-
               <div class="publication-title">
-
-                Methodological challenges in explainable AI
-                for fraud detection: a systematic literature
-                review
-
+                Methodological challenges in explainable AI for fraud detection: a systematic literature review
               </div>
-
 
               <div class="publication-authors">
-
                 <strong>Zafar, U.</strong>, & Wu, F.
-
               </div>
-
 
               <div class="publication-venue">
-
-                Artificial Intelligence Review,
-                59, 115, 2026
-
+                Artificial Intelligence Review, 59, 115, 2026
               </div>
 
-
               <div class="publication-links">
-
 
                 <a
                   href="https://doi.org/10.1007/s10462-026-11516-7"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [DOI]
                 </a>
 
-
                 <a
                   href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [Scholar]
                 </a>
 
-
               </div>
-
 
             </article>
 
 
           </div>
-
 
         </div>
 
@@ -2026,7 +1680,6 @@
         <!-- UNDER REVIEW -->
 
         <div class="status-group">
-
 
           <div class="status-title">
             Under Review
@@ -2038,28 +1691,18 @@
 
             <article class="publication">
 
-
               <div class="publication-title">
-
-                A Multi-Model Framework for Explainable
-                Sepsis Mortality Prediction with Dynamic
-                Fairness and Drift Analysis
-
+                A Multi-Model Framework for Explainable Sepsis Mortality Prediction with Dynamic Fairness and Drift Analysis
               </div>
-
 
               <div class="publication-note">
-
-                Manuscript under review
-
+                Under review
               </div>
-
 
             </article>
 
 
           </div>
-
 
         </div>
 
@@ -2068,7 +1711,6 @@
         <!-- WORK IN PROGRESS -->
 
         <div class="status-group">
-
 
           <div class="status-title">
             Work in Progress
@@ -2080,52 +1722,23 @@
 
             <article class="publication">
 
-
               <div class="publication-title">
-
-                Official labels versus peer comments:
-                How AI disclosure methods and image
-                implausibility shape users’ trust and
-                engagement with AI-generated images on
-                social media
-
+                Official labels versus peer comments: How AI disclosure methods and image implausibility shape users’ trust and engagement with AI-generated images on social media
               </div>
-
-
-              <div class="publication-note">
-
-                Work in progress
-
-              </div>
-
 
             </article>
 
 
-
             <article class="publication">
 
-
               <div class="publication-title">
-
-                RefundProof: Decision Intelligence Framework
-                for AI-Manipulated Refund Fraud in E-Commerce
-
+                RefundProof: Decision Intelligence Framework for AI-Manipulated Refund Fraud in E-Commerce
               </div>
-
-
-              <div class="publication-note">
-
-                Work in progress
-
-              </div>
-
 
             </article>
 
 
           </div>
-
 
         </div>
 
@@ -2146,11 +1759,9 @@
         </h3>
 
 
-
         <!-- PUBLISHED -->
 
         <div class="status-group">
-
 
           <div class="status-title">
             Published
@@ -2160,187 +1771,115 @@
           <div class="publication-list">
 
 
-            <!-- ICIME 2026 -->
-
             <article class="publication">
 
-
               <div class="publication-title">
-
-                Detecting AI-Inpainted Refund-Claim Images
-                Using Explainable Cues and Deep Ensembles
-
+                Detecting AI-Inpainted Refund-Claim Images Using Explainable Cues and Deep Ensembles
               </div>
-
 
               <div class="publication-authors">
-
-                <strong>Zafar, U.</strong>,
-                Wu, F., & Hsieh, Y. C.
-
+                <strong>Zafar, U.</strong>, Wu, F., & Hsieh, Y. C.
               </div>
-
 
               <div class="publication-venue">
-
-                14th International Conference on
-                Information Management and Engineering
-                (ICIME 2026), Yokohama, Japan
-
+                14th International Conference on Information Management and Engineering (ICIME 2026), Yokohama, Japan
               </div>
-
 
               <div class="publication-note">
-
                 Best Presentation Award
-
               </div>
-
 
             </article>
 
 
-
-            <!-- ICEB 2024 -->
-
             <article class="publication">
 
-
               <div class="publication-title">
-
-                Financial inclusion and fintech ecosystems
-                in the digital age: A systematic review
-                and meta-analysis
-
+                Financial inclusion and fintech ecosystems in the digital age: A systematic review and meta-analysis
               </div>
-
 
               <div class="publication-authors">
-
                 <strong>Zafar, U.</strong>, & Li, E. Y.
-
               </div>
-
 
               <div class="publication-venue">
-
-                ICEB 2024 Proceedings,
-                Zhuhai, China
-
+                ICEB 2024 Proceedings, Zhuhai, China
               </div>
-
 
               <div class="publication-links">
 
                 <a
                   href="https://aisel.aisnet.org/iceb2024/50"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [Paper]
                 </a>
 
               </div>
 
-
             </article>
 
 
-
-            <!-- ICEB 2023 -->
-
             <article class="publication">
 
-
               <div class="publication-title">
-
-                Fostering Fintech adoption in growing
-                economies: Opportunities, challenges,
-                and strategies
-
+                Fostering Fintech adoption in growing economies: Opportunities, challenges, and strategies
               </div>
-
 
               <div class="publication-authors">
-
-                Li, E. Y., &
-                <strong>Zafar, U.</strong>
-
+                Li, E. Y., & <strong>Zafar, U.</strong>
               </div>
-
 
               <div class="publication-venue">
-
-                ICEB 2023 Proceedings,
-                Chiayi, Taiwan
-
+                ICEB 2023 Proceedings, Chiayi, Taiwan
               </div>
-
 
               <div class="publication-links">
 
                 <a
                   href="https://aisel.aisnet.org/iceb2023/27"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [Paper]
                 </a>
 
               </div>
 
-
             </article>
 
 
-
-            <!-- COA 2021 -->
-
             <article class="publication">
 
-
               <div class="publication-title">
-
-                Acoustic Wave Analysis in Deep Sea and
-                Shallow Water Using Bellhop Tool
-
+                Acoustic Wave Analysis in Deep Sea and Shallow Water Using Bellhop Tool
               </div>
-
 
               <div class="publication-authors">
-
-                Shehwar, D. E.,
-                Gul, S.,
-                <strong>Zafar, U.</strong>,
-                Shaukat, U.,
-                Syed, A. H.,
-                & Zaidi, S. S. H.
-
+                Shehwar, D. E., Gul, S., <strong>Zafar, U.</strong>, Shaukat, U., Syed, A. H., & Zaidi, S. S. H.
               </div>
-
 
               <div class="publication-venue">
-
                 2021 OES China Ocean Acoustics
-
               </div>
-
 
               <div class="publication-links">
 
                 <a
                   href="https://doi.org/10.1109/COA50123.2021.9519944"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   [DOI]
                 </a>
 
               </div>
 
-
             </article>
 
 
           </div>
-
 
         </div>
 
@@ -2349,7 +1888,6 @@
         <!-- UNDER REVIEW -->
 
         <div class="status-group">
-
 
           <div class="status-title">
             Under Review
@@ -2361,34 +1899,22 @@
 
             <article class="publication">
 
-
               <div class="publication-title">
-
-                Attention-Admission Governance for
-                Portfolios of Autonomous Clinical Agents
-
+                Attention-Admission Governance for Portfolios of Autonomous Clinical Agents
               </div>
-
 
               <div class="publication-venue">
-
                 IMCOM 2027
-
               </div>
-
 
               <div class="publication-note">
-
                 Under review
-
               </div>
-
 
             </article>
 
 
           </div>
-
 
         </div>
 
@@ -2440,10 +1966,7 @@
           <div>
 
             <div class="teaching-name">
-
-              Teaching Assistant —
-              Analysis and Application of Big Data
-
+              Teaching Assistant — Analysis and Application of Big Data
             </div>
 
             <div class="teaching-detail">
@@ -2453,7 +1976,6 @@
           </div>
 
         </div>
-
 
 
         <div class="teaching-item">
@@ -2465,10 +1987,7 @@
           <div>
 
             <div class="teaching-name">
-
-              Teaching Assistant —
-              Advanced Software Engineering
-
+              Teaching Assistant — Advanced Software Engineering
             </div>
 
             <div class="teaching-detail">
@@ -2480,7 +1999,6 @@
         </div>
 
 
-
         <div class="teaching-item">
 
           <div class="teaching-date">
@@ -2490,10 +2008,7 @@
           <div>
 
             <div class="teaching-name">
-
-              Teaching Assistant —
-              Data Communications & Networks
-
+              Teaching Assistant — Data Communications & Networks
             </div>
 
             <div class="teaching-detail">
@@ -2505,7 +2020,6 @@
         </div>
 
 
-
         <div class="teaching-item">
 
           <div class="teaching-date">
@@ -2515,10 +2029,7 @@
           <div>
 
             <div class="teaching-name">
-
-              Teaching Assistant —
-              Object-oriented System Analysis and Design
-
+              Teaching Assistant — Object-oriented System Analysis and Design
             </div>
 
             <div class="teaching-detail">
@@ -2528,7 +2039,6 @@
           </div>
 
         </div>
-
 
 
         <div class="teaching-item">
@@ -2540,10 +2050,7 @@
           <div>
 
             <div class="teaching-name">
-
-              Teaching Assistant —
-              Analysis and Application of Big Data
-
+              Teaching Assistant — Analysis and Application of Big Data
             </div>
 
             <div class="teaching-detail">
@@ -2553,7 +2060,6 @@
           </div>
 
         </div>
-
 
 
         <div class="teaching-item">
@@ -2569,10 +2075,7 @@
             </div>
 
             <div class="teaching-detail">
-
-              College of Management,
-              National Chung Cheng University
-
+              College of Management, National Chung Cheng University
             </div>
 
           </div>
@@ -2637,7 +2140,6 @@
         </div>
 
 
-
         <div class="award-item">
 
           <div class="award-date">
@@ -2645,14 +2147,10 @@
           </div>
 
           <div class="award-name">
-
-            Chung Hwa Rotary Educational Foundation
-            Academic Scholarship
-
+            Chung Hwa Rotary Educational Foundation Academic Scholarship
           </div>
 
         </div>
-
 
 
         <div class="award-item">
@@ -2674,7 +2172,6 @@
         </div>
 
 
-
         <div class="award-item">
 
           <div class="award-date">
@@ -2692,7 +2189,6 @@
           </div>
 
         </div>
-
 
 
         <div class="award-item">
@@ -2745,6 +2241,10 @@
 
 
 
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
 <script>
 
   document.getElementById("year").textContent =
@@ -2761,9 +2261,7 @@
   menuButton.addEventListener(
     "click",
     function () {
-
       navLinks.classList.toggle("active");
-
     }
   );
 
@@ -2775,9 +2273,7 @@
       link.addEventListener(
         "click",
         function() {
-
           navLinks.classList.remove("active");
-
         }
       );
 
