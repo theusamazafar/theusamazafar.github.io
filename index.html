@@ -10,13 +10,11 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>
-    Usama Zafar | Explainable AI & Information Systems Researcher
-  </title>
+  <title>Usama Zafar | Academic Website</title>
 
   <meta
     name="description"
-    content="Usama Zafar is a Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan. His research includes explainable AI, machine learning, information security, anomaly detection, and FinTech."
+    content="Usama Zafar is a Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan. His research focuses on explainable AI, machine learning, information security, anomaly detection, FinTech, and information systems."
   >
 
   <meta
@@ -30,39 +28,9 @@
   >
 
 
-  <!-- =====================================================
-       SOCIAL PREVIEW
-  ====================================================== -->
-
-  <meta
-    property="og:type"
-    content="profile"
-  >
-
-  <meta
-    property="og:title"
-    content="Usama Zafar | Academic Website"
-  >
-
-  <meta
-    property="og:description"
-    content="Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan."
-  >
-
-  <meta
-    property="og:url"
-    content="https://theusamazafar.github.io/"
-  >
-
-  <meta
-    property="og:image"
-    content="https://theusamazafar.github.io/profile.jpg"
-  >
-
-
-  <!-- =====================================================
-       GOOGLE / STRUCTURED DATA
-  ====================================================== -->
+  <!-- ==========================================
+       GOOGLE STRUCTURED DATA
+  =========================================== -->
 
   <script type="application/ld+json">
   {
@@ -70,7 +38,6 @@
     "@type": "ProfilePage",
     "mainEntity": {
       "@type": "Person",
-      "@id": "https://theusamazafar.github.io/#usama-zafar",
       "name": "Usama Zafar",
       "alternateName": "Muhammad Usama Zafar",
       "url": "https://theusamazafar.github.io/",
@@ -85,15 +52,6 @@
         "https://www.linkedin.com/in/theusamazafar/",
         "https://orcid.org/0009-0008-9320-5019",
         "https://github.com/theusamazafar"
-      ],
-      "knowsAbout": [
-        "Explainable Artificial Intelligence",
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Information Security",
-        "Anomaly Detection",
-        "FinTech",
-        "Information Systems"
       ]
     }
   }
@@ -102,39 +60,27 @@
 
   <style>
 
-    /* =========================================================
-       COLORS
-    ========================================================= */
+    /* ==========================================
+       BASIC SETTINGS
+    =========================================== */
 
     :root {
 
+      --text: #4c4c4c;
+      --heading: #3d3d3d;
+      --muted: #777777;
+
+      --border: #eeeeee;
+
+      --link: #2795b6;
+      --link-hover: #17738e;
+
       --background: #ffffff;
-      --soft-background: #f7f7f7;
 
-      --text: #454545;
-      --heading: #282828;
-      --muted: #737373;
-
-      --line: #e6e6e6;
-
-      --dark: #222222;
-      --dark-soft: #333333;
-
-      --link: #287d92;
-      --link-hover: #145c6d;
-
-      --scholar: #4285f4;
-      --linkedin: #0a66c2;
-      --orcid: #a6ce39;
-
-      --max-width: 1180px;
+      --max-width: 1080px;
 
     }
 
-
-    /* =========================================================
-       RESET
-    ========================================================= */
 
     * {
 
@@ -150,12 +96,16 @@
 
     html {
 
-      scroll-padding-top: 100px;
+      scroll-padding-top: 90px;
 
     }
 
 
     body {
+
+      background: var(--background);
+
+      color: var(--text);
 
       font-family:
         -apple-system,
@@ -166,13 +116,11 @@
         Arial,
         sans-serif;
 
-      background: var(--background);
-
-      color: var(--text);
-
-      line-height: 1.7;
-
       font-size: 16px;
+
+      line-height: 1.62;
+
+      -webkit-font-smoothing: antialiased;
 
     }
 
@@ -197,9 +145,9 @@
 
     img {
 
-      max-width: 100%;
-
       display: block;
+
+      max-width: 100%;
 
     }
 
@@ -208,66 +156,56 @@
 
       width: min(92%, var(--max-width));
 
-      margin: auto;
+      margin: 0 auto;
 
     }
 
 
 
-    /* =========================================================
-       TOP NAVIGATION
-    ========================================================= */
+    /* ==========================================
+       NAVIGATION
+    =========================================== */
 
     header {
 
-      position: sticky;
+      background: #ffffff;
 
-      top: 0;
-
-      z-index: 1000;
-
-      background:
-        rgba(255,255,255,0.97);
-
-      backdrop-filter: blur(12px);
-
-      border-bottom:
-        1px solid var(--line);
+      border-bottom: 1px solid var(--border);
 
     }
 
 
     .navbar {
 
-      min-height: 78px;
+      height: 76px;
 
       display: flex;
 
       align-items: center;
 
-      justify-content: space-between;
+      justify-content: flex-start;
 
-      gap: 25px;
-
-    }
-
-
-    .brand {
-
-      color: var(--heading);
-
-      font-weight: 750;
-
-      font-size: 1.12rem;
-
-      letter-spacing: -0.02em;
+      gap: 68px;
 
     }
 
 
-    .brand:hover {
+    .site-name {
 
-      color: var(--heading);
+      min-width: 170px;
+
+      color: #555;
+
+      font-size: 1.05rem;
+
+      font-weight: 700;
+
+    }
+
+
+    .site-name:hover {
+
+      color: #333;
 
       text-decoration: none;
 
@@ -276,43 +214,35 @@
 
     .nav-links {
 
-      list-style: none;
-
       display: flex;
 
       align-items: center;
 
-      gap: 34px;
+      gap: 38px;
+
+      list-style: none;
 
     }
 
 
     .nav-links a {
 
-      color: #666;
+      color: #747474;
 
       font-size: 0.97rem;
 
-      font-weight: 500;
+      font-weight: 400;
+
+      white-space: nowrap;
 
     }
 
 
     .nav-links a:hover {
 
-      color: #111;
+      color: #333;
 
       text-decoration: none;
-
-    }
-
-
-    .nav-cv {
-
-      padding-bottom: 3px;
-
-      border-bottom:
-        2px solid #222;
 
     }
 
@@ -321,9 +251,13 @@
 
       display: none;
 
+      margin-left: auto;
+
       border: 0;
 
       background: transparent;
+
+      color: #555;
 
       font-size: 1.5rem;
 
@@ -333,21 +267,21 @@
 
 
 
-    /* =========================================================
-       PAGE LAYOUT
-    ========================================================= */
+    /* ==========================================
+       MAIN ACADEMIC LAYOUT
+    =========================================== */
 
-    .page-layout {
+    .academic-layout {
 
       display: grid;
 
-      grid-template-columns:
-        235px minmax(0, 1fr);
+      grid-template-columns: 205px minmax(0, 1fr);
 
-      gap: 70px;
+      column-gap: 55px;
 
-      padding:
-        55px 0 90px;
+      padding-top: 47px;
+
+      padding-bottom: 65px;
 
       align-items: start;
 
@@ -355,24 +289,29 @@
 
 
 
-    /* =========================================================
-       LEFT PROFILE COLUMN
-    ========================================================= */
+    /* ==========================================
+       LEFT SIDEBAR
+    =========================================== */
 
     .sidebar {
 
-      position: sticky;
-
-      top: 115px;
+      width: 205px;
 
     }
 
 
+    /*
+      PASSPORT-STYLE PHOTO
+      RECTANGULAR — NO ROUNDING
+    */
+
     .profile-photo {
 
-      width: 185px;
+      width: 175px;
 
       aspect-ratio: 35 / 45;
+
+      height: auto;
 
       object-fit: cover;
 
@@ -380,12 +319,9 @@
 
       border-radius: 0;
 
-      border:
-        1px solid #dedede;
+      border: 1px solid #e2e2e2;
 
-      background: #eee;
-
-      margin-bottom: 18px;
+      margin-bottom: 16px;
 
     }
 
@@ -394,40 +330,45 @@
 
       color: var(--heading);
 
-      font-size: 1.23rem;
+      font-size: 1.05rem;
 
-      font-weight: 750;
+      font-weight: 700;
 
-      margin-bottom: 2px;
-
-    }
-
-
-    .sidebar-chinese {
-
-      color: #888;
-
-      font-size: 0.9rem;
-
-      margin-bottom: 15px;
+      margin-bottom: 1px;
 
     }
 
 
-    .sidebar-tagline {
+    .chinese-name {
+
+      color: #8a8a8a;
+
+      font-size: 0.86rem;
+
+      margin-bottom: 14px;
+
+    }
+
+
+    .sidebar-description {
 
       color: #666;
 
-      font-size: 0.9rem;
+      font-size: 0.87rem;
 
-      line-height: 1.55;
+      line-height: 1.5;
 
-      margin-bottom: 24px;
+      margin-bottom: 21px;
 
     }
 
 
-    .profile-links {
+
+    /* ==========================================
+       SIDEBAR LINKS
+    =========================================== */
+
+    .sidebar-links {
 
       list-style: none;
 
@@ -435,12 +376,119 @@
 
       flex-direction: column;
 
-      gap: 11px;
+      gap: 9px;
 
     }
 
 
-    .profile-links li {
+    .sidebar-links li {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      min-height: 20px;
+
+      color: #606060;
+
+      font-size: 0.85rem;
+
+    }
+
+
+    .sidebar-links a {
+
+      color: #606060;
+
+    }
+
+
+    .sidebar-links a:hover {
+
+      color: #222;
+
+      text-decoration: none;
+
+    }
+
+
+    .side-icon {
+
+      width: 16px;
+
+      height: 16px;
+
+      min-width: 16px;
+
+      color: #555;
+
+    }
+
+
+    .side-icon svg {
+
+      display: block;
+
+      width: 100%;
+
+      height: 100%;
+
+    }
+
+
+
+    /* ==========================================
+       MAIN COLUMN
+    =========================================== */
+
+    .main-content {
+
+      min-width: 0;
+
+      padding-top: 1px;
+
+    }
+
+
+    .main-name {
+
+      color: var(--heading);
+
+      font-size: 1.95rem;
+
+      font-weight: 700;
+
+      letter-spacing: -0.025em;
+
+      line-height: 1.2;
+
+      margin-bottom: 36px;
+
+    }
+
+
+
+    /* ==========================================
+       SECTIONS
+    =========================================== */
+
+    .section {
+
+      margin-bottom: 42px;
+
+    }
+
+
+    .section:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+
+    .section-title {
 
       display: flex;
 
@@ -448,47 +496,33 @@
 
       gap: 10px;
 
-      color: #606060;
+      color: var(--heading);
 
-      font-size: 0.88rem;
+      font-size: 1.42rem;
 
-    }
+      font-weight: 700;
 
+      line-height: 1.3;
 
-    .profile-links a {
-
-      color: #606060;
-
-    }
-
-
-    .profile-links a:hover {
-
-      color: #111;
-
-      text-decoration: none;
+      margin-bottom: 14px;
 
     }
 
 
-    .sidebar-icon {
+    .section-icon {
 
-      width: 19px;
+      width: 23px;
 
-      height: 19px;
+      height: 23px;
 
-      min-width: 19px;
+      color: #686868;
 
-      display: grid;
-
-      place-items: center;
-
-      color: #555;
+      flex: 0 0 auto;
 
     }
 
 
-    .sidebar-icon svg {
+    .section-icon svg {
 
       width: 100%;
 
@@ -499,90 +533,16 @@
     }
 
 
+    .section p {
 
-    /* =========================================================
-       MAIN CONTENT
-    ========================================================= */
+      margin-bottom: 15px;
 
-    .main-content {
-
-      min-width: 0;
+      font-size: 1rem;
 
     }
 
 
-    .intro-name {
-
-      color: var(--heading);
-
-      font-size:
-        clamp(2rem, 4vw, 2.65rem);
-
-      font-weight: 750;
-
-      letter-spacing: -0.04em;
-
-      margin-bottom: 35px;
-
-    }
-
-
-    .content-section {
-
-      margin-bottom: 52px;
-
-      scroll-margin-top: 110px;
-
-    }
-
-
-    .content-section:last-child {
-
-      margin-bottom: 0;
-
-    }
-
-
-    .section-heading {
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 12px;
-
-      color: var(--heading);
-
-      font-size: 1.55rem;
-
-      line-height: 1.25;
-
-      margin-bottom: 17px;
-
-      letter-spacing: -0.02em;
-
-    }
-
-
-    .section-symbol {
-
-      font-size: 1.35rem;
-
-      line-height: 1;
-
-    }
-
-
-    .content-section p {
-
-      margin-bottom: 17px;
-
-      font-size: 1.02rem;
-
-    }
-
-
-    .content-section p:last-child {
+    .section p:last-child {
 
       margin-bottom: 0;
 
@@ -590,47 +550,9 @@
 
 
 
-    /* =========================================================
-       RESEARCH INTERESTS
-    ========================================================= */
-
-    .research-tags {
-
-      display: flex;
-
-      flex-wrap: wrap;
-
-      gap: 9px;
-
-      margin-top: 18px;
-
-    }
-
-
-    .research-tag {
-
-      padding: 6px 11px;
-
-      border:
-        1px solid #d9d9d9;
-
-      background: #fafafa;
-
-      color: #555;
-
-      border-radius: 4px;
-
-      font-size: 0.82rem;
-
-      font-weight: 600;
-
-    }
-
-
-
-    /* =========================================================
-       HIGHLIGHTS / NEWS
-    ========================================================= */
+    /* ==========================================
+       LATEST NEWS
+    =========================================== */
 
     .news-list {
 
@@ -638,7 +560,7 @@
 
       flex-direction: column;
 
-      gap: 16px;
+      gap: 11px;
 
     }
 
@@ -647,47 +569,37 @@
 
       display: grid;
 
-      grid-template-columns:
-        86px 1fr;
+      grid-template-columns: 82px 1fr;
 
-      gap: 14px;
+      gap: 8px;
 
-      align-items: start;
-
-      font-size: 0.98rem;
+      line-height: 1.55;
 
     }
 
 
     .news-date {
 
-      color: var(--heading);
+      color: #555;
 
-      font-weight: 750;
+      font-weight: 700;
 
       white-space: nowrap;
 
     }
 
 
-    .news-text {
+    .news-body {
 
       color: #5d5d5d;
 
     }
 
 
-    .news-text strong {
 
-      color: #444;
-
-    }
-
-
-
-    /* =========================================================
+    /* ==========================================
        PUBLICATIONS
-    ========================================================= */
+    =========================================== */
 
     .publication-list {
 
@@ -695,24 +607,23 @@
 
       flex-direction: column;
 
-      gap: 25px;
+      gap: 21px;
 
     }
 
 
     .publication {
 
-      padding-bottom: 25px;
+      padding-bottom: 19px;
 
-      border-bottom:
-        1px solid var(--line);
+      border-bottom: 1px solid #eeeeee;
 
     }
 
 
     .publication:last-child {
 
-      border-bottom: 0;
+      border-bottom: none;
 
       padding-bottom: 0;
 
@@ -721,39 +632,39 @@
 
     .publication-title {
 
-      color: var(--heading);
+      color: #404040;
 
-      font-size: 1.04rem;
+      font-size: 0.99rem;
 
-      font-weight: 750;
+      font-weight: 700;
 
-      line-height: 1.5;
-
-      margin-bottom: 5px;
-
-    }
-
-
-    .publication-authors {
-
-      color: #656565;
-
-      font-size: 0.92rem;
+      line-height: 1.48;
 
       margin-bottom: 3px;
 
     }
 
 
+    .publication-authors {
+
+      color: #666;
+
+      font-size: 0.9rem;
+
+      margin-bottom: 2px;
+
+    }
+
+
     .publication-venue {
 
-      color: #777;
+      color: #767676;
 
-      font-size: 0.91rem;
+      font-size: 0.88rem;
 
       font-style: italic;
 
-      margin-bottom: 8px;
+      margin-bottom: 6px;
 
     }
 
@@ -762,21 +673,19 @@
 
       display: flex;
 
+      gap: 12px;
+
       flex-wrap: wrap;
 
-      gap: 10px;
-
-      font-size: 0.84rem;
-
-      font-weight: 650;
+      font-size: 0.83rem;
 
     }
 
 
 
-    /* =========================================================
+    /* ==========================================
        EDUCATION
-    ========================================================= */
+    =========================================== */
 
     .education-list {
 
@@ -784,7 +693,7 @@
 
       flex-direction: column;
 
-      gap: 22px;
+      gap: 17px;
 
     }
 
@@ -793,49 +702,50 @@
 
       display: grid;
 
-      grid-template-columns:
-        115px 1fr;
+      grid-template-columns: 115px 1fr;
 
-      gap: 18px;
+      gap: 12px;
 
     }
 
 
-    .education-year {
+    .education-date {
 
       color: #777;
 
-      font-size: 0.89rem;
+      font-size: 0.86rem;
 
-      font-weight: 600;
+      padding-top: 1px;
 
     }
 
 
     .education-degree {
 
-      color: var(--heading);
+      color: #444;
 
-      font-weight: 700;
+      font-weight: 650;
 
-      margin-bottom: 2px;
+      line-height: 1.45;
 
     }
 
 
     .education-school {
 
-      color: #696969;
+      color: #777;
 
-      font-size: 0.92rem;
+      font-size: 0.88rem;
+
+      margin-top: 1px;
 
     }
 
 
 
-    /* =========================================================
+    /* ==========================================
        TEACHING
-    ========================================================= */
+    =========================================== */
 
     .teaching-list {
 
@@ -843,7 +753,7 @@
 
       flex-direction: column;
 
-      gap: 16px;
+      gap: 15px;
 
     }
 
@@ -852,45 +762,48 @@
 
       display: grid;
 
-      grid-template-columns:
-        110px 1fr;
+      grid-template-columns: 108px 1fr;
 
-      gap: 17px;
+      gap: 14px;
 
     }
 
 
-    .teaching-term {
+    .teaching-date {
 
       color: #777;
 
-      font-size: 0.88rem;
+      font-size: 0.85rem;
+
+      padding-top: 1px;
 
     }
 
 
-    .teaching-course {
+    .teaching-name {
 
-      color: var(--heading);
+      color: #444;
 
       font-weight: 650;
 
     }
 
 
-    .teaching-level {
+    .teaching-detail {
 
       color: #777;
 
-      font-size: 0.88rem;
+      font-size: 0.86rem;
+
+      margin-top: 1px;
 
     }
 
 
 
-    /* =========================================================
+    /* ==========================================
        AWARDS
-    ========================================================= */
+    =========================================== */
 
     .award-list {
 
@@ -898,7 +811,7 @@
 
       flex-direction: column;
 
-      gap: 14px;
+      gap: 13px;
 
     }
 
@@ -907,28 +820,25 @@
 
       display: grid;
 
-      grid-template-columns:
-        90px 1fr;
+      grid-template-columns: 92px 1fr;
 
-      gap: 18px;
+      gap: 14px;
 
     }
 
 
-    .award-year {
+    .award-date {
 
       color: #777;
 
-      font-size: 0.88rem;
-
-      font-weight: 600;
+      font-size: 0.85rem;
 
     }
 
 
     .award-name {
 
-      color: var(--heading);
+      color: #444;
 
       font-weight: 650;
 
@@ -941,159 +851,71 @@
 
       color: #777;
 
-      font-size: 0.88rem;
+      font-size: 0.86rem;
 
-      margin-top: 1px;
-
-    }
-
-
-
-    /* =========================================================
-       CONTACT BAR
-    ========================================================= */
-
-    .contact-strip {
-
-      padding:
-        25px 0;
-
-      border-top:
-        1px solid var(--line);
-
-      margin-top: 55px;
-
-    }
-
-
-    .contact-strip-inner {
-
-      display: flex;
-
-      align-items: center;
-
-      flex-wrap: wrap;
-
-      gap: 18px;
-
-    }
-
-
-    .contact-strip a {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 7px;
-
-      color: #666;
-
-      font-size: 0.87rem;
-
-    }
-
-
-    .contact-strip a:hover {
-
-      color: #111;
-
-      text-decoration: none;
-
-    }
-
-
-    .small-icon {
-
-      width: 18px;
-
-      height: 18px;
-
-    }
-
-
-    .small-icon svg {
-
-      width: 100%;
-
-      height: 100%;
-
-      display: block;
+      font-weight: 400;
 
     }
 
 
 
-    /* =========================================================
+    /* ==========================================
        FOOTER
-    ========================================================= */
+    =========================================== */
 
     footer {
 
-      border-top:
-        1px solid var(--line);
-
-      padding:
-        25px 0 35px;
+      border-top: 1px solid #eeeeee;
 
       color: #888;
 
-      font-size: 0.82rem;
+      font-size: 0.8rem;
+
+      padding: 23px 0 30px;
 
     }
 
 
 
-    /* =========================================================
-       RESPONSIVE
-    ========================================================= */
+    /* ==========================================
+       TABLET
+    =========================================== */
 
-    @media (max-width: 900px) {
+    @media (max-width: 850px) {
 
-      .page-layout {
+      .navbar {
 
-        grid-template-columns: 1fr;
-
-        gap: 45px;
-
-      }
-
-
-      .sidebar {
-
-        position: static;
-
-        display: grid;
-
-        grid-template-columns:
-          170px 1fr;
-
-        gap: 25px;
-
-        align-items: start;
-
-      }
-
-
-      .profile-photo {
-
-        width: 170px;
-
-        margin-bottom: 0;
-
-      }
-
-
-      .sidebar-info {
-
-        align-self: center;
+        gap: 35px;
 
       }
 
 
       .nav-links {
 
-        gap: 20px;
+        gap: 22px;
+
+      }
+
+
+      .academic-layout {
+
+        grid-template-columns: 175px 1fr;
+
+        column-gap: 38px;
+
+      }
+
+
+      .sidebar {
+
+        width: 175px;
+
+      }
+
+
+      .profile-photo {
+
+        width: 155px;
 
       }
 
@@ -1101,11 +923,22 @@
 
 
 
-    @media (max-width: 700px) {
+    /* ==========================================
+       MOBILE
+    =========================================== */
+
+    @media (max-width: 680px) {
 
       .navbar {
 
-        min-height: 68px;
+        height: 66px;
+
+      }
+
+
+      .site-name {
+
+        min-width: 0;
 
       }
 
@@ -1119,26 +952,27 @@
 
       .nav-links {
 
+        display: none;
+
         position: absolute;
 
-        top: 68px;
+        top: 66px;
 
         left: 0;
 
         right: 0;
 
-        display: none;
+        z-index: 1000;
+
+        background: #ffffff;
+
+        border-bottom: 1px solid #eeeeee;
 
         flex-direction: column;
 
         align-items: stretch;
 
         gap: 0;
-
-        background: white;
-
-        border-bottom:
-          1px solid var(--line);
 
       }
 
@@ -1152,8 +986,7 @@
 
       .nav-links li {
 
-        border-top:
-          1px solid #eee;
+        border-top: 1px solid #f0f0f0;
 
       }
 
@@ -1162,16 +995,29 @@
 
         display: block;
 
-        padding:
-          12px 5%;
+        padding: 11px 5%;
+
+      }
+
+
+      .academic-layout {
+
+        grid-template-columns: 1fr;
+
+        row-gap: 35px;
+
+        padding-top: 32px;
 
       }
 
 
       .sidebar {
 
-        grid-template-columns:
-          125px 1fr;
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 135px 1fr;
 
         gap: 20px;
 
@@ -1180,28 +1026,32 @@
 
       .profile-photo {
 
-        width: 125px;
+        width: 135px;
+
+        margin: 0;
 
       }
 
 
-      .page-layout {
+      .sidebar-description {
 
-        padding-top: 35px;
-
-      }
-
-
-      .intro-name {
-
-        font-size: 2rem;
+        max-width: 300px;
 
       }
 
 
-      .section-heading {
+      .main-name {
 
-        font-size: 1.35rem;
+        font-size: 1.8rem;
+
+        margin-bottom: 30px;
+
+      }
+
+
+      .section {
+
+        margin-bottom: 36px;
 
       }
 
@@ -1213,7 +1063,7 @@
 
         grid-template-columns: 1fr;
 
-        gap: 2px;
+        gap: 1px;
 
       }
 
@@ -1221,7 +1071,7 @@
 
 
 
-    @media (max-width: 470px) {
+    @media (max-width: 430px) {
 
       .sidebar {
 
@@ -1232,14 +1082,7 @@
 
       .profile-photo {
 
-        width: 150px;
-
-      }
-
-
-      .sidebar-info {
-
-        align-self: auto;
+        width: 145px;
 
       }
 
@@ -1254,9 +1097,9 @@
 <body>
 
 
-<!-- =========================================================
-     HEADER
-========================================================= -->
+<!-- ==========================================
+     TOP NAVIGATION
+=========================================== -->
 
 <header>
 
@@ -1266,7 +1109,7 @@
 
 
       <a
-        class="brand"
+        class="site-name"
         href="#home"
       >
         Usama Zafar
@@ -1276,7 +1119,7 @@
       <button
         class="menu-button"
         id="menuButton"
-        aria-label="Open menu"
+        aria-label="Open navigation"
       >
         ☰
       </button>
@@ -1286,12 +1129,6 @@
         class="nav-links"
         id="navLinks"
       >
-
-        <li>
-          <a href="#about">
-            About
-          </a>
-        </li>
 
         <li>
           <a href="#publications">
@@ -1312,6 +1149,12 @@
         </li>
 
         <li>
+          <a href="#education">
+            Education
+          </a>
+        </li>
+
+        <li>
           <a href="#awards">
             Awards
           </a>
@@ -1319,7 +1162,6 @@
 
         <li>
           <a
-            class="nav-cv"
             href="cv.pdf"
             target="_blank"
           >
@@ -1338,19 +1180,19 @@
 
 
 
-<!-- =========================================================
-     BODY
-========================================================= -->
+<!-- ==========================================
+     PAGE
+=========================================== -->
 
 <main
-  class="container page-layout"
+  class="container academic-layout"
   id="home"
 >
 
 
-  <!-- =======================================================
-       SIDEBAR
-  ======================================================== -->
+  <!-- ========================================
+       LEFT SIDEBAR
+  ========================================= -->
 
   <aside class="sidebar">
 
@@ -1362,7 +1204,7 @@
     >
 
 
-    <div class="sidebar-info">
+    <div>
 
 
       <div class="sidebar-name">
@@ -1370,56 +1212,34 @@
       </div>
 
 
-      <div class="sidebar-chinese">
+      <div class="chinese-name">
         扎法馬
       </div>
 
 
-      <p class="sidebar-tagline">
+      <p class="sidebar-description">
 
-        Researcher working on explainable,
-        trustworthy, and data-driven information
-        technologies.
+        Ph.D. Candidate in Information Management
+        at National Chung Cheng University.
 
       </p>
 
 
 
-      <ul class="profile-links">
-
-
-        <!-- UNIVERSITY -->
-
-        <li>
-
-          <span class="sidebar-icon">
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12 3L2 8l10 5 8-4v6h2V8L12 3zm-6 9v5c0 2 3 4 6 4s6-2 6-4v-5l-6 3-6-3z"/>
-            </svg>
-
-          </span>
-
-          National Chung Cheng University
-
-        </li>
-
+      <ul class="sidebar-links">
 
 
         <!-- LOCATION -->
 
         <li>
 
-          <span class="sidebar-icon">
+          <span class="side-icon">
 
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
             >
-              <path d="M12 2C8.1 2 5 5.1 5 9c0 5.1 7 13 7 13s7-7.9 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+              <path d="M12 2C8.1 2 5 5.1 5 9c0 5.1 7 13 7 13s7-7.9 7-13c0-3.9-3.1-7-7-7zm0 9.4A2.4 2.4 0 1 1 12 6.6a2.4 2.4 0 0 1 0 4.8z"/>
             </svg>
 
           </span>
@@ -1430,24 +1250,43 @@
 
 
 
-        <!-- EMAIL -->
+        <!-- UNIVERSITY -->
 
         <li>
 
-          <span class="sidebar-icon">
+          <span class="side-icon">
 
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
             >
-              <path d="M3 5h18v14H3V5zm9 7L5 7v10h14V7l-7 5zm0-2l7-5H5l7 5z"/>
+              <path d="M12 2L2 7l10 5 10-5-10-5zm-7 9v6h2v-5l5 2.5 5-2.5v5h2v-6l-7 3.5L5 11zm3 6v2h8v-2H8z"/>
             </svg>
 
           </span>
 
-          <a
-            href="mailto:usamazafar@alum.ccu.edu.tw"
-          >
+          National Chung Cheng University
+
+        </li>
+
+
+
+        <!-- EMAIL -->
+
+        <li>
+
+          <span class="side-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M3 5h18v14H3V5zm9 7L5.5 7h13L12 12zm0 2.2L5 8.8V17h14V8.8l-7 5.4z"/>
+            </svg>
+
+          </span>
+
+          <a href="mailto:usamazafar@alum.ccu.edu.tw">
             Email
           </a>
 
@@ -1459,7 +1298,7 @@
 
         <li>
 
-          <span class="sidebar-icon">
+          <span class="side-icon">
 
             <svg
               viewBox="0 0 24 24"
@@ -1473,7 +1312,6 @@
           <a
             href="https://github.com/theusamazafar"
             target="_blank"
-            rel="noopener noreferrer"
           >
             GitHub
           </a>
@@ -1486,26 +1324,16 @@
 
         <li>
 
-          <span class="sidebar-icon">
+          <span class="side-icon">
 
-            <svg viewBox="0 0 64 64">
+            <svg
+              viewBox="0 0 64 64"
+              fill="currentColor"
+            >
 
-              <circle
-                cx="32"
-                cy="32"
-                r="30"
-                fill="#4285F4"
-              />
+              <path d="M32 7L5 22l27 15 27-15L32 7z"/>
 
-              <path
-                d="M12 25L32 14L52 25L32 36Z"
-                fill="white"
-              />
-
-              <path
-                d="M20 31V40C20 45 25 49 32 49C39 49 44 45 44 40V31L32 38Z"
-                fill="white"
-              />
+              <path d="M16 31v11c0 8 8 14 16 14s16-6 16-14V31l-16 9-16-9z"/>
 
             </svg>
 
@@ -1514,7 +1342,6 @@
           <a
             href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Google Scholar
           </a>
@@ -1527,36 +1354,14 @@
 
         <li>
 
-          <span class="sidebar-icon">
+          <span class="side-icon">
 
-            <svg viewBox="0 0 64 64">
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
 
-              <rect
-                width="64"
-                height="64"
-                rx="6"
-                fill="#0A66C2"
-              />
-
-              <circle
-                cx="17"
-                cy="20"
-                r="5"
-                fill="white"
-              />
-
-              <rect
-                x="12"
-                y="28"
-                width="10"
-                height="25"
-                fill="white"
-              />
-
-              <path
-                d="M28 28H38V32C41 28 45 26 49 27C57 28 58 35 58 42V53H48V43C48 37 46 35 42 35C38 35 38 39 38 43V53H28Z"
-                fill="white"
-              />
+              <path d="M5.3 3.7A2.3 2.3 0 1 1 .7 3.7a2.3 2.3 0 0 1 4.6 0zM1.1 7h4.3v13.8H1.1V7zm6.8 0H12v1.9h.1c.6-1.1 2-2.3 4.1-2.3 4.4 0 5.2 2.9 5.2 6.6v7.6h-4.3v-6.7c0-1.6 0-3.7-2.3-3.7-2.3 0-2.7 1.8-2.7 3.6v6.8H7.9V7z"/>
 
             </svg>
 
@@ -1565,7 +1370,6 @@
           <a
             href="https://www.linkedin.com/in/theusamazafar/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
@@ -1578,22 +1382,24 @@
 
         <li>
 
-          <span class="sidebar-icon">
+          <span class="side-icon">
 
-            <svg viewBox="0 0 64 64">
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
 
               <circle
-                cx="32"
-                cy="32"
-                r="30"
-                fill="#A6CE39"
+                cx="12"
+                cy="12"
+                r="10"
               />
 
               <text
-                x="32"
-                y="39"
+                x="12"
+                y="15"
                 text-anchor="middle"
-                font-size="25"
+                font-size="8"
                 font-family="Arial"
                 font-weight="bold"
                 fill="white"
@@ -1608,7 +1414,6 @@
           <a
             href="https://orcid.org/0009-0008-9320-5019"
             target="_blank"
-            rel="noopener noreferrer"
           >
             ORCID
           </a>
@@ -1626,33 +1431,40 @@
 
 
 
-  <!-- =======================================================
-       MAIN COLUMN
-  ======================================================== -->
+  <!-- ========================================
+       MAIN CONTENT
+  ========================================= -->
 
   <div class="main-content">
 
 
-    <h1 class="intro-name">
+    <h1 class="main-name">
       Usama Zafar
     </h1>
 
 
 
-    <!-- =====================================================
+    <!-- ======================================
          ABOUT
-    ====================================================== -->
+    ======================================= -->
 
     <section
-      class="content-section"
+      class="section"
       id="about"
     >
 
 
-      <h2 class="section-heading">
+      <h2 class="section-title">
 
-        <span class="section-symbol">
-          🎓
+        <span class="section-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5zm-6 8v5c0 3.2 3 5.5 6 5.5s6-2.3 6-5.5v-5l-6 3-6-3z"/>
+          </svg>
+
         </span>
 
         About Me
@@ -1667,7 +1479,6 @@
         <a
           href="https://www.ccu.edu.tw/"
           target="_blank"
-          rel="noopener noreferrer"
         >
           National Chung Cheng University
         </a>,
@@ -1678,7 +1489,6 @@
         <a
           href="https://mis.ccu.edu.tw/p/412-1120-2075.php?Lang=zh-tw"
           target="_blank"
-          rel="noopener noreferrer"
         >
           Prof. Fan Wu (吳帆)
         </a>.
@@ -1690,8 +1500,9 @@
 
         My academic background spans Information Management,
         Control Science & Engineering, and Software Engineering.
-        My research focuses on the development and evaluation of
-        trustworthy AI-enabled information systems.
+        My work combines technical AI methods with information
+        systems perspectives to study trustworthy and practically
+        meaningful intelligent systems.
 
       </p>
 
@@ -1700,20 +1511,27 @@
 
 
 
-    <!-- =====================================================
+    <!-- ======================================
          RESEARCH
-    ====================================================== -->
+    ======================================= -->
 
     <section
-      class="content-section"
+      class="section"
       id="research"
     >
 
 
-      <h2 class="section-heading">
+      <h2 class="section-title">
 
-        <span class="section-symbol">
-          🔬
+        <span class="section-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M9 2h6v2h-1v5.3l5.6 8.1A3 3 0 0 1 17.1 22H6.9a3 3 0 0 1-2.5-4.6L10 9.3V4H9V2zm2.7 8.4L6.1 18.5c-.4.6 0 1.5.8 1.5h10.2c.8 0 1.2-.9.8-1.5l-5.6-8.1V4h-.6v6.4z"/>
+          </svg>
+
         </span>
 
         Research Interests
@@ -1726,65 +1544,44 @@
         My research interests include explainable artificial
         intelligence, machine learning, anomaly detection,
         information security, FinTech, and information systems.
-        I am particularly interested in transparent and
-        trustworthy AI approaches for real-world decision-making
-        environments.
+        I am particularly interested in the transparency,
+        reliability, and evaluation of AI-supported systems in
+        real-world decision-making environments.
 
       </p>
-
-
-      <div class="research-tags">
-
-        <span class="research-tag">
-          Explainable AI
-        </span>
-
-        <span class="research-tag">
-          Machine Learning
-        </span>
-
-        <span class="research-tag">
-          Anomaly Detection
-        </span>
-
-        <span class="research-tag">
-          Information Security
-        </span>
-
-        <span class="research-tag">
-          FinTech
-        </span>
-
-        <span class="research-tag">
-          Information Systems
-        </span>
-
-      </div>
 
 
     </section>
 
 
 
-    <!-- =====================================================
-         LATEST HIGHLIGHTS
-    ====================================================== -->
+    <!-- ======================================
+         LATEST NEWS
+    ======================================= -->
 
     <section
-      class="content-section"
-      id="highlights"
+      class="section"
+      id="news"
     >
 
 
-      <h2 class="section-heading">
+      <h2 class="section-title">
 
-        <span class="section-symbol">
-          🗞️
+        <span class="section-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M4 3h14a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V3zm4 4v2h8V7H8zm0 4v2h8v-2H8zm0 4v2h5v-2H8z"/>
+          </svg>
+
         </span>
 
-        Latest Highlights
+        Latest News
 
       </h2>
+
 
 
       <div class="news-list">
@@ -1796,18 +1593,16 @@
             2026
           </div>
 
-          <div class="news-text">
+          <div class="news-body">
 
             Published
 
-            <strong>
-              “Methodological challenges in explainable AI
-              for fraud detection”
-            </strong>
+            <em>
+              Methodological challenges in explainable AI
+              for fraud detection: a systematic literature review
+            </em>
 
             in <em>Artificial Intelligence Review</em>.
-
-            &nbsp;
 
             <a
               href="https://doi.org/10.1007/s10462-026-11516-7"
@@ -1828,7 +1623,7 @@
             2026
           </div>
 
-          <div class="news-text">
+          <div class="news-body">
 
             Received the
 
@@ -1836,7 +1631,8 @@
               Best Presentation Award
             </strong>
 
-            at ICIME 2026 in Yokohama, Japan.
+            at ICIME 2026,
+            Yokohama, Japan.
 
           </div>
 
@@ -1850,14 +1646,10 @@
             2025–26
           </div>
 
-          <div class="news-text">
+          <div class="news-body">
 
-            Awarded the
-
-            <strong>
-              Chung Hwa Rotary Educational Foundation
-              Academic Scholarship
-            </strong>.
+            Awarded the Chung Hwa Rotary Educational
+            Foundation Academic Scholarship.
 
           </div>
 
@@ -1871,20 +1663,27 @@
 
 
 
-    <!-- =====================================================
+    <!-- ======================================
          PUBLICATIONS
-    ====================================================== -->
+    ======================================= -->
 
     <section
-      class="content-section"
+      class="section"
       id="publications"
     >
 
 
-      <h2 class="section-heading">
+      <h2 class="section-title">
 
-        <span class="section-symbol">
-          📚
+        <span class="section-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M4 3h7v18H4V3zm9 0h7v18h-7V3zM6 6v2h3V6H6zm0 4v2h3v-2H6zm9-4v2h3V6h-3zm0 4v2h3v-2h-3z"/>
+          </svg>
+
         </span>
 
         Publications
@@ -1895,8 +1694,6 @@
 
       <div class="publication-list">
 
-
-        <!-- PUBLICATION 1 -->
 
         <article class="publication">
 
@@ -1930,14 +1727,14 @@
               href="https://doi.org/10.1007/s10462-026-11516-7"
               target="_blank"
             >
-              DOI
+              [DOI]
             </a>
 
             <a
               href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
               target="_blank"
             >
-              Google Scholar
+              [Scholar]
             </a>
 
           </div>
@@ -1946,8 +1743,6 @@
         </article>
 
 
-
-        <!-- PUBLICATION 2 -->
 
         <article class="publication">
 
@@ -1979,9 +1774,7 @@
 
           <div class="publication-links">
 
-            <span>
-              Best Presentation Award
-            </span>
+            Best Presentation Award
 
           </div>
 
@@ -1990,24 +1783,20 @@
 
 
 
-        <!-- PUBLICATION 3 -->
-
         <article class="publication">
 
 
           <div class="publication-title">
 
-            Financial inclusion and fintech ecosystems
-            in the digital age: A systematic review and
-            meta-analysis
+            Financial inclusion and fintech ecosystems in the
+            digital age: A systematic review and meta-analysis
 
           </div>
 
 
           <div class="publication-authors">
 
-            <strong>Zafar, U.</strong>,
-            & Li, E. Y.
+            <strong>Zafar, U.</strong>, & Li, E. Y.
 
           </div>
 
@@ -2026,7 +1815,7 @@
               href="https://aisel.aisnet.org/iceb2024/50"
               target="_blank"
             >
-              Paper
+              [Paper]
             </a>
 
           </div>
@@ -2035,8 +1824,6 @@
         </article>
 
 
-
-        <!-- PUBLICATION 4 -->
 
         <article class="publication">
 
@@ -2071,7 +1858,7 @@
               href="https://aisel.aisnet.org/iceb2023/27"
               target="_blank"
             >
-              Paper
+              [Paper]
             </a>
 
           </div>
@@ -2081,15 +1868,13 @@
 
 
 
-        <!-- PUBLICATION 5 -->
-
         <article class="publication">
 
 
           <div class="publication-title">
 
-            Acoustic Wave Analysis in Deep Sea and Shallow
-            Water Using Bellhop Tool
+            Acoustic Wave Analysis in Deep Sea and Shallow Water
+            Using Bellhop Tool
 
           </div>
 
@@ -2119,7 +1904,7 @@
               href="https://doi.org/10.1109/COA50123.2021.9519944"
               target="_blank"
             >
-              DOI
+              [DOI]
             </a>
 
           </div>
@@ -2135,20 +1920,27 @@
 
 
 
-    <!-- =====================================================
+    <!-- ======================================
          EDUCATION
-    ====================================================== -->
+    ======================================= -->
 
     <section
-      class="content-section"
+      class="section"
       id="education"
     >
 
 
-      <h2 class="section-heading">
+      <h2 class="section-title">
 
-        <span class="section-symbol">
-          🎓
+        <span class="section-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5zm-6 8v5c0 3.2 3 5.5 6 5.5s6-2.3 6-5.5v-5l-6 3-6-3z"/>
+          </svg>
+
         </span>
 
         Education
@@ -2156,12 +1948,13 @@
       </h2>
 
 
+
       <div class="education-list">
 
 
         <div class="education-item">
 
-          <div class="education-year">
+          <div class="education-date">
             2022–Present
           </div>
 
@@ -2183,7 +1976,7 @@
 
         <div class="education-item">
 
-          <div class="education-year">
+          <div class="education-date">
             2020–2022
           </div>
 
@@ -2205,7 +1998,7 @@
 
         <div class="education-item">
 
-          <div class="education-year">
+          <div class="education-date">
             2015–2019
           </div>
 
@@ -2216,10 +2009,8 @@
             </div>
 
             <div class="education-school">
-
               Government College University Faisalabad,
               Pakistan
-
             </div>
 
           </div>
@@ -2234,20 +2025,27 @@
 
 
 
-    <!-- =====================================================
+    <!-- ======================================
          TEACHING
-    ====================================================== -->
+    ======================================= -->
 
     <section
-      class="content-section"
+      class="section"
       id="teaching"
     >
 
 
-      <h2 class="section-heading">
+      <h2 class="section-title">
 
-        <span class="section-symbol">
-          👨‍🏫
+        <span class="section-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M3 3h18v12H3V3zm2 2v8h14V5H5zm2 12h10v2H7v-2zm4-8h2v2h-2V9z"/>
+          </svg>
+
         </span>
 
         Teaching & Academic Service
@@ -2255,25 +2053,23 @@
       </h2>
 
 
+
       <div class="teaching-list">
 
 
         <div class="teaching-item">
 
-          <div class="teaching-term">
+          <div class="teaching-date">
             Spring 2026
           </div>
 
           <div>
 
-            <div class="teaching-course">
-
-              Teaching Assistant —
-              Analysis and Application of Big Data
-
+            <div class="teaching-name">
+              Teaching Assistant — Analysis and Application of Big Data
             </div>
 
-            <div class="teaching-level">
+            <div class="teaching-detail">
               Undergraduate course
             </div>
 
@@ -2285,20 +2081,17 @@
 
         <div class="teaching-item">
 
-          <div class="teaching-term">
+          <div class="teaching-date">
             Spring 2026
           </div>
 
           <div>
 
-            <div class="teaching-course">
-
-              Teaching Assistant —
-              Advanced Software Engineering
-
+            <div class="teaching-name">
+              Teaching Assistant — Advanced Software Engineering
             </div>
 
-            <div class="teaching-level">
+            <div class="teaching-detail">
               Ph.D. course
             </div>
 
@@ -2310,20 +2103,17 @@
 
         <div class="teaching-item">
 
-          <div class="teaching-term">
+          <div class="teaching-date">
             Fall 2025
           </div>
 
           <div>
 
-            <div class="teaching-course">
-
-              Teaching Assistant —
-              Data Communications & Networks
-
+            <div class="teaching-name">
+              Teaching Assistant — Data Communications & Networks
             </div>
 
-            <div class="teaching-level">
+            <div class="teaching-detail">
               Graduate course
             </div>
 
@@ -2335,20 +2125,17 @@
 
         <div class="teaching-item">
 
-          <div class="teaching-term">
+          <div class="teaching-date">
             Fall 2025
           </div>
 
           <div>
 
-            <div class="teaching-course">
-
-              Teaching Assistant —
-              Object-oriented System Analysis and Design
-
+            <div class="teaching-name">
+              Teaching Assistant — Object-oriented System Analysis and Design
             </div>
 
-            <div class="teaching-level">
+            <div class="teaching-detail">
               Graduate course
             </div>
 
@@ -2360,20 +2147,17 @@
 
         <div class="teaching-item">
 
-          <div class="teaching-term">
+          <div class="teaching-date">
             Spring 2025
           </div>
 
           <div>
 
-            <div class="teaching-course">
-
-              Teaching Assistant —
-              Analysis and Application of Big Data
-
+            <div class="teaching-name">
+              Teaching Assistant — Analysis and Application of Big Data
             </div>
 
-            <div class="teaching-level">
+            <div class="teaching-detail">
               Undergraduate course
             </div>
 
@@ -2385,21 +2169,19 @@
 
         <div class="teaching-item">
 
-          <div class="teaching-term">
+          <div class="teaching-date">
             2023–2025
           </div>
 
           <div>
 
-            <div class="teaching-course">
+            <div class="teaching-name">
               EMI English Corner Tutor
             </div>
 
-            <div class="teaching-level">
-
+            <div class="teaching-detail">
               College of Management,
               National Chung Cheng University
-
             </div>
 
           </div>
@@ -2414,20 +2196,27 @@
 
 
 
-    <!-- =====================================================
+    <!-- ======================================
          AWARDS
-    ====================================================== -->
+    ======================================= -->
 
     <section
-      class="content-section"
+      class="section"
       id="awards"
     >
 
 
-      <h2 class="section-heading">
+      <h2 class="section-title">
 
-        <span class="section-symbol">
-          🏆
+        <span class="section-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M7 2h10v3h3v3c0 3.1-2 5.7-5 6.6V17h3v2H6v-2h3v-2.4C6 13.7 4 11.1 4 8V5h3V2zm2 2v4c0 2.2 1.3 4 3 4s3-1.8 3-4V4H9zM6 7v1c0 1.6.7 3 1.8 3.9C7.3 10.8 7 9.5 7 8V7H6zm11 0v1c0 1.5-.3 2.8-.8 3.9A4.9 4.9 0 0 0 18 8V7h-1z"/>
+          </svg>
+
         </span>
 
         Awards & Scholarships
@@ -2435,12 +2224,13 @@
       </h2>
 
 
+
       <div class="award-list">
 
 
         <div class="award-item">
 
-          <div class="award-year">
+          <div class="award-date">
             2026
           </div>
 
@@ -2460,8 +2250,8 @@
 
         <div class="award-item">
 
-          <div class="award-year">
-            2025–26
+          <div class="award-date">
+            2025–2026
           </div>
 
           <div class="award-name">
@@ -2477,8 +2267,8 @@
 
         <div class="award-item">
 
-          <div class="award-year">
-            2023–24
+          <div class="award-date">
+            2023–2024
           </div>
 
           <div class="award-name">
@@ -2497,7 +2287,7 @@
 
         <div class="award-item">
 
-          <div class="award-year">
+          <div class="award-date">
             2021
           </div>
 
@@ -2517,8 +2307,8 @@
 
         <div class="award-item">
 
-          <div class="award-year">
-            2020–22
+          <div class="award-date">
+            2020–2022
           </div>
 
           <div class="award-name">
@@ -2540,95 +2330,6 @@
     </section>
 
 
-
-    <!-- =====================================================
-         CONTACT STRIP
-    ====================================================== -->
-
-    <div class="contact-strip">
-
-
-      <div class="contact-strip-inner">
-
-
-        <!-- EMAIL -->
-
-        <a href="mailto:usamazafar@alum.ccu.edu.tw">
-
-          <span class="small-icon">
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M3 5h18v14H3V5zm9 7L5 7v10h14V7l-7 5z"/>
-            </svg>
-
-          </span>
-
-          Email
-
-        </a>
-
-
-
-        <!-- SCHOLAR -->
-
-        <a
-          href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
-          target="_blank"
-        >
-
-          Google Scholar
-
-        </a>
-
-
-
-        <!-- LINKEDIN -->
-
-        <a
-          href="https://www.linkedin.com/in/theusamazafar/"
-          target="_blank"
-        >
-
-          LinkedIn
-
-        </a>
-
-
-
-        <!-- ORCID -->
-
-        <a
-          href="https://orcid.org/0009-0008-9320-5019"
-          target="_blank"
-        >
-
-          ORCID
-
-        </a>
-
-
-
-        <!-- CV -->
-
-        <a
-          href="cv.pdf"
-          target="_blank"
-        >
-
-          CV
-
-        </a>
-
-
-      </div>
-
-
-    </div>
-
-
   </div>
 
 
@@ -2636,9 +2337,9 @@
 
 
 
-<!-- =========================================================
+<!-- ==========================================
      FOOTER
-========================================================= -->
+=========================================== -->
 
 <footer>
 
@@ -2646,7 +2347,6 @@
 
     ©
     <span id="year"></span>
-
     Usama Zafar
 
   </div>
@@ -2654,10 +2354,6 @@
 </footer>
 
 
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
 
 <script>
 
@@ -2674,7 +2370,7 @@
 
   menuButton.addEventListener(
     "click",
-    function() {
+    function () {
 
       navLinks.classList.toggle("active");
 
