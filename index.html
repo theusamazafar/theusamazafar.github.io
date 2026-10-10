@@ -10,17 +10,94 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Usama Zafar | Researcher</title>
+  <title>
+    Usama Zafar | Explainable AI & Information Systems Researcher
+  </title>
 
   <meta
     name="description"
-    content="Academic website of Usama Zafar, Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan."
+    content="Usama Zafar is a Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan. His research includes explainable AI, machine learning, information security, anomaly detection, and FinTech."
   >
 
   <meta
     name="author"
     content="Usama Zafar"
   >
+
+  <link
+    rel="canonical"
+    href="https://theusamazafar.github.io/"
+  >
+
+
+  <!-- =====================================================
+       SOCIAL PREVIEW
+  ====================================================== -->
+
+  <meta
+    property="og:type"
+    content="profile"
+  >
+
+  <meta
+    property="og:title"
+    content="Usama Zafar | Academic Website"
+  >
+
+  <meta
+    property="og:description"
+    content="Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan."
+  >
+
+  <meta
+    property="og:url"
+    content="https://theusamazafar.github.io/"
+  >
+
+  <meta
+    property="og:image"
+    content="https://theusamazafar.github.io/profile.jpg"
+  >
+
+
+  <!-- =====================================================
+       GOOGLE / STRUCTURED DATA
+  ====================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://theusamazafar.github.io/#usama-zafar",
+      "name": "Usama Zafar",
+      "alternateName": "Muhammad Usama Zafar",
+      "url": "https://theusamazafar.github.io/",
+      "image": "https://theusamazafar.github.io/profile.jpg",
+      "jobTitle": "Ph.D. Candidate in Information Management",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "National Chung Cheng University"
+      },
+      "sameAs": [
+        "https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl",
+        "https://www.linkedin.com/in/theusamazafar/",
+        "https://orcid.org/0009-0008-9320-5019",
+        "https://github.com/theusamazafar"
+      ],
+      "knowsAbout": [
+        "Explainable Artificial Intelligence",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Information Security",
+        "Anomaly Detection",
+        "FinTech",
+        "Information Systems"
+      ]
+    }
+  }
+  </script>
 
 
   <style>
@@ -31,29 +108,26 @@
 
     :root {
 
-      --black: #101010;
-      --charcoal: #1a1a1a;
-      --charcoal-light: #252525;
+      --background: #ffffff;
+      --soft-background: #f7f7f7;
 
-      --text: #191919;
-      --muted: #696969;
+      --text: #454545;
+      --heading: #282828;
+      --muted: #737373;
 
-      --grey: #888888;
-      --light-grey: #e1e1de;
-      --soft-grey: #f2f2ef;
+      --line: #e6e6e6;
 
-      --white: #ffffff;
-      --warm-white: #fafaf8;
+      --dark: #222222;
+      --dark-soft: #333333;
 
-      --border: #dededb;
+      --link: #287d92;
+      --link-hover: #145c6d;
+
+      --scholar: #4285f4;
+      --linkedin: #0a66c2;
+      --orcid: #a6ce39;
 
       --max-width: 1180px;
-
-      --shadow:
-        0 16px 42px rgba(0,0,0,0.07);
-
-      --shadow-dark:
-        0 30px 75px rgba(0,0,0,0.23);
 
     }
 
@@ -75,7 +149,9 @@
 
 
     html {
-      scroll-padding-top: 82px;
+
+      scroll-padding-top: 100px;
+
     }
 
 
@@ -90,35 +166,41 @@
         Arial,
         sans-serif;
 
-      background: var(--warm-white);
+      background: var(--background);
 
       color: var(--text);
 
       line-height: 1.7;
+
+      font-size: 16px;
 
     }
 
 
     a {
 
-      color: inherit;
+      color: var(--link);
 
       text-decoration: none;
 
     }
 
 
-    img {
+    a:hover {
 
-      display: block;
+      color: var(--link-hover);
 
-      max-width: 100%;
+      text-decoration: underline;
 
     }
 
 
-    button {
-      font: inherit;
+    img {
+
+      max-width: 100%;
+
+      display: block;
+
     }
 
 
@@ -131,101 +213,9 @@
     }
 
 
-    .section {
-      padding: 95px 0;
-    }
-
-
-    .section-soft {
-      background: var(--soft-grey);
-    }
-
-
-    .section-dark {
-
-      background: var(--charcoal);
-
-      color: white;
-
-    }
-
-
 
     /* =========================================================
-       SECTION HEADINGS
-    ========================================================= */
-
-    .section-title {
-
-      max-width: 760px;
-
-      margin: 0 auto 55px;
-
-      text-align: center;
-
-    }
-
-
-    .section-kicker {
-
-      display: inline-block;
-
-      margin-bottom: 9px;
-
-      color: #777;
-
-      font-size: 0.74rem;
-
-      font-weight: 800;
-
-      letter-spacing: 0.18em;
-
-      text-transform: uppercase;
-
-    }
-
-
-    .section-title h2 {
-
-      color: var(--black);
-
-      font-size:
-        clamp(2.1rem, 4vw, 3rem);
-
-      line-height: 1.15;
-
-      letter-spacing: -0.045em;
-
-    }
-
-
-    .section-title p {
-
-      margin-top: 15px;
-
-      color: var(--muted);
-
-    }
-
-
-    .section-dark .section-title h2 {
-      color: white;
-    }
-
-
-    .section-dark .section-kicker {
-      color: #aaa;
-    }
-
-
-    .section-dark .section-title p {
-      color: #bcbcbc;
-    }
-
-
-
-    /* =========================================================
-       NAVIGATION
+       TOP NAVIGATION
     ========================================================= */
 
     header {
@@ -237,19 +227,19 @@
       z-index: 1000;
 
       background:
-        rgba(250,250,248,0.96);
+        rgba(255,255,255,0.97);
 
-      backdrop-filter: blur(14px);
+      backdrop-filter: blur(12px);
 
       border-bottom:
-        1px solid rgba(0,0,0,0.08);
+        1px solid var(--line);
 
     }
 
 
-    nav {
+    .navbar {
 
-      min-height: 74px;
+      min-height: 78px;
 
       display: flex;
 
@@ -264,420 +254,241 @@
 
     .brand {
 
-      display: flex;
+      color: var(--heading);
 
-      align-items: center;
+      font-weight: 750;
 
-      gap: 11px;
+      font-size: 1.12rem;
 
-      color: var(--black);
-
-      font-size: 1.08rem;
-
-      font-weight: 800;
-
-      letter-spacing: -0.025em;
+      letter-spacing: -0.02em;
 
     }
 
 
-    .brand-circle {
+    .brand:hover {
 
-      width: 38px;
+      color: var(--heading);
 
-      height: 38px;
-
-      display: grid;
-
-      place-items: center;
-
-      border-radius: 50%;
-
-      background: var(--black);
-
-      color: white;
-
-      font-size: 0.75rem;
-
-      font-weight: 850;
+      text-decoration: none;
 
     }
 
 
     .nav-links {
 
+      list-style: none;
+
       display: flex;
 
       align-items: center;
 
-      gap: 25px;
-
-      list-style: none;
+      gap: 34px;
 
     }
 
 
     .nav-links a {
 
-      color: #555;
+      color: #666;
 
-      font-size: 0.9rem;
+      font-size: 0.97rem;
 
-      font-weight: 650;
-
-      transition: 0.2s;
+      font-weight: 500;
 
     }
 
 
     .nav-links a:hover {
-      color: black;
+
+      color: #111;
+
+      text-decoration: none;
+
     }
 
 
-    .menu-btn {
+    .nav-cv {
+
+      padding-bottom: 3px;
+
+      border-bottom:
+        2px solid #222;
+
+    }
+
+
+    .menu-button {
 
       display: none;
 
-      border: none;
+      border: 0;
 
       background: transparent;
 
-      color: var(--black);
+      font-size: 1.5rem;
 
       cursor: pointer;
-
-      font-size: 1.6rem;
 
     }
 
 
 
     /* =========================================================
-       HERO
+       PAGE LAYOUT
     ========================================================= */
 
-    .hero {
-
-      position: relative;
-
-      min-height:
-        calc(100vh - 74px);
-
-      display: flex;
-
-      align-items: center;
-
-      overflow: hidden;
-
-      background: var(--charcoal);
-
-      color: white;
-
-    }
-
-
-    .hero::before {
-
-      content: "";
-
-      position: absolute;
-
-      top: -250px;
-
-      right: -170px;
-
-      width: 650px;
-
-      height: 650px;
-
-      border-radius: 50%;
-
-      background:
-        radial-gradient(
-          circle,
-          rgba(255,255,255,0.075),
-          transparent 68%
-        );
-
-    }
-
-
-    .hero::after {
-
-      content: "";
-
-      position: absolute;
-
-      left: -200px;
-
-      bottom: -280px;
-
-      width: 600px;
-
-      height: 600px;
-
-      border-radius: 50%;
-
-      background:
-        radial-gradient(
-          circle,
-          rgba(255,255,255,0.035),
-          transparent 70%
-        );
-
-    }
-
-
-    .hero-grid {
-
-      position: relative;
-
-      z-index: 2;
+    .page-layout {
 
       display: grid;
 
       grid-template-columns:
-        1.25fr 0.75fr;
+        235px minmax(0, 1fr);
 
-      align-items: center;
+      gap: 70px;
 
-      gap: 80px;
+      padding:
+        55px 0 90px;
 
-      padding: 80px 0;
-
-    }
-
-
-    .eyebrow {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 10px;
-
-      margin-bottom: 20px;
-
-      color: #aaa;
-
-      font-size: 0.75rem;
-
-      font-weight: 800;
-
-      letter-spacing: 0.17em;
-
-      text-transform: uppercase;
-
-    }
-
-
-    .eyebrow-dot {
-
-      width: 8px;
-
-      height: 8px;
-
-      border-radius: 50%;
-
-      background: white;
-
-    }
-
-
-    .hero h1 {
-
-      margin-bottom: 25px;
-
-      font-size:
-        clamp(4rem, 8vw, 6.9rem);
-
-      font-weight: 800;
-
-      line-height: 0.94;
-
-      letter-spacing: -0.075em;
-
-    }
-
-
-    .hero h1 span {
-      color: #a7a7a7;
-    }
-
-
-    .hero-role {
-
-      margin-bottom: 3px;
-
-      color: #eeeeee;
-
-      font-size: 1.38rem;
-
-      font-weight: 650;
-
-    }
-
-
-    .hero-university {
-
-      margin-bottom: 27px;
-
-      color: #aaa;
-
-      font-size: 1rem;
-
-    }
-
-
-    .hero-intro {
-
-      max-width: 690px;
-
-      margin-bottom: 30px;
-
-      color: #c5c5c5;
-
-      font-size: 1.04rem;
-
-    }
-
-
-    .hero-tags {
-
-      display: flex;
-
-      flex-wrap: wrap;
-
-      gap: 9px;
-
-      margin-bottom: 34px;
-
-    }
-
-
-    .hero-tags span {
-
-      padding: 7px 13px;
-
-      border:
-        1px solid #484848;
-
-      border-radius: 100px;
-
-      background:
-        rgba(255,255,255,0.035);
-
-      color: #d5d5d5;
-
-      font-size: 0.81rem;
-
-      font-weight: 650;
+      align-items: start;
 
     }
 
 
 
     /* =========================================================
-       BUTTONS
+       LEFT PROFILE COLUMN
     ========================================================= */
 
-    .button-row {
+    .sidebar {
+
+      position: sticky;
+
+      top: 115px;
+
+    }
+
+
+    .profile-photo {
+
+      width: 185px;
+
+      aspect-ratio: 35 / 45;
+
+      object-fit: cover;
+
+      object-position: center top;
+
+      border-radius: 0;
+
+      border:
+        1px solid #dedede;
+
+      background: #eee;
+
+      margin-bottom: 18px;
+
+    }
+
+
+    .sidebar-name {
+
+      color: var(--heading);
+
+      font-size: 1.23rem;
+
+      font-weight: 750;
+
+      margin-bottom: 2px;
+
+    }
+
+
+    .sidebar-chinese {
+
+      color: #888;
+
+      font-size: 0.9rem;
+
+      margin-bottom: 15px;
+
+    }
+
+
+    .sidebar-tagline {
+
+      color: #666;
+
+      font-size: 0.9rem;
+
+      line-height: 1.55;
+
+      margin-bottom: 24px;
+
+    }
+
+
+    .profile-links {
+
+      list-style: none;
 
       display: flex;
 
-      flex-wrap: wrap;
+      flex-direction: column;
 
       gap: 11px;
 
     }
 
 
-    .btn {
+    .profile-links li {
 
-      display: inline-flex;
+      display: flex;
 
       align-items: center;
 
-      justify-content: center;
+      gap: 10px;
 
-      gap: 8px;
-
-      padding: 12px 18px;
-
-      border-radius: 9px;
+      color: #606060;
 
       font-size: 0.88rem;
 
-      font-weight: 750;
+    }
 
-      transition: 0.25s;
+
+    .profile-links a {
+
+      color: #606060;
 
     }
 
 
-    .btn-white {
+    .profile-links a:hover {
 
-      border: 1px solid white;
+      color: #111;
 
-      background: white;
-
-      color: black;
+      text-decoration: none;
 
     }
 
 
-    .btn-white:hover {
+    .sidebar-icon {
 
-      transform: translateY(-3px);
+      width: 19px;
 
-      background: #ededed;
+      height: 19px;
 
-    }
+      min-width: 19px;
 
+      display: grid;
 
-    .btn-outline {
+      place-items: center;
 
-      border: 1px solid #525252;
-
-      background:
-        rgba(255,255,255,0.025);
-
-      color: white;
+      color: #555;
 
     }
 
 
-    .btn-outline:hover {
-
-      transform: translateY(-3px);
-
-      background: white;
-
-      color: black;
-
-    }
-
-
-
-    /* =========================================================
-       ICONS
-    ========================================================= */
-
-    .icon {
-
-      width: 20px;
-
-      height: 20px;
-
-      display: inline-block;
-
-      vertical-align: middle;
-
-    }
-
-
-    .icon svg {
+    .sidebar-icon svg {
 
       width: 100%;
 
@@ -690,230 +501,185 @@
 
 
     /* =========================================================
-       PROFILE CARD
+       MAIN CONTENT
     ========================================================= */
 
-    .profile-holder {
+    .main-content {
 
-      display: flex;
-
-      justify-content: center;
+      min-width: 0;
 
     }
 
 
-    .profile-card {
+    .intro-name {
 
-      width: 350px;
+      color: var(--heading);
 
-      padding: 38px 34px 32px;
-
-      border:
-        1px solid #3b3b3b;
-
-      border-radius: 20px;
-
-      background:
-        linear-gradient(
-          145deg,
-          #292929,
-          #121212
-        );
-
-      text-align: center;
-
-      box-shadow: var(--shadow-dark);
-
-    }
-
-
-    /*
-      PASSPORT-STYLE PHOTO
-      RECTANGULAR — NO ROUNDING
-    */
-
-    .profile-photo {
-
-      width: 195px;
-
-      aspect-ratio: 35 / 45;
-
-      height: auto;
-
-      margin: auto;
-
-      border:
-        3px solid #444;
-
-      border-radius: 0;
-
-      background: #eeeeee;
-
-      object-fit: cover;
-
-      object-position: center top;
-
-    }
-
-
-    .profile-card h3 {
-
-      margin-top: 24px;
-
-      color: white;
-
-      font-size: 1.6rem;
+      font-size:
+        clamp(2rem, 4vw, 2.65rem);
 
       font-weight: 750;
 
-      letter-spacing: -0.025em;
+      letter-spacing: -0.04em;
+
+      margin-bottom: 35px;
 
     }
 
 
-    .chinese-name {
+    .content-section {
 
-      margin-top: 3px;
+      margin-bottom: 52px;
 
-      color: #999;
-
-      font-size: 1rem;
+      scroll-margin-top: 110px;
 
     }
 
 
+    .content-section:last-child {
 
-    /* =========================================================
-       ABOUT
-    ========================================================= */
-
-    .about-content {
-
-      max-width: 850px;
-
-      margin: auto;
+      margin-bottom: 0;
 
     }
 
 
-    .about-content p {
+    .section-heading {
 
-      margin-bottom: 19px;
+      display: flex;
 
-      color: #555;
+      align-items: center;
+
+      gap: 12px;
+
+      color: var(--heading);
+
+      font-size: 1.55rem;
+
+      line-height: 1.25;
+
+      margin-bottom: 17px;
+
+      letter-spacing: -0.02em;
+
+    }
+
+
+    .section-symbol {
+
+      font-size: 1.35rem;
+
+      line-height: 1;
+
+    }
+
+
+    .content-section p {
+
+      margin-bottom: 17px;
 
       font-size: 1.02rem;
 
     }
 
 
-    .about-content p:last-child {
+    .content-section p:last-child {
+
       margin-bottom: 0;
-    }
 
-
-    .about-content a {
-
-      color: var(--black);
-
-      font-weight: 750;
-
-      border-bottom:
-        1px solid #999;
-
-    }
-
-
-    .about-content a:hover {
-      border-bottom-color: black;
     }
 
 
 
     /* =========================================================
-       RESEARCH
+       RESEARCH INTERESTS
     ========================================================= */
 
-    .research-grid {
+    .research-tags {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 9px;
+
+      margin-top: 18px;
+
+    }
+
+
+    .research-tag {
+
+      padding: 6px 11px;
+
+      border:
+        1px solid #d9d9d9;
+
+      background: #fafafa;
+
+      color: #555;
+
+      border-radius: 4px;
+
+      font-size: 0.82rem;
+
+      font-weight: 600;
+
+    }
+
+
+
+    /* =========================================================
+       HIGHLIGHTS / NEWS
+    ========================================================= */
+
+    .news-list {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 16px;
+
+    }
+
+
+    .news-item {
 
       display: grid;
 
       grid-template-columns:
-        repeat(3, 1fr);
+        86px 1fr;
 
-      gap: 22px;
+      gap: 14px;
 
-    }
+      align-items: start;
 
-
-    .research-card {
-
-      padding: 30px;
-
-      border:
-        1px solid #dfdfdc;
-
-      border-radius: 18px;
-
-      background: white;
-
-      transition: 0.25s;
+      font-size: 0.98rem;
 
     }
 
 
-    .research-card:hover {
+    .news-date {
 
-      transform: translateY(-7px);
+      color: var(--heading);
 
-      border-color: #aaa;
+      font-weight: 750;
 
-      box-shadow: var(--shadow);
-
-    }
-
-
-    .research-code {
-
-      width: 49px;
-
-      height: 49px;
-
-      display: grid;
-
-      place-items: center;
-
-      margin-bottom: 18px;
-
-      border-radius: 12px;
-
-      background: var(--black);
-
-      color: white;
-
-      font-size: 0.75rem;
-
-      font-weight: 850;
+      white-space: nowrap;
 
     }
 
 
-    .research-card h3 {
+    .news-text {
 
-      margin-bottom: 9px;
-
-      color: var(--black);
-
-      font-size: 1.08rem;
+      color: #5d5d5d;
 
     }
 
 
-    .research-card p {
+    .news-text strong {
 
-      color: #707070;
-
-      font-size: 0.91rem;
+      color: #444;
 
     }
 
@@ -923,171 +689,86 @@
        PUBLICATIONS
     ========================================================= */
 
-    .pub-list {
+    .publication-list {
 
       display: flex;
 
       flex-direction: column;
 
-      gap: 18px;
+      gap: 25px;
 
     }
 
 
     .publication {
 
-      display: grid;
+      padding-bottom: 25px;
 
-      grid-template-columns:
-        90px 1fr;
-
-      gap: 25px;
-
-      padding: 28px;
-
-      border:
-        1px solid #393939;
-
-      border-radius: 18px;
-
-      background: #282828;
-
-      transition: 0.25s;
+      border-bottom:
+        1px solid var(--line);
 
     }
 
 
-    .publication:hover {
+    .publication:last-child {
 
-      transform: translateY(-4px);
+      border-bottom: 0;
 
-      border-color: #555;
-
-      box-shadow:
-        0 18px 45px rgba(0,0,0,0.18);
+      padding-bottom: 0;
 
     }
 
 
-    .pub-year {
+    .publication-title {
 
-      color: white;
+      color: var(--heading);
 
-      font-size: 1.08rem;
+      font-size: 1.04rem;
 
-      font-weight: 800;
+      font-weight: 750;
 
-    }
+      line-height: 1.5;
 
-
-    .pub-type {
-
-      display: block;
-
-      margin-top: 4px;
-
-      color: #999;
-
-      font-size: 0.67rem;
-
-      font-weight: 700;
-
-      letter-spacing: 0.12em;
-
-      text-transform: uppercase;
+      margin-bottom: 5px;
 
     }
 
 
-    .publication h3 {
+    .publication-authors {
+
+      color: #656565;
+
+      font-size: 0.92rem;
+
+      margin-bottom: 3px;
+
+    }
+
+
+    .publication-venue {
+
+      color: #777;
+
+      font-size: 0.91rem;
+
+      font-style: italic;
 
       margin-bottom: 8px;
 
-      color: white;
-
-      font-size: 1.08rem;
-
-      line-height: 1.42;
-
     }
 
 
-    .publication p {
-
-      margin-bottom: 7px;
-
-      color: #b8b8b8;
-
-      font-size: 0.9rem;
-
-    }
-
-
-    .tag {
-
-      display: inline-block;
-
-      margin:
-        5px 4px 0 0;
-
-      padding: 4px 9px;
-
-      border:
-        1px solid #4b4b4b;
-
-      border-radius: 100px;
-
-      color: #c9c9c9;
-
-      font-size: 0.72rem;
-
-    }
-
-
-    .pub-links {
+    .publication-links {
 
       display: flex;
 
       flex-wrap: wrap;
 
-      gap: 8px;
+      gap: 10px;
 
-      margin-top: 14px;
+      font-size: 0.84rem;
 
-    }
-
-
-    .pub-links a {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 6px;
-
-      padding: 7px 11px;
-
-      border:
-        1px solid #555;
-
-      border-radius: 7px;
-
-      color: white;
-
-      font-size: 0.77rem;
-
-      font-weight: 700;
-
-      transition: 0.2s;
-
-    }
-
-
-    .pub-links a:hover {
-
-      background: white;
-
-      color: black;
+      font-weight: 650;
 
     }
 
@@ -1097,238 +778,111 @@
        EDUCATION
     ========================================================= */
 
-    .timeline {
+    .education-list {
 
-      position: relative;
+      display: flex;
 
-      max-width: 880px;
+      flex-direction: column;
 
-      margin: auto;
-
-    }
-
-
-    .timeline::before {
-
-      content: "";
-
-      position: absolute;
-
-      top: 8px;
-
-      bottom: 8px;
-
-      left: 14px;
-
-      width: 2px;
-
-      background: #cfcfcb;
+      gap: 22px;
 
     }
 
 
-    .timeline-item {
+    .education-item {
 
-      position: relative;
+      display: grid;
 
-      padding:
-        0 0 42px 55px;
+      grid-template-columns:
+        115px 1fr;
 
-    }
-
-
-    .timeline-item:last-child {
-      padding-bottom: 0;
-    }
-
-
-    .timeline-dot {
-
-      position: absolute;
-
-      top: 5px;
-
-      left: 7px;
-
-      width: 16px;
-
-      height: 16px;
-
-      border:
-        4px solid var(--soft-grey);
-
-      border-radius: 50%;
-
-      background: var(--black);
+      gap: 18px;
 
     }
 
 
-    .timeline-item h3 {
+    .education-year {
 
-      color: var(--black);
+      color: #777;
 
-      font-size: 1.15rem;
+      font-size: 0.89rem;
+
+      font-weight: 600;
 
     }
 
 
-    .place {
+    .education-degree {
 
-      color: #444;
+      color: var(--heading);
 
       font-weight: 700;
 
+      margin-bottom: 2px;
+
     }
 
 
-    .date {
+    .education-school {
 
-      display: block;
+      color: #696969;
 
-      margin-top: 4px;
-
-      color: #888;
-
-      font-size: 0.84rem;
+      font-size: 0.92rem;
 
     }
 
 
 
     /* =========================================================
-       EXPERIENCE
+       TEACHING
     ========================================================= */
 
-    .two-column {
+    .teaching-list {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 16px;
+
+    }
+
+
+    .teaching-item {
 
       display: grid;
 
       grid-template-columns:
-        1fr 1fr;
+        110px 1fr;
 
-      gap: 28px;
-
-    }
-
-
-    .panel {
-
-      padding: 30px;
-
-      border:
-        1px solid var(--border);
-
-      border-radius: 18px;
-
-      background: white;
+      gap: 17px;
 
     }
 
 
-    .panel > h3 {
+    .teaching-term {
 
-      margin-bottom: 22px;
+      color: #777;
 
-      color: var(--black);
-
-      font-size: 1.3rem;
+      font-size: 0.88rem;
 
     }
 
 
-    .mini-item {
+    .teaching-course {
 
-      padding: 16px 0;
-
-      border-bottom:
-        1px solid #ececea;
-
-    }
-
-
-    .mini-item:first-of-type {
-      padding-top: 0;
-    }
-
-
-    .mini-item:last-of-type {
-      border-bottom: none;
-    }
-
-
-    .mini-item strong {
-
-      display: block;
-
-      color: #222;
-
-    }
-
-
-    .mini-item span {
-
-      display: block;
-
-      margin: 2px 0;
-
-      color: #888;
-
-      font-size: 0.83rem;
+      color: var(--heading);
 
       font-weight: 650;
 
     }
 
 
-    .mini-item p {
+    .teaching-level {
 
-      color: #6c6c6c;
+      color: #777;
 
-      font-size: 0.89rem;
-
-    }
-
-
-    .skills-title {
-
-      margin:
-        33px 0 15px;
-
-      color: var(--black);
-
-      font-size: 1.2rem;
-
-    }
-
-
-    .skills {
-
-      display: flex;
-
-      flex-wrap: wrap;
-
-      gap: 9px;
-
-    }
-
-
-    .skill {
-
-      padding: 7px 12px;
-
-      border:
-        1px solid #d9d9d6;
-
-      border-radius: 8px;
-
-      background: var(--soft-grey);
-
-      color: #444;
-
-      font-size: 0.82rem;
-
-      font-weight: 650;
+      font-size: 0.88rem;
 
     }
 
@@ -1338,181 +892,133 @@
        AWARDS
     ========================================================= */
 
-    .awards {
+    .award-list {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 14px;
+
+    }
+
+
+    .award-item {
 
       display: grid;
 
       grid-template-columns:
-        repeat(2, 1fr);
+        90px 1fr;
 
-      gap: 20px;
-
-      max-width: 950px;
-
-      margin: auto;
+      gap: 18px;
 
     }
 
 
-    .award {
-
-      display: flex;
-
-      align-items: flex-start;
-
-      gap: 17px;
-
-      padding: 25px;
-
-      border:
-        1px solid #dfdfdc;
-
-      border-radius: 18px;
-
-      background: white;
-
-    }
-
-
-    .award-symbol {
-
-      min-width: 43px;
-
-      width: 43px;
-
-      height: 43px;
-
-      display: grid;
-
-      place-items: center;
-
-      border-radius: 10px;
-
-      background: var(--black);
-
-      color: white;
-
-    }
-
-
-    .award h3 {
-
-      color: var(--black);
-
-      font-size: 0.98rem;
-
-      line-height: 1.4;
-
-    }
-
-
-    .award p {
-
-      margin-top: 4px;
+    .award-year {
 
       color: #777;
 
-      font-size: 0.86rem;
+      font-size: 0.88rem;
+
+      font-weight: 600;
+
+    }
+
+
+    .award-name {
+
+      color: var(--heading);
+
+      font-weight: 650;
+
+    }
+
+
+    .award-place {
+
+      display: block;
+
+      color: #777;
+
+      font-size: 0.88rem;
+
+      margin-top: 1px;
 
     }
 
 
 
     /* =========================================================
-       CONTACT
+       CONTACT BAR
     ========================================================= */
 
-    .contact-box {
+    .contact-strip {
 
-      max-width: 950px;
+      padding:
+        25px 0;
 
-      margin: auto;
+      border-top:
+        1px solid var(--line);
 
-      padding: 60px 35px;
-
-      border-radius: 26px;
-
-      background: var(--black);
-
-      color: white;
-
-      text-align: center;
-
-      box-shadow: var(--shadow-dark);
+      margin-top: 55px;
 
     }
 
 
-    .contact-box h2 {
-
-      margin-bottom: 13px;
-
-      font-size:
-        clamp(2.1rem, 5vw, 3.1rem);
-
-      letter-spacing: -0.045em;
-
-    }
-
-
-    .contact-box > p {
-
-      max-width: 610px;
-
-      margin:
-        0 auto 30px;
-
-      color: #aaa;
-
-    }
-
-
-    .contact-links {
+    .contact-strip-inner {
 
       display: flex;
 
-      justify-content: center;
+      align-items: center;
 
       flex-wrap: wrap;
 
-      gap: 11px;
+      gap: 18px;
 
     }
 
 
-    .contact-link {
+    .contact-strip a {
 
       display: inline-flex;
 
       align-items: center;
 
-      gap: 9px;
+      gap: 7px;
 
-      padding: 11px 15px;
+      color: #666;
 
-      border:
-        1px solid #454545;
-
-      border-radius: 9px;
-
-      color: white;
-
-      font-size: 0.86rem;
-
-      font-weight: 650;
-
-      transition: 0.2s;
+      font-size: 0.87rem;
 
     }
 
 
-    .contact-link:hover {
+    .contact-strip a:hover {
 
-      transform: translateY(-3px);
+      color: #111;
 
-      background: white;
+      text-decoration: none;
 
-      color: black;
+    }
+
+
+    .small-icon {
+
+      width: 18px;
+
+      height: 18px;
+
+    }
+
+
+    .small-icon svg {
+
+      width: 100%;
+
+      height: 100%;
+
+      display: block;
 
     }
 
@@ -1524,16 +1030,15 @@
 
     footer {
 
-      padding: 31px 0;
-
       border-top:
-        1px solid #ddd;
+        1px solid var(--line);
 
-      color: #777;
+      padding:
+        25px 0 35px;
 
-      text-align: center;
+      color: #888;
 
-      font-size: 0.83rem;
+      font-size: 0.82rem;
 
     }
 
@@ -1543,49 +1048,72 @@
        RESPONSIVE
     ========================================================= */
 
-    @media (max-width: 950px) {
+    @media (max-width: 900px) {
 
-      .hero-grid {
+      .page-layout {
 
         grid-template-columns: 1fr;
 
-        text-align: center;
+        gap: 45px;
 
       }
 
 
-      .profile-holder {
-        order: -1;
-      }
+      .sidebar {
 
+        position: static;
 
-      .hero-intro {
-
-        margin-left: auto;
-
-        margin-right: auto;
-
-      }
-
-
-      .hero-tags,
-      .button-row {
-
-        justify-content: center;
-
-      }
-
-
-      .research-grid {
+        display: grid;
 
         grid-template-columns:
-          repeat(2, 1fr);
+          170px 1fr;
+
+        gap: 25px;
+
+        align-items: start;
 
       }
 
 
-      .two-column {
-        grid-template-columns: 1fr;
+      .profile-photo {
+
+        width: 170px;
+
+        margin-bottom: 0;
+
+      }
+
+
+      .sidebar-info {
+
+        align-self: center;
+
+      }
+
+
+      .nav-links {
+
+        gap: 20px;
+
+      }
+
+    }
+
+
+
+    @media (max-width: 700px) {
+
+      .navbar {
+
+        min-height: 68px;
+
+      }
+
+
+      .menu-button {
+
+        display: block;
+
       }
 
 
@@ -1593,7 +1121,7 @@
 
         position: absolute;
 
-        top: 74px;
+        top: 68px;
 
         left: 0;
 
@@ -1603,23 +1131,30 @@
 
         flex-direction: column;
 
+        align-items: stretch;
+
         gap: 0;
 
-        background: var(--warm-white);
+        background: white;
 
         border-bottom:
-          1px solid #ddd;
+          1px solid var(--line);
 
       }
 
 
       .nav-links.active {
+
         display: flex;
+
       }
 
 
       .nav-links li {
-        width: 100%;
+
+        border-top:
+          1px solid #eee;
+
       }
 
 
@@ -1627,101 +1162,84 @@
 
         display: block;
 
-        width: 100%;
-
-        padding: 14px 5%;
-
-        border-top:
-          1px solid #ececea;
-
-      }
-
-
-      .menu-btn {
-        display: block;
-      }
-
-    }
-
-
-
-    @media (max-width: 650px) {
-
-      .section {
-        padding: 72px 0;
-      }
-
-
-      .hero-grid {
-
         padding:
-          55px 0 70px;
-
-        gap: 45px;
+          12px 5%;
 
       }
 
 
-      .hero h1 {
-        font-size: 4rem;
-      }
+      .sidebar {
 
+        grid-template-columns:
+          125px 1fr;
 
-      .profile-card {
-
-        width:
-          min(100%, 320px);
-
-        padding:
-          32px 25px 28px;
+        gap: 20px;
 
       }
 
 
       .profile-photo {
 
-        width: 170px;
-
-        aspect-ratio: 35 / 45;
-
-        height: auto;
-
-        border-radius: 0;
+        width: 125px;
 
       }
 
 
-      .research-grid,
-      .awards {
+      .page-layout {
+
+        padding-top: 35px;
+
+      }
+
+
+      .intro-name {
+
+        font-size: 2rem;
+
+      }
+
+
+      .section-heading {
+
+        font-size: 1.35rem;
+
+      }
+
+
+      .news-item,
+      .education-item,
+      .teaching-item,
+      .award-item {
+
+        grid-template-columns: 1fr;
+
+        gap: 2px;
+
+      }
+
+    }
+
+
+
+    @media (max-width: 470px) {
+
+      .sidebar {
 
         grid-template-columns: 1fr;
 
       }
 
 
-      .publication {
+      .profile-photo {
 
-        grid-template-columns: 1fr;
-
-        gap: 8px;
+        width: 150px;
 
       }
 
 
-      .button-row {
-        flex-direction: column;
-      }
+      .sidebar-info {
 
-
-      .button-row .btn {
-        width: 100%;
-      }
-
-
-      .contact-box {
-
-        padding:
-          45px 20px;
+        align-self: auto;
 
       }
 
@@ -1737,33 +1255,27 @@
 
 
 <!-- =========================================================
-     NAVIGATION
+     HEADER
 ========================================================= -->
 
 <header>
 
   <div class="container">
 
-    <nav>
+    <nav class="navbar">
 
 
       <a
-        href="#home"
         class="brand"
+        href="#home"
       >
-
-        <div class="brand-circle">
-          UZ
-        </div>
-
         Usama Zafar
-
       </a>
 
 
       <button
-        id="menuBtn"
-        class="menu-btn"
+        class="menu-button"
+        id="menuButton"
         aria-label="Open menu"
       >
         ☰
@@ -1771,23 +1283,49 @@
 
 
       <ul
-        id="navLinks"
         class="nav-links"
+        id="navLinks"
       >
 
-        <li><a href="#about">About</a></li>
+        <li>
+          <a href="#about">
+            About
+          </a>
+        </li>
 
-        <li><a href="#research">Research</a></li>
+        <li>
+          <a href="#publications">
+            Publications
+          </a>
+        </li>
 
-        <li><a href="#publications">Publications</a></li>
+        <li>
+          <a href="#research">
+            Research
+          </a>
+        </li>
 
-        <li><a href="#education">Education</a></li>
+        <li>
+          <a href="#teaching">
+            Teaching
+          </a>
+        </li>
 
-        <li><a href="#experience">Experience</a></li>
+        <li>
+          <a href="#awards">
+            Awards
+          </a>
+        </li>
 
-        <li><a href="#awards">Awards</a></li>
-
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            class="nav-cv"
+            href="cv.pdf"
+            target="_blank"
+          >
+            CV
+          </a>
+        </li>
 
       </ul>
 
@@ -1800,1481 +1338,155 @@
 
 
 
-<main>
-
-
 <!-- =========================================================
-     HERO
+     BODY
 ========================================================= -->
 
-<section
-  class="hero"
+<main
+  class="container page-layout"
   id="home"
 >
 
-  <div class="container">
 
-    <div class="hero-grid">
+  <!-- =======================================================
+       SIDEBAR
+  ======================================================== -->
 
+  <aside class="sidebar">
 
-      <div>
 
-
-       
-        <h2>
-
-          Usama <span>Zafar</span>
-
-        </h2>
-
-
-        <p class="hero-role">
-
-          Ph.D. Candidate in Information Management
-
-        </p>
-
-
-        <p class="hero-university">
-
-          National Chung Cheng University, Taiwan
-
-        </p>
-
-
-        <p class="hero-intro">
-
-          Researching trustworthy and explainable artificial
-          intelligence and its applications across information
-          systems, security, and data-driven decision making.
-
-        </p>
-
-
-        <div class="hero-tags">
-
-          <span>Explainable AI</span>
-
-          <span>Machine Learning</span>
-
-          <span>Information Security</span>
-
-          <span>Anomaly Detection</span>
-
-          <span>FinTech</span>
-
-        </div>
-
-
-
-        <div class="button-row">
-
-
-          <a
-            href="#publications"
-            class="btn btn-white"
-          >
-            Publications
-          </a>
-
-
-
-          <!-- CV -->
-
-          <a
-            href="cv.pdf"
-            target="_blank"
-            class="btn btn-outline"
-          >
-
-            <span class="icon">
-
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-
-                <path d="M6 2h9l5 5v15H6z"/>
-
-                <path d="M14 2v6h6"/>
-
-              </svg>
-
-            </span>
-
-            CV
-
-          </a>
-
-
-
-          <!-- GOOGLE SCHOLAR -->
-
-          <a
-            href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline"
-          >
-
-            <span class="icon">
-
-              <svg viewBox="0 0 64 64">
-
-                <circle
-                  cx="32"
-                  cy="32"
-                  r="30"
-                  fill="#4285F4"
-                />
-
-                <path
-                  d="M12 25L32 14L52 25L32 36Z"
-                  fill="white"
-                />
-
-                <path
-                  d="M20 31V40C20 45 25 49 32 49C39 49 44 45 44 40V31L32 38Z"
-                  fill="white"
-                />
-
-              </svg>
-
-            </span>
-
-            Google Scholar
-
-          </a>
-
-
-
-          <!-- LINKEDIN -->
-
-          <a
-            href="https://www.linkedin.com/in/theusamazafar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline"
-          >
-
-            <span class="icon">
-
-              <svg viewBox="0 0 64 64">
-
-                <rect
-                  width="64"
-                  height="64"
-                  rx="8"
-                  fill="#0A66C2"
-                />
-
-                <circle
-                  cx="17"
-                  cy="20"
-                  r="5"
-                  fill="white"
-                />
-
-                <rect
-                  x="12"
-                  y="28"
-                  width="10"
-                  height="25"
-                  fill="white"
-                />
-
-                <path
-                  d="M28 28H38V32C41 28 45 26 49 27C57 28 58 35 58 42V53H48V43C48 37 46 35 42 35C38 35 38 39 38 43V53H28Z"
-                  fill="white"
-                />
-
-              </svg>
-
-            </span>
-
-            LinkedIn
-
-          </a>
-
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- =====================================================
-           PROFILE
-           Passport photo — rectangular
-      ====================================================== -->
-
-      <div class="profile-holder">
-
-
-        <div class="profile-card">
-
-
-          <img
-            src="profile.jpg"
-            class="profile-photo"
-            alt="Usama Zafar"
-          >
-
-
-          <h3>
-            Usama Zafar
-          </h3>
-
-
-          <p class="chinese-name">
-            扎法馬
-          </p>
-
-
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     ABOUT
-========================================================= -->
-
-<section
-  class="section"
-  id="about"
->
-
-  <div class="container">
-
-
-    <div class="section-title">
-
-      
-      <h2>
-        About Me
-      </h2>
-
-    </div>
-
-
-
-    <div class="about-content">
-
-
-      <p>
-
-        I am a Ph.D. Candidate in Information Management at
-        National Chung Cheng University (CCU), Taiwan, where I
-        conduct my doctoral research under the supervision of
-
-        <a
-          href="https://mis.ccu.edu.tw/p/412-1120-2075.php?Lang=zh-tw"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Prof. Fan Wu (吳帆)
-        </a>.
-
-      </p>
-
-
-      <p>
-
-        My interdisciplinary academic background spans Information
-        Management, Control Science & Engineering, and Software
-        Engineering. This background allows me to approach research
-        questions from both technical and information-systems
-        perspectives.
-
-      </p>
-
-
-      <p>
-
-        Alongside research, I have experience in university teaching
-        and academic support as well as several years of professional
-        web development experience.
-
-      </p>
-
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     RESEARCH
-========================================================= -->
-
-<section
-  class="section section-soft"
-  id="research"
->
-
-  <div class="container">
-
-
-    <div class="section-title">
-
-      <span class="section-kicker">
-        Research
-      </span>
-
-      <h2>
-        Research Interests
-      </h2>
-
-      <p>
-
-        My work focuses on intelligent, explainable, secure,
-        and data-driven information technologies.
-
-      </p>
-
-    </div>
-
-
-
-    <div class="research-grid">
-
-
-      <div class="research-card">
-
-        <div class="research-code">
-          XAI
-        </div>
-
-        <h3>
-          Explainable AI
-        </h3>
-
-        <p>
-
-          Transparency, interpretability, explanation methods,
-          and evaluation of artificial intelligence systems.
-
-        </p>
-
-      </div>
-
-
-
-      <div class="research-card">
-
-        <div class="research-code">
-          ML
-        </div>
-
-        <h3>
-          Artificial Intelligence & Machine Learning
-        </h3>
-
-        <p>
-
-          Data-driven approaches for complex prediction,
-          classification, and decision-making problems.
-
-        </p>
-
-      </div>
-
-
-
-      <div class="research-card">
-
-        <div class="research-code">
-          AD
-        </div>
-
-        <h3>
-          Anomaly Detection
-        </h3>
-
-        <p>
-
-          Identification of abnormal patterns, behaviors,
-          events, and potentially fraudulent activities.
-
-        </p>
-
-      </div>
-
-
-
-      <div class="research-card">
-
-        <div class="research-code">
-          SEC
-        </div>
-
-        <h3>
-          Information Security
-        </h3>
-
-        <p>
-
-          Trustworthy information systems and intelligent
-          approaches to security-related problems.
-
-        </p>
-
-      </div>
-
-
-
-      <div class="research-card">
-
-        <div class="research-code">
-          FT
-        </div>
-
-        <h3>
-          FinTech
-        </h3>
-
-        <p>
-
-          Financial technology ecosystems, digital financial
-          inclusion, adoption, and emerging financial services.
-
-        </p>
-
-      </div>
-
-
-
-      <div class="research-card">
-
-        <div class="research-code">
-          IS
-        </div>
-
-        <h3>
-          Information Systems
-        </h3>
-
-        <p>
-
-          Understanding how digital and AI-enabled technologies
-          operate within organizational and decision environments.
-
-        </p>
-
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     PUBLICATIONS
-========================================================= -->
-
-<section
-  class="section section-dark"
-  id="publications"
->
-
-  <div class="container">
-
-
-    <div class="section-title">
-
-        <h2>
-        Publications
-      </h2>
-
-      <p>
-        Journal and peer-reviewed conference publications.
-      </p>
-
-    </div>
-
-
-
-    <div class="pub-list">
-
-
-      <!-- 2026 JOURNAL -->
-
-      <article class="publication">
-
-
-        <div class="pub-year">
-
-          2026
-
-          <span class="pub-type">
-            Journal
-          </span>
-
-        </div>
-
-
-        <div>
-
-
-          <h3>
-
-            Methodological challenges in explainable AI for fraud
-            detection: a systematic literature review
-
-          </h3>
-
-
-          <p>
-
-            <strong>Zafar, U.</strong>, & Wu, F.
-
-          </p>
-
-
-          <p>
-
-            Artificial Intelligence Review,
-            59, 115 (2026).
-
-          </p>
-
-
-          <span class="tag">
-            Explainable AI
-          </span>
-
-          <span class="tag">
-            Fraud Detection
-          </span>
-
-          <span class="tag">
-            Systematic Review
-          </span>
-
-
-          <div class="pub-links">
-
-
-            <a
-              href="https://doi.org/10.1007/s10462-026-11516-7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              DOI ↗
-            </a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </article>
-
-
-
-      <!-- 2026 ICIME -->
-
-      <article class="publication">
-
-
-        <div class="pub-year">
-
-          2026
-
-          <span class="pub-type">
-            Conference
-          </span>
-
-        </div>
-
-
-        <div>
-
-
-          <h3>
-
-            Detecting AI-Inpainted Refund-Claim Images Using
-            Explainable Cues and Deep Ensembles
-
-          </h3>
-
-
-          <p>
-
-            <strong>Zafar, U.</strong>,
-            Wu, F., & Hsieh, Y. C.
-
-          </p>
-
-
-          <p>
-
-            14th International Conference on Information Management
-            and Engineering (ICIME 2026), Yokohama, Japan.
-
-          </p>
-
-
-          <span class="tag">
-            Best Presentation Award
-          </span>
-
-          <span class="tag">
-            Explainable AI
-          </span>
-
-
-        </div>
-
-
-      </article>
-
-
-
-      <!-- 2024 -->
-
-      <article class="publication">
-
-
-        <div class="pub-year">
-
-          2024
-
-          <span class="pub-type">
-            Conference
-          </span>
-
-        </div>
-
-
-        <div>
-
-
-          <h3>
-
-            Financial inclusion and fintech ecosystems in the
-            digital age: A systematic review and meta-analysis
-
-          </h3>
-
-
-          <p>
-
-            <strong>Zafar, U.</strong>, & Li, E. Y.
-
-          </p>
-
-
-          <p>
-
-            ICEB 2024 Proceedings,
-            Zhuhai, China.
-
-          </p>
-
-
-          <div class="pub-links">
-
-
-            <a
-              href="https://aisel.aisnet.org/iceb2024/50"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-
-              Publication ↗
-
-            </a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </article>
-
-
-
-      <!-- 2023 -->
-
-      <article class="publication">
-
-
-        <div class="pub-year">
-
-          2023
-
-          <span class="pub-type">
-            Conference
-          </span>
-
-        </div>
-
-
-        <div>
-
-
-          <h3>
-
-            Fostering Fintech adoption in growing economies:
-            Opportunities, challenges, and strategies
-
-          </h3>
-
-
-          <p>
-
-            Li, E. Y., & <strong>Zafar, U.</strong>
-
-          </p>
-
-
-          <p>
-
-            ICEB 2023 Proceedings,
-            Chiayi, Taiwan.
-
-          </p>
-
-
-          <div class="pub-links">
-
-
-            <a
-              href="https://aisel.aisnet.org/iceb2023/27"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-
-              Publication ↗
-
-            </a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </article>
-
-
-
-      <!-- 2021 -->
-
-      <article class="publication">
-
-
-        <div class="pub-year">
-
-          2021
-
-          <span class="pub-type">
-            Conference
-          </span>
-
-        </div>
-
-
-        <div>
-
-
-          <h3>
-
-            Acoustic Wave Analysis in Deep Sea and Shallow Water
-            Using Bellhop Tool
-
-          </h3>
-
-
-          <p>
-
-            Shehwar, D. E., Gul, S.,
-            <strong>Zafar, U.</strong>,
-            Shaukat, U., Syed, A. H.,
-            & Zaidi, S. S. H.
-
-          </p>
-
-
-          <p>
-
-            2021 OES China Ocean Acoustics (COA).
-
-          </p>
-
-
-          <div class="pub-links">
-
-
-            <a
-              href="https://doi.org/10.1109/COA50123.2021.9519944"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-
-              DOI ↗
-
-            </a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </article>
-
-
-    </div>
-
-
-
-    <div
-      style="
-        text-align:center;
-        margin-top:35px;
-      "
+    <img
+      class="profile-photo"
+      src="profile.jpg"
+      alt="Usama Zafar"
     >
 
-      <a
-        href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-white"
-      >
 
-        <span class="icon">
-
-          <svg viewBox="0 0 64 64">
-
-            <circle
-              cx="32"
-              cy="32"
-              r="30"
-              fill="#4285F4"
-            />
-
-            <path
-              d="M12 25L32 14L52 25L32 36Z"
-              fill="white"
-            />
-
-            <path
-              d="M20 31V40C20 45 25 49 32 49C39 49 44 45 44 40V31L32 38Z"
-              fill="white"
-            />
-
-          </svg>
-
-        </span>
-
-        Google Scholar Profile
-
-      </a>
+    <div class="sidebar-info">
 
 
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     EDUCATION
-========================================================= -->
-
-<section
-  class="section section-soft"
-  id="education"
->
-
-  <div class="container">
-
-
-    <div class="section-title">
-
-      <span class="section-kicker">
-        Academic Journey
-      </span>
-
-      <h2>
-        Education
-      </h2>
-
-    </div>
-
-
-
-    <div class="timeline">
-
-
-      <div class="timeline-item">
-
-        <div class="timeline-dot"></div>
-
-        <h3>
-          Ph.D. in Information Management
-        </h3>
-
-        <div class="place">
-          National Chung Cheng University, Taiwan
-        </div>
-
-        <span class="date">
-          2022 – Present
-        </span>
-
+      <div class="sidebar-name">
+        Usama Zafar
       </div>
 
 
-
-      <div class="timeline-item">
-
-        <div class="timeline-dot"></div>
-
-        <h3>
-          M.S. in Control Science & Engineering
-        </h3>
-
-        <div class="place">
-          Xi'an Jiaotong University, China
-        </div>
-
-        <span class="date">
-          2020 – 2022
-        </span>
-
+      <div class="sidebar-chinese">
+        扎法馬
       </div>
 
 
-
-      <div class="timeline-item">
-
-        <div class="timeline-dot"></div>
-
-        <h3>
-          B.S. in Software Engineering
-        </h3>
-
-        <div class="place">
-
-          Government College University Faisalabad,
-          Pakistan
-
-        </div>
-
-        <span class="date">
-          2015 – 2019
-        </span>
-
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     EXPERIENCE
-========================================================= -->
-
-<section
-  class="section"
-  id="experience"
->
-
-  <div class="container">
-
-
-    <div class="section-title">
-
-      <h2>
-        Experience
-     
-      <h2>
-      
-    </div>
-
-
-
-    <div class="two-column">
-
-
-      <div class="panel">
-
-
-        <h3>
-          Academic & Teaching
-        </h3>
-
-
-        <div class="mini-item">
-
-          <strong>
-            Teaching Assistant — Analysis and Application of Big Data
-          </strong>
-
-          <span>
-            Spring 2026
-          </span>
-
-          <p>
-            Undergraduate course
-          </p>
-
-        </div>
-
-
-        <div class="mini-item">
-
-          <strong>
-            Teaching Assistant — Advanced Software Engineering
-          </strong>
-
-          <span>
-            Spring 2026
-          </span>
-
-          <p>
-            Ph.D. course
-          </p>
-
-        </div>
-
-
-        <div class="mini-item">
-
-          <strong>
-            Teaching Assistant — Data Communications & Networks
-          </strong>
-
-          <span>
-            Fall 2025
-          </span>
-
-          <p>
-            Graduate course
-          </p>
-
-        </div>
-
-
-        <div class="mini-item">
-
-          <strong>
-            Teaching Assistant — Object-oriented System Analysis and Design
-          </strong>
-
-          <span>
-            Fall 2025
-          </span>
-
-          <p>
-            Graduate course
-          </p>
-
-        </div>
-
-
-        <div class="mini-item">
-
-          <strong>
-            Teaching Assistant — Analysis and Application of Big Data
-          </strong>
-
-          <span>
-            Spring 2025
-          </span>
-
-          <p>
-            Undergraduate course
-          </p>
-
-        </div>
-
-
-        <div class="mini-item">
-
-          <strong>
-            EMI English Corner Tutor
-          </strong>
-
-          <span>
-            2023 – 2025
-          </span>
-
-          <p>
-
-            College of Management,
-            National Chung Cheng University
-
-          </p>
-
-        </div>
-
-
-      </div>
-
-
-
-      <div class="panel">
-
-
-        <h3>
-          Professional Experience
-        </h3>
-
-
-        <div class="mini-item">
-
-          <strong>
-            Web Developer — Freelance
-          </strong>
-
-          <span>
-            2017 – 2022
-          </span>
-
-          <p>
-
-            Developed websites and digital content for e-commerce,
-            blogs, and related web projects using HTML, CSS,
-            JavaScript, SQL, PHP, and WordPress.
-
-          </p>
-
-        </div>
-
-
-        <h3 class="skills-title">
-          Technical Competencies
-        </h3>
-
-
-        <div class="skills">
-
-
-          <span class="skill">Python</span>
-
-          <span class="skill">Artificial Intelligence</span>
-
-          <span class="skill">Machine Learning</span>
-
-          <span class="skill">Explainable AI</span>
-
-          <span class="skill">Anomaly Detection</span>
-
-          <span class="skill">Information Security</span>
-
-          <span class="skill">Software Engineering</span>
-
-          <span class="skill">C / C++</span>
-
-          <span class="skill">Java / OOP</span>
-
-          <span class="skill">HTML</span>
-
-          <span class="skill">CSS</span>
-
-          <span class="skill">JavaScript</span>
-
-          <span class="skill">PHP</span>
-
-          <span class="skill">SQL</span>
-
-          <span class="skill">Databases</span>
-
-          <span class="skill">Networking</span>
-
-          <span class="skill">WordPress</span>
-
-
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     AWARDS
-========================================================= -->
-
-<section
-  class="section section-soft"
-  id="awards"
->
-
-  <div class="container">
-
-
-    <div class="section-title">
-
-      <span class="section-kicker">
-        Recognition
-      </span>
-
-      <h2>
-        Awards & Scholarships
-      </h2>
-
-    </div>
-
-
-
-    <div class="awards">
-
-
-      <div class="award">
-
-        <div class="award-symbol">
-          ★
-        </div>
-
-        <div>
-
-          <h3>
-            Best Presentation Award
-          </h3>
-
-          <p>
-            ICIME 2026 · Yokohama, Japan
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="award">
-
-        <div class="award-symbol">
-          ◆
-        </div>
-
-        <div>
-
-          <h3>
-
-            Chung Hwa Rotary Educational Foundation
-            Academic Scholarship
-
-          </h3>
-
-          <p>
-            Ph.D. Scholar · 2025–2026
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="award">
-
-        <div class="award-symbol">
-          ◈
-        </div>
-
-        <div>
-
-          <h3>
-            Overseas Research Scholarship
-          </h3>
-
-          <p>
-
-            National Chung Cheng University ·
-            2023–2024
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="award">
-
-        <div class="award-symbol">
-          ★
-        </div>
-
-        <div>
-
-          <h3>
-            Excellent International Student
-          </h3>
-
-          <p>
-            Xi'an Jiaotong University · 2021
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="award">
-
-        <div class="award-symbol">
-          ◇
-        </div>
-
-        <div>
-
-          <h3>
-            Chinese Government Scholarship
-          </h3>
-
-          <p>
-
-            Xi'an Jiaotong University ·
-            2020–2022
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     CONTACT
-========================================================= -->
-
-<section
-  class="section"
-  id="contact"
->
-
-  <div class="container">
-
-
-    <div class="contact-box">
-
-
-      <h4>
-        Let's Connect
-      </h4>
-
-
-      <p>
-
-        For academic collaboration, research discussions,
-        or professional networking.
+      <p class="sidebar-tagline">
+
+        Researcher working on explainable,
+        trustworthy, and data-driven information
+        technologies.
 
       </p>
 
 
 
-      <div class="contact-links">
+      <ul class="profile-links">
 
 
-        <!-- EMAIL -->
+        <!-- UNIVERSITY -->
 
-        <a
-          href="mailto:usamazafar@alum.ccu.edu.tw"
-          class="contact-link"
-        >
+        <li>
 
-          <span class="icon">
+          <span class="sidebar-icon">
 
             <svg
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
+              fill="currentColor"
             >
-
-              <rect
-                x="3"
-                y="5"
-                width="18"
-                height="14"
-                rx="2"
-              />
-
-              <path d="M3 7l9 6 9-6"/>
-
+              <path d="M12 3L2 8l10 5 8-4v6h2V8L12 3zm-6 9v5c0 2 3 4 6 4s6-2 6-4v-5l-6 3-6-3z"/>
             </svg>
 
           </span>
 
-          Email
+          National Chung Cheng University
 
-        </a>
+        </li>
+
+
+
+        <!-- LOCATION -->
+
+        <li>
+
+          <span class="sidebar-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M12 2C8.1 2 5 5.1 5 9c0 5.1 7 13 7 13s7-7.9 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+            </svg>
+
+          </span>
+
+          Taiwan
+
+        </li>
+
+
+
+        <!-- EMAIL -->
+
+        <li>
+
+          <span class="sidebar-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M3 5h18v14H3V5zm9 7L5 7v10h14V7l-7 5zm0-2l7-5H5l7 5z"/>
+            </svg>
+
+          </span>
+
+          <a
+            href="mailto:usamazafar@alum.ccu.edu.tw"
+          >
+            Email
+          </a>
+
+        </li>
+
+
+
+        <!-- GITHUB -->
+
+        <li>
+
+          <span class="sidebar-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C17.7 5 18.7 5.3 18.7 5.3c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v2.8c0 .3.2.6.8.5A11.5 11.5 0 0 0 12 .7z"/>
+            </svg>
+
+          </span>
+
+          <a
+            href="https://github.com/theusamazafar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+        </li>
 
 
 
         <!-- GOOGLE SCHOLAR -->
 
-        <a
-          href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link"
-        >
+        <li>
 
-          <span class="icon">
+          <span class="sidebar-icon">
 
             <svg viewBox="0 0 64 64">
 
@@ -3299,29 +1511,30 @@
 
           </span>
 
-          Google Scholar
+          <a
+            href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Scholar
+          </a>
 
-        </a>
+        </li>
 
 
 
         <!-- LINKEDIN -->
 
-        <a
-          href="https://www.linkedin.com/in/theusamazafar/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link"
-        >
+        <li>
 
-          <span class="icon">
+          <span class="sidebar-icon">
 
             <svg viewBox="0 0 64 64">
 
               <rect
                 width="64"
                 height="64"
-                rx="8"
+                rx="6"
                 fill="#0A66C2"
               />
 
@@ -3349,22 +1562,23 @@
 
           </span>
 
-          LinkedIn
+          <a
+            href="https://www.linkedin.com/in/theusamazafar/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
 
-        </a>
+        </li>
 
 
 
         <!-- ORCID -->
 
-        <a
-          href="https://orcid.org/0009-0008-9320-5019"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link"
-        >
+        <li>
 
-          <span class="icon">
+          <span class="sidebar-icon">
 
             <svg viewBox="0 0 64 64">
 
@@ -3391,6 +1605,1006 @@
 
           </span>
 
+          <a
+            href="https://orcid.org/0009-0008-9320-5019"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ORCID
+          </a>
+
+        </li>
+
+
+      </ul>
+
+
+    </div>
+
+
+  </aside>
+
+
+
+  <!-- =======================================================
+       MAIN COLUMN
+  ======================================================== -->
+
+  <div class="main-content">
+
+
+    <h1 class="intro-name">
+      Usama Zafar
+    </h1>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+      class="content-section"
+      id="about"
+    >
+
+
+      <h2 class="section-heading">
+
+        <span class="section-symbol">
+          🎓
+        </span>
+
+        About Me
+
+      </h2>
+
+
+      <p>
+
+        I am a Ph.D. Candidate in Information Management at
+
+        <a
+          href="https://www.ccu.edu.tw/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          National Chung Cheng University
+        </a>,
+
+        Taiwan, where I conduct my doctoral research under the
+        supervision of
+
+        <a
+          href="https://mis.ccu.edu.tw/p/412-1120-2075.php?Lang=zh-tw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Prof. Fan Wu (吳帆)
+        </a>.
+
+      </p>
+
+
+      <p>
+
+        My academic background spans Information Management,
+        Control Science & Engineering, and Software Engineering.
+        My research focuses on the development and evaluation of
+        trustworthy AI-enabled information systems.
+
+      </p>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RESEARCH
+    ====================================================== -->
+
+    <section
+      class="content-section"
+      id="research"
+    >
+
+
+      <h2 class="section-heading">
+
+        <span class="section-symbol">
+          🔬
+        </span>
+
+        Research Interests
+
+      </h2>
+
+
+      <p>
+
+        My research interests include explainable artificial
+        intelligence, machine learning, anomaly detection,
+        information security, FinTech, and information systems.
+        I am particularly interested in transparent and
+        trustworthy AI approaches for real-world decision-making
+        environments.
+
+      </p>
+
+
+      <div class="research-tags">
+
+        <span class="research-tag">
+          Explainable AI
+        </span>
+
+        <span class="research-tag">
+          Machine Learning
+        </span>
+
+        <span class="research-tag">
+          Anomaly Detection
+        </span>
+
+        <span class="research-tag">
+          Information Security
+        </span>
+
+        <span class="research-tag">
+          FinTech
+        </span>
+
+        <span class="research-tag">
+          Information Systems
+        </span>
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LATEST HIGHLIGHTS
+    ====================================================== -->
+
+    <section
+      class="content-section"
+      id="highlights"
+    >
+
+
+      <h2 class="section-heading">
+
+        <span class="section-symbol">
+          🗞️
+        </span>
+
+        Latest Highlights
+
+      </h2>
+
+
+      <div class="news-list">
+
+
+        <div class="news-item">
+
+          <div class="news-date">
+            2026
+          </div>
+
+          <div class="news-text">
+
+            Published
+
+            <strong>
+              “Methodological challenges in explainable AI
+              for fraud detection”
+            </strong>
+
+            in <em>Artificial Intelligence Review</em>.
+
+            &nbsp;
+
+            <a
+              href="https://doi.org/10.1007/s10462-026-11516-7"
+              target="_blank"
+            >
+              [Paper]
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="news-item">
+
+          <div class="news-date">
+            2026
+          </div>
+
+          <div class="news-text">
+
+            Received the
+
+            <strong>
+              Best Presentation Award
+            </strong>
+
+            at ICIME 2026 in Yokohama, Japan.
+
+          </div>
+
+        </div>
+
+
+
+        <div class="news-item">
+
+          <div class="news-date">
+            2025–26
+          </div>
+
+          <div class="news-text">
+
+            Awarded the
+
+            <strong>
+              Chung Hwa Rotary Educational Foundation
+              Academic Scholarship
+            </strong>.
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PUBLICATIONS
+    ====================================================== -->
+
+    <section
+      class="content-section"
+      id="publications"
+    >
+
+
+      <h2 class="section-heading">
+
+        <span class="section-symbol">
+          📚
+        </span>
+
+        Publications
+
+      </h2>
+
+
+
+      <div class="publication-list">
+
+
+        <!-- PUBLICATION 1 -->
+
+        <article class="publication">
+
+
+          <div class="publication-title">
+
+            Methodological challenges in explainable AI for
+            fraud detection: a systematic literature review
+
+          </div>
+
+
+          <div class="publication-authors">
+
+            <strong>Zafar, U.</strong>, & Wu, F.
+
+          </div>
+
+
+          <div class="publication-venue">
+
+            Artificial Intelligence Review,
+            59, 115, 2026
+
+          </div>
+
+
+          <div class="publication-links">
+
+            <a
+              href="https://doi.org/10.1007/s10462-026-11516-7"
+              target="_blank"
+            >
+              DOI
+            </a>
+
+            <a
+              href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
+              target="_blank"
+            >
+              Google Scholar
+            </a>
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- PUBLICATION 2 -->
+
+        <article class="publication">
+
+
+          <div class="publication-title">
+
+            Detecting AI-Inpainted Refund-Claim Images Using
+            Explainable Cues and Deep Ensembles
+
+          </div>
+
+
+          <div class="publication-authors">
+
+            <strong>Zafar, U.</strong>,
+            Wu, F., & Hsieh, Y. C.
+
+          </div>
+
+
+          <div class="publication-venue">
+
+            14th International Conference on Information
+            Management and Engineering (ICIME 2026),
+            Yokohama, Japan
+
+          </div>
+
+
+          <div class="publication-links">
+
+            <span>
+              Best Presentation Award
+            </span>
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- PUBLICATION 3 -->
+
+        <article class="publication">
+
+
+          <div class="publication-title">
+
+            Financial inclusion and fintech ecosystems
+            in the digital age: A systematic review and
+            meta-analysis
+
+          </div>
+
+
+          <div class="publication-authors">
+
+            <strong>Zafar, U.</strong>,
+            & Li, E. Y.
+
+          </div>
+
+
+          <div class="publication-venue">
+
+            ICEB 2024 Proceedings,
+            Zhuhai, China
+
+          </div>
+
+
+          <div class="publication-links">
+
+            <a
+              href="https://aisel.aisnet.org/iceb2024/50"
+              target="_blank"
+            >
+              Paper
+            </a>
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- PUBLICATION 4 -->
+
+        <article class="publication">
+
+
+          <div class="publication-title">
+
+            Fostering Fintech adoption in growing economies:
+            Opportunities, challenges, and strategies
+
+          </div>
+
+
+          <div class="publication-authors">
+
+            Li, E. Y., &
+            <strong>Zafar, U.</strong>
+
+          </div>
+
+
+          <div class="publication-venue">
+
+            ICEB 2023 Proceedings,
+            Chiayi, Taiwan
+
+          </div>
+
+
+          <div class="publication-links">
+
+            <a
+              href="https://aisel.aisnet.org/iceb2023/27"
+              target="_blank"
+            >
+              Paper
+            </a>
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- PUBLICATION 5 -->
+
+        <article class="publication">
+
+
+          <div class="publication-title">
+
+            Acoustic Wave Analysis in Deep Sea and Shallow
+            Water Using Bellhop Tool
+
+          </div>
+
+
+          <div class="publication-authors">
+
+            Shehwar, D. E.,
+            Gul, S.,
+            <strong>Zafar, U.</strong>,
+            Shaukat, U.,
+            Syed, A. H.,
+            & Zaidi, S. S. H.
+
+          </div>
+
+
+          <div class="publication-venue">
+
+            2021 OES China Ocean Acoustics
+
+          </div>
+
+
+          <div class="publication-links">
+
+            <a
+              href="https://doi.org/10.1109/COA50123.2021.9519944"
+              target="_blank"
+            >
+              DOI
+            </a>
+
+          </div>
+
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EDUCATION
+    ====================================================== -->
+
+    <section
+      class="content-section"
+      id="education"
+    >
+
+
+      <h2 class="section-heading">
+
+        <span class="section-symbol">
+          🎓
+        </span>
+
+        Education
+
+      </h2>
+
+
+      <div class="education-list">
+
+
+        <div class="education-item">
+
+          <div class="education-year">
+            2022–Present
+          </div>
+
+          <div>
+
+            <div class="education-degree">
+              Ph.D. in Information Management
+            </div>
+
+            <div class="education-school">
+              National Chung Cheng University, Taiwan
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="education-item">
+
+          <div class="education-year">
+            2020–2022
+          </div>
+
+          <div>
+
+            <div class="education-degree">
+              M.S. in Control Science & Engineering
+            </div>
+
+            <div class="education-school">
+              Xi'an Jiaotong University, China
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="education-item">
+
+          <div class="education-year">
+            2015–2019
+          </div>
+
+          <div>
+
+            <div class="education-degree">
+              B.S. in Software Engineering
+            </div>
+
+            <div class="education-school">
+
+              Government College University Faisalabad,
+              Pakistan
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TEACHING
+    ====================================================== -->
+
+    <section
+      class="content-section"
+      id="teaching"
+    >
+
+
+      <h2 class="section-heading">
+
+        <span class="section-symbol">
+          👨‍🏫
+        </span>
+
+        Teaching & Academic Service
+
+      </h2>
+
+
+      <div class="teaching-list">
+
+
+        <div class="teaching-item">
+
+          <div class="teaching-term">
+            Spring 2026
+          </div>
+
+          <div>
+
+            <div class="teaching-course">
+
+              Teaching Assistant —
+              Analysis and Application of Big Data
+
+            </div>
+
+            <div class="teaching-level">
+              Undergraduate course
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="teaching-item">
+
+          <div class="teaching-term">
+            Spring 2026
+          </div>
+
+          <div>
+
+            <div class="teaching-course">
+
+              Teaching Assistant —
+              Advanced Software Engineering
+
+            </div>
+
+            <div class="teaching-level">
+              Ph.D. course
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="teaching-item">
+
+          <div class="teaching-term">
+            Fall 2025
+          </div>
+
+          <div>
+
+            <div class="teaching-course">
+
+              Teaching Assistant —
+              Data Communications & Networks
+
+            </div>
+
+            <div class="teaching-level">
+              Graduate course
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="teaching-item">
+
+          <div class="teaching-term">
+            Fall 2025
+          </div>
+
+          <div>
+
+            <div class="teaching-course">
+
+              Teaching Assistant —
+              Object-oriented System Analysis and Design
+
+            </div>
+
+            <div class="teaching-level">
+              Graduate course
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="teaching-item">
+
+          <div class="teaching-term">
+            Spring 2025
+          </div>
+
+          <div>
+
+            <div class="teaching-course">
+
+              Teaching Assistant —
+              Analysis and Application of Big Data
+
+            </div>
+
+            <div class="teaching-level">
+              Undergraduate course
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="teaching-item">
+
+          <div class="teaching-term">
+            2023–2025
+          </div>
+
+          <div>
+
+            <div class="teaching-course">
+              EMI English Corner Tutor
+            </div>
+
+            <div class="teaching-level">
+
+              College of Management,
+              National Chung Cheng University
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         AWARDS
+    ====================================================== -->
+
+    <section
+      class="content-section"
+      id="awards"
+    >
+
+
+      <h2 class="section-heading">
+
+        <span class="section-symbol">
+          🏆
+        </span>
+
+        Awards & Scholarships
+
+      </h2>
+
+
+      <div class="award-list">
+
+
+        <div class="award-item">
+
+          <div class="award-year">
+            2026
+          </div>
+
+          <div class="award-name">
+
+            Best Presentation Award
+
+            <span class="award-place">
+              ICIME 2026, Yokohama, Japan
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="award-item">
+
+          <div class="award-year">
+            2025–26
+          </div>
+
+          <div class="award-name">
+
+            Chung Hwa Rotary Educational Foundation
+            Academic Scholarship
+
+          </div>
+
+        </div>
+
+
+
+        <div class="award-item">
+
+          <div class="award-year">
+            2023–24
+          </div>
+
+          <div class="award-name">
+
+            Overseas Research Scholarship
+
+            <span class="award-place">
+              National Chung Cheng University
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="award-item">
+
+          <div class="award-year">
+            2021
+          </div>
+
+          <div class="award-name">
+
+            Excellent International Student
+
+            <span class="award-place">
+              Xi'an Jiaotong University
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="award-item">
+
+          <div class="award-year">
+            2020–22
+          </div>
+
+          <div class="award-name">
+
+            Chinese Government Scholarship
+
+            <span class="award-place">
+              Xi'an Jiaotong University
+            </span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT STRIP
+    ====================================================== -->
+
+    <div class="contact-strip">
+
+
+      <div class="contact-strip-inner">
+
+
+        <!-- EMAIL -->
+
+        <a href="mailto:usamazafar@alum.ccu.edu.tw">
+
+          <span class="small-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M3 5h18v14H3V5zm9 7L5 7v10h14V7l-7 5z"/>
+            </svg>
+
+          </span>
+
+          Email
+
+        </a>
+
+
+
+        <!-- SCHOLAR -->
+
+        <a
+          href="https://scholar.google.com/citations?user=uIJFmcIAAAAJ&hl"
+          target="_blank"
+        >
+
+          Google Scholar
+
+        </a>
+
+
+
+        <!-- LINKEDIN -->
+
+        <a
+          href="https://www.linkedin.com/in/theusamazafar/"
+          target="_blank"
+        >
+
+          LinkedIn
+
+        </a>
+
+
+
+        <!-- ORCID -->
+
+        <a
+          href="https://orcid.org/0009-0008-9320-5019"
+          target="_blank"
+        >
+
           ORCID
 
         </a>
@@ -3402,25 +2616,7 @@
         <a
           href="cv.pdf"
           target="_blank"
-          class="contact-link"
         >
-
-          <span class="icon">
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-
-              <path d="M6 2h9l5 5v15H6z"/>
-
-              <path d="M14 2v6h6"/>
-
-            </svg>
-
-          </span>
 
           CV
 
@@ -3434,8 +2630,6 @@
 
 
   </div>
-
-</section>
 
 
 </main>
@@ -3453,8 +2647,7 @@
     ©
     <span id="year"></span>
 
-    Usama Zafar ·
-    National Chung Cheng University
+    Usama Zafar
 
   </div>
 
@@ -3468,21 +2661,20 @@
 
 <script>
 
-
   document.getElementById("year").textContent =
     new Date().getFullYear();
 
 
-  const menuBtn =
-    document.getElementById("menuBtn");
+  const menuButton =
+    document.getElementById("menuButton");
 
   const navLinks =
     document.getElementById("navLinks");
 
 
-  menuBtn.addEventListener(
+  menuButton.addEventListener(
     "click",
-    function () {
+    function() {
 
       navLinks.classList.toggle("active");
 
@@ -3504,7 +2696,6 @@
       );
 
     });
-
 
 </script>
 
