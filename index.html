@@ -2,38 +2,27 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Usama Zafar | Academic Website</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="profile.jpg?v=8">
-  <link rel="shortcut icon" type="image/jpeg" href="profile.jpg?v=8">
-  <link rel="apple-touch-icon" href="profile.jpg?v=8">
+  <link rel="icon" type="image/jpeg" href="profile.jpg?v=9">
+  <link rel="shortcut icon" type="image/jpeg" href="profile.jpg?v=9">
+  <link rel="apple-touch-icon" href="profile.jpg?v=9">
 
-  <!-- SEO -->
   <meta
     name="description"
     content="Academic website of Usama Zafar, Ph.D. Candidate in Information Management at National Chung Cheng University, Taiwan."
   >
 
-  <meta
-    name="author"
-    content="Usama Zafar"
-  >
+  <meta name="author" content="Usama Zafar">
 
   <link
     rel="canonical"
     href="https://theusamazafar.github.io/"
   >
 
-  <!-- Open Graph -->
   <meta property="og:type" content="profile">
 
   <meta
@@ -56,7 +45,6 @@
     content="https://theusamazafar.github.io/profile.jpg"
   >
 
-  <!-- Font -->
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -73,7 +61,6 @@
     rel="stylesheet"
   >
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -100,7 +87,6 @@
   }
   </script>
 
-
   <style>
 
     :root {
@@ -114,7 +100,6 @@
       --max-width: 1080px;
     }
 
-
     * {
       margin: 0;
       padding: 0;
@@ -122,769 +107,464 @@
       scroll-behavior: smooth;
     }
 
-
     html {
       scroll-padding-top: 84px;
     }
 
-
     body {
       background: var(--background);
       color: var(--text);
-
-      font-family:
-        "Lato",
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: "Lato", Arial, Helvetica, sans-serif;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.56;
-
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
-
 
     a {
       color: var(--link);
       text-decoration: none;
     }
 
-
     a:hover {
       color: var(--link-hover);
       text-decoration: underline;
     }
-
 
     img {
       display: block;
       max-width: 100%;
     }
 
-
     .container {
       width: min(92%, var(--max-width));
       margin: 0 auto;
     }
-
-
-
-    /* =========================================================
-       NAVIGATION
-    ========================================================= */
 
     header {
       background: #ffffff;
       border-bottom: 1px solid var(--border);
     }
 
-
     .navbar {
       min-height: 70px;
-
       display: flex;
       align-items: center;
-
       gap: 48px;
     }
 
-
     .site-name {
       min-width: 155px;
-
       color: #444444;
-
       font-size: 1.02rem;
       font-weight: 600;
-
       letter-spacing: -0.01em;
     }
-
 
     .site-name:hover {
       color: #222222;
       text-decoration: none;
     }
 
-
     .nav-links {
       display: flex;
       align-items: center;
-
       gap: 25px;
-
       list-style: none;
     }
 
-
     .nav-links a {
       color: #777777;
-
       font-size: 0.89rem;
       font-weight: 400;
-
       white-space: nowrap;
     }
-
 
     .nav-links a:hover {
       color: #333333;
       text-decoration: none;
     }
 
-
     .menu-button {
       display: none;
-
       margin-left: auto;
-
       border: none;
       background: transparent;
-
       color: #555555;
-
       font-size: 1.45rem;
-
       cursor: pointer;
     }
 
-
-
-    /* =========================================================
-       PAGE LAYOUT
-    ========================================================= */
-
     .academic-layout {
       display: grid;
-
-      grid-template-columns:
-        180px minmax(0, 1fr);
-
+      grid-template-columns: 180px minmax(0, 1fr);
       column-gap: 48px;
-
       align-items: start;
-
       padding-top: 38px;
       padding-bottom: 55px;
     }
-
-
-
-    /* =========================================================
-       SIDEBAR
-    ========================================================= */
 
     .sidebar {
       width: 180px;
     }
 
-
     .profile-photo {
       width: 128px;
-
       aspect-ratio: 35 / 45;
-
       height: auto;
-
       object-fit: cover;
       object-position: center top;
-
       border: 1px solid #e0e0e0;
       border-radius: 0;
-
       background: #eeeeee;
-
       margin-bottom: 15px;
     }
 
-
     .sidebar-description {
       color: #676767;
-
       font-size: 0.84rem;
       line-height: 1.48;
-
       margin-bottom: 19px;
     }
 
-
-
-    /* =========================================================
-       SIDEBAR LINKS
-    ========================================================= */
-
     .sidebar-links {
       list-style: none;
-
       display: flex;
       flex-direction: column;
-
       gap: 8px;
     }
-
 
     .sidebar-links li {
       display: flex;
       align-items: flex-start;
-
       gap: 8px;
-
       color: #626262;
-
       font-size: 0.81rem;
       line-height: 1.35;
     }
 
-
     .sidebar-links a {
       color: #626262;
     }
-
 
     .sidebar-links a:hover {
       color: #222222;
       text-decoration: none;
     }
 
-
     .side-icon {
       width: 15px;
       height: 15px;
       min-width: 15px;
-
       margin-top: 1px;
-
       color: #626262;
     }
 
-
     .side-icon svg {
       display: block;
-
       width: 100%;
       height: 100%;
     }
 
-
-
-    /* =========================================================
-       HIGHLIGHTS
-    ========================================================= */
-
     .sidebar-highlights {
       margin-top: 24px;
       padding-top: 17px;
-
       border-top: 1px solid var(--border);
     }
 
-
     .sidebar-highlights h3 {
       color: #444444;
-
       font-size: 0.9rem;
       font-weight: 600;
-
       margin-bottom: 11px;
     }
 
-
     .highlight-item {
       color: #6c6c6c;
-
       font-size: 0.76rem;
       line-height: 1.43;
-
       margin-bottom: 12px;
     }
-
 
     .highlight-item:last-child {
       margin-bottom: 0;
     }
 
-
     .highlight-date {
       display: block;
-
       color: #4b4b4b;
-
       font-size: 0.73rem;
       font-weight: 600;
-
       margin-bottom: 1px;
     }
-
 
     .highlight-item a {
       font-size: 0.74rem;
     }
 
-
-
-    /* =========================================================
-       VISITOR COUNTER
-    ========================================================= */
-
     .visitor-counter {
       margin-top: 23px;
       padding-top: 16px;
-
       border-top: 1px solid var(--border);
     }
 
-
     .visitor-counter-title {
       color: #444444;
-
       font-size: 0.9rem;
       font-weight: 600;
-
       margin-bottom: 10px;
     }
-
 
     .visitor-counter img {
       max-width: 100%;
       height: auto;
-
       border: 0;
     }
-
-
-
-    /* =========================================================
-       MAIN
-    ========================================================= */
 
     .main-content {
       min-width: 0;
     }
 
-
     .main-name {
       color: var(--heading);
-
       font-size: 1.9rem;
       font-weight: 600;
-
       line-height: 1.2;
       letter-spacing: -0.025em;
-
       margin-bottom: 27px;
     }
-
-
-
-    /* =========================================================
-       SECTIONS
-    ========================================================= */
 
     .section {
       margin-bottom: 33px;
     }
 
-
     .section:last-child {
       margin-bottom: 0;
     }
 
-
     .section-title {
       display: flex;
       align-items: center;
-
       gap: 8px;
-
       color: var(--heading);
-
       font-size: 1.24rem;
       font-weight: 600;
-
       line-height: 1.3;
-
       margin-bottom: 11px;
     }
-
 
     .section-icon {
       width: 18px;
       height: 18px;
       min-width: 18px;
-
       color: #676767;
     }
-
 
     .section-icon svg {
       width: 100%;
       height: 100%;
-
       display: block;
     }
 
-
     .section p {
       font-size: 0.98rem;
-
       margin-bottom: 12px;
     }
-
 
     .section p:last-child {
       margin-bottom: 0;
     }
 
-
-
-    /* =========================================================
-       EDUCATION
-    ========================================================= */
-
-    .education-list {
-      display: flex;
-      flex-direction: column;
-
-      gap: 12px;
-    }
-
-
-    .education-item {
-      display: grid;
-
-      grid-template-columns:
-        108px 1fr;
-
-      gap: 11px;
-    }
-
-
-    .education-date {
-      color: #7a7a7a;
-
-      font-size: 0.83rem;
-
-      padding-top: 1px;
-    }
-
-
-    .education-degree {
-      color: #454545;
-
-      font-size: 0.93rem;
-      font-weight: 500;
-
-      line-height: 1.4;
-    }
-
-
-    .education-school {
-      color: #7a7a7a;
-
-      font-size: 0.84rem;
-
-      margin-top: 1px;
-    }
-
-
-
-    /* =========================================================
-       EXPERIENCE
-    ========================================================= */
-
+    .education-list,
     .experience-list {
       display: flex;
       flex-direction: column;
-
-      gap: 14px;
+      gap: 12px;
     }
 
-
+    .education-item,
     .experience-item {
       display: grid;
-
-      grid-template-columns:
-        108px 1fr;
-
+      grid-template-columns: 108px 1fr;
       gap: 11px;
     }
 
-
+    .education-date,
     .experience-date {
       color: #7a7a7a;
-
       font-size: 0.83rem;
-
       padding-top: 1px;
     }
 
-
+    .education-degree,
     .experience-role {
       color: #454545;
-
       font-size: 0.93rem;
       font-weight: 500;
-
       line-height: 1.4;
     }
 
-
+    .education-school,
     .experience-place {
       color: #777777;
-
       font-size: 0.84rem;
-
       margin-top: 1px;
     }
 
-
     .experience-description {
       color: #777777;
-
       font-size: 0.82rem;
       line-height: 1.45;
-
       margin-top: 3px;
     }
-
-
-
-    /* =========================================================
-       PUBLICATIONS
-    ========================================================= */
 
     .publication-category {
       margin-bottom: 23px;
     }
 
-
     .publication-category:last-child {
       margin-bottom: 0;
     }
 
-
     .category-title {
       color: #373737;
-
       font-size: 1rem;
       font-weight: 600;
-
       margin-bottom: 10px;
     }
-
 
     .status-group {
       margin-bottom: 15px;
     }
 
-
     .status-group:last-child {
       margin-bottom: 0;
     }
 
-
     .status-title {
       color: #707070;
-
       font-size: 0.78rem;
       font-weight: 600;
-
       margin-bottom: 5px;
     }
-
 
     .publication-list {
       display: flex;
       flex-direction: column;
-
       gap: 10px;
     }
-
 
     .publication {
       padding: 0;
       margin: 0;
     }
 
-
     .publication-title {
       color: #3f3f3f;
-
       font-size: 0.92rem;
       font-weight: 500;
-
       line-height: 1.4;
-
       margin-bottom: 2px;
     }
 
-
     .publication-authors {
       color: #686868;
-
       font-size: 0.84rem;
       line-height: 1.4;
-
       margin-bottom: 1px;
     }
-
 
     .publication-venue {
       color: #777777;
-
       font-size: 0.82rem;
       font-style: italic;
-
       line-height: 1.4;
-
       margin-bottom: 1px;
     }
 
-
     .publication-note {
       color: #828282;
-
       font-size: 0.8rem;
       line-height: 1.35;
     }
 
-
     .publication-links {
       display: flex;
       flex-wrap: wrap;
-
       gap: 8px;
-
       margin-top: 2px;
-
       font-size: 0.79rem;
     }
-
-
-
-    /* =========================================================
-       TEACHING
-    ========================================================= */
 
     .teaching-list {
       display: flex;
       flex-direction: column;
-
       gap: 11px;
     }
 
-
     .teaching-item {
       display: grid;
-
-      grid-template-columns:
-        103px 1fr;
-
+      grid-template-columns: 103px 1fr;
       gap: 12px;
     }
 
-
     .teaching-date {
       color: #777777;
-
       font-size: 0.82rem;
-
       padding-top: 1px;
     }
 
-
     .teaching-name {
       color: #454545;
-
       font-size: 0.91rem;
       font-weight: 500;
-
       line-height: 1.4;
     }
 
-
     .teaching-detail {
       color: #7d7d7d;
-
       font-size: 0.82rem;
-
       margin-top: 1px;
     }
-
-
-
-    /* =========================================================
-       AWARDS
-    ========================================================= */
 
     .award-list {
       display: flex;
       flex-direction: column;
-
       gap: 10px;
     }
 
-
     .award-item {
       display: grid;
-
-      grid-template-columns:
-        88px 1fr;
-
+      grid-template-columns: 88px 1fr;
       gap: 12px;
     }
 
-
     .award-date {
       color: #777777;
-
       font-size: 0.82rem;
     }
 
-
     .award-name {
       color: #454545;
-
       font-size: 0.91rem;
       font-weight: 500;
     }
 
-
     .award-place {
       display: block;
-
       color: #7d7d7d;
-
       font-size: 0.82rem;
       font-weight: 400;
-
       margin-top: 1px;
     }
 
-
-
-    /* =========================================================
-       FOOTER
-    ========================================================= */
-
     footer {
       border-top: 1px solid var(--border);
-
       color: #8c8c8c;
-
       font-size: 0.76rem;
-
       padding: 20px 0 27px;
     }
-
-
-
-    /* =========================================================
-       TABLET
-    ========================================================= */
 
     @media (max-width: 900px) {
 
@@ -892,24 +572,18 @@
         gap: 25px;
       }
 
-
       .nav-links {
         gap: 15px;
       }
 
-
       .academic-layout {
-        grid-template-columns:
-          158px 1fr;
-
+        grid-template-columns: 158px 1fr;
         column-gap: 32px;
       }
-
 
       .sidebar {
         width: 158px;
       }
-
 
       .profile-photo {
         width: 120px;
@@ -917,160 +591,113 @@
 
     }
 
-
-
-    /* =========================================================
-       MOBILE
-    ========================================================= */
-
     @media (max-width: 720px) {
 
       html {
         scroll-padding-top: 68px;
       }
 
-
       body {
         font-size: 15px;
         line-height: 1.48;
       }
 
-
       .container {
         width: 92%;
       }
-
 
       .navbar {
         min-height: 64px;
         gap: 0;
       }
 
-
       .site-name {
         min-width: 0;
-
         font-size: 1rem;
       }
 
-
       .menu-button {
         display: block;
-
         font-size: 1.35rem;
       }
 
-
       .nav-links {
         display: none;
-
         position: absolute;
-
         top: 64px;
         left: 0;
         right: 0;
-
         z-index: 1000;
-
         flex-direction: column;
         align-items: stretch;
-
         gap: 0;
-
         background: #ffffff;
-
         border-bottom: 1px solid var(--border);
       }
-
 
       .nav-links.active {
         display: flex;
       }
 
-
       .nav-links li {
         border-top: 1px solid #f1f1f1;
       }
 
-
       .nav-links a {
         display: block;
-
         padding: 10px 4%;
-
         font-size: 0.88rem;
       }
-
 
       .academic-layout {
         display: flex;
         flex-direction: column;
-
         padding-top: 22px;
         padding-bottom: 40px;
       }
 
-
       .sidebar {
         width: 100%;
-
         display: grid;
-
-        grid-template-columns:
-          88px minmax(0, 1fr);
-
+        grid-template-columns: 88px minmax(0, 1fr);
         column-gap: 15px;
-
         align-items: start;
       }
 
-
       .profile-photo {
         width: 88px;
-
         margin: 0;
-
         grid-column: 1;
         grid-row: 1;
       }
-
 
       .sidebar-profile {
         grid-column: 2;
         grid-row: 1;
       }
 
-
       .sidebar-description {
         font-size: 0.8rem;
         line-height: 1.4;
-
         margin-bottom: 10px;
       }
-
 
       .sidebar-links {
         flex-direction: row;
         flex-wrap: wrap;
-
         gap: 6px 13px;
       }
 
-
       .sidebar-links li {
         width: auto;
-
         font-size: 0.74rem;
         line-height: 1.25;
       }
 
-
       .sidebar-links li:first-child {
         width: 100%;
-
         margin-bottom: 2px;
       }
-
 
       .side-icon {
         width: 13px;
@@ -1078,69 +705,47 @@
         min-width: 13px;
       }
 
-
       .sidebar-highlights {
         grid-column: 1 / -1;
-
         margin-top: 17px;
         padding-top: 13px;
       }
 
-
       .sidebar-highlights h3 {
         font-size: 0.9rem;
-
         margin-bottom: 8px;
       }
 
-
       .highlight-item {
         display: grid;
-
-        grid-template-columns:
-          70px 1fr;
-
+        grid-template-columns: 70px 1fr;
         gap: 6px;
-
         margin-bottom: 8px;
-
         font-size: 0.74rem;
         line-height: 1.35;
       }
 
-
       .highlight-date {
         margin: 0;
-
         font-size: 0.72rem;
       }
-
-
-      /* Main page name hidden on mobile.
-         The navigation name remains, so "Usama Zafar"
-         appears only once on phones. */
 
       .main-name {
         display: none;
       }
 
-
       .main-content {
         margin-top: 25px;
       }
-
 
       .section {
         margin-bottom: 25px;
       }
 
-
       .section-title {
         font-size: 1.07rem;
-
         margin-bottom: 8px;
       }
-
 
       .section-icon {
         width: 16px;
@@ -1148,41 +753,32 @@
         min-width: 16px;
       }
 
-
       .section p {
         font-size: 0.9rem;
         line-height: 1.5;
-
         margin-bottom: 9px;
       }
-
 
       .education-list,
       .experience-list {
         gap: 10px;
       }
 
-
       .education-item,
       .experience-item {
-        grid-template-columns:
-          92px 1fr;
-
+        grid-template-columns: 92px 1fr;
         gap: 9px;
       }
-
 
       .education-date,
       .experience-date {
         font-size: 0.76rem;
       }
 
-
       .education-degree,
       .experience-role {
         font-size: 0.86rem;
       }
-
 
       .education-school,
       .experience-place,
@@ -1190,133 +786,96 @@
         font-size: 0.78rem;
       }
 
-
       .publication-category {
         margin-bottom: 18px;
       }
 
-
       .category-title {
         font-size: 0.94rem;
-
         margin-bottom: 7px;
       }
-
 
       .status-group {
         margin-bottom: 11px;
       }
 
-
       .status-title {
         font-size: 0.73rem;
-
         margin-bottom: 4px;
       }
-
 
       .publication-list {
         gap: 8px;
       }
-
 
       .publication-title {
         font-size: 0.86rem;
         line-height: 1.35;
       }
 
-
       .publication-authors {
         font-size: 0.78rem;
       }
-
 
       .publication-venue {
         font-size: 0.77rem;
       }
 
-
       .publication-note {
         font-size: 0.75rem;
       }
 
-
       .publication-links {
         font-size: 0.74rem;
-
         margin-top: 1px;
       }
-
 
       .teaching-list,
       .award-list {
         gap: 8px;
       }
 
-
       .teaching-item,
       .award-item {
-        grid-template-columns:
-          90px 1fr;
-
+        grid-template-columns: 90px 1fr;
         gap: 9px;
       }
-
 
       .teaching-date,
       .award-date {
         font-size: 0.75rem;
       }
 
-
       .teaching-name,
       .award-name {
         font-size: 0.84rem;
       }
-
 
       .teaching-detail,
       .award-place {
         font-size: 0.76rem;
       }
 
-
-      /*
-        Visitor counter is moved to the bottom by JavaScript
-        on mobile.
-      */
-
       .visitor-counter {
         width: 100%;
-
         margin-top: 28px;
         padding-top: 16px;
       }
-
 
       .visitor-counter-title {
         font-size: 0.86rem;
       }
 
-
       .visitor-counter img {
         max-width: 170px;
       }
 
-
       footer {
         padding: 16px 0 22px;
-
         font-size: 0.72rem;
       }
 
     }
-
-
-
-    /* =========================================================
-       SMALL PHONES
-    ========================================================= */
 
     @media (max-width: 430px) {
 
@@ -1324,59 +883,45 @@
         padding-top: 20px;
       }
 
-
       .sidebar {
-        grid-template-columns:
-          80px minmax(0, 1fr);
-
+        grid-template-columns: 80px minmax(0, 1fr);
         column-gap: 13px;
       }
-
 
       .profile-photo {
         width: 80px;
       }
 
-
       .sidebar-description {
         font-size: 0.76rem;
       }
-
 
       .sidebar-links {
         gap: 5px 11px;
       }
 
-
       .sidebar-links li {
         font-size: 0.7rem;
       }
 
-
       .highlight-item {
-        grid-template-columns:
-          64px 1fr;
-
+        grid-template-columns: 64px 1fr;
         font-size: 0.71rem;
       }
-
 
       .section-title {
         font-size: 1.02rem;
       }
 
-
       .section p {
         font-size: 0.87rem;
       }
-
 
       .education-item,
       .experience-item,
       .teaching-item,
       .award-item {
         grid-template-columns: 1fr;
-
         gap: 1px;
       }
 
@@ -1386,21 +931,13 @@
 
 </head>
 
-
-
 <body>
-
-
-<!-- =========================================================
-     NAVIGATION
-========================================================= -->
 
 <header>
 
   <div class="container">
 
     <nav class="navbar">
-
 
       <a
         class="site-name"
@@ -1409,7 +946,6 @@
         Usama Zafar
       </a>
 
-
       <button
         class="menu-button"
         id="menuButton"
@@ -1417,7 +953,6 @@
       >
         ☰
       </button>
-
 
       <ul
         class="nav-links"
@@ -1462,34 +997,21 @@
 
       </ul>
 
-
     </nav>
 
   </div>
 
 </header>
 
-
-
-<!-- =========================================================
-     PAGE
-========================================================= -->
-
 <main
   class="container academic-layout"
   id="home"
 >
 
-
-  <!-- =======================================================
-       LEFT SIDEBAR
-  ======================================================== -->
-
   <aside
     class="sidebar"
     id="sidebar"
   >
-
 
     <img
       class="profile-photo"
@@ -1497,31 +1019,23 @@
       alt="Usama Zafar"
     >
 
-
     <div class="sidebar-profile">
-
 
       <p class="sidebar-description">
         Ph.D. Candidate in Information Management.
       </p>
 
-
       <ul class="sidebar-links">
-
-
-        <!-- UNIVERSITY -->
 
         <li>
 
           <span class="side-icon">
-
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zm-7 9v6h2v-5l5 2.5 5-2.5v5h2v-6l-7 3.5L5 11zm3 6v2h8v-2H8z"/>
             </svg>
-
           </span>
 
           <span>
@@ -1530,21 +1044,15 @@
 
         </li>
 
-
-
-        <!-- EMAIL -->
-
         <li>
 
           <span class="side-icon">
-
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
             >
               <path d="M3 5h18v14H3V5zm9 7L5.5 7h13L12 12zm0 2.2L5 8.8V17h14V8.8l-7 5.4z"/>
             </svg>
-
           </span>
 
           <a href="mailto:usamazafar@alum.ccu.edu.tw">
@@ -1553,21 +1061,15 @@
 
         </li>
 
-
-
-        <!-- GITHUB -->
-
         <li>
 
           <span class="side-icon">
-
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
             >
               <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C17.7 5 18.7 5.3 18.7 5.3c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v2.8c0 .3.2.6.8.5A11.5 11.5 0 0 0 12 .7z"/>
             </svg>
-
           </span>
 
           <a
@@ -1580,14 +1082,9 @@
 
         </li>
 
-
-
-        <!-- GOOGLE SCHOLAR -->
-
         <li>
 
           <span class="side-icon">
-
             <svg
               viewBox="0 0 64 64"
               fill="currentColor"
@@ -1595,7 +1092,6 @@
               <path d="M32 7L5 22l27 15 27-15L32 7z"/>
               <path d="M16 31v11c0 8 8 14 16 14s16-6 16-14V31l-16 9-16-9z"/>
             </svg>
-
           </span>
 
           <a
@@ -1608,21 +1104,15 @@
 
         </li>
 
-
-
-        <!-- LINKEDIN -->
-
         <li>
 
           <span class="side-icon">
-
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
             >
               <path d="M5.3 3.7A2.3 2.3 0 1 1 .7 3.7a2.3 2.3 0 0 1 4.6 0zM1.1 7h4.3v13.8H1.1V7zm6.8 0H12v1.9h.1c.6-1.1 2-2.3 4.1-2.3 4.4 0 5.2 2.9 5.2 6.6v7.6h-4.3v-6.7c0-1.6 0-3.7-2.3-3.7-2.3 0-2.7 1.8-2.7 3.6v6.8H7.9V7z"/>
             </svg>
-
           </span>
 
           <a
@@ -1634,10 +1124,6 @@
           </a>
 
         </li>
-
-
-
-        <!-- ORCID -->
 
         <li>
 
@@ -1680,25 +1166,15 @@
 
         </li>
 
-
       </ul>
-
 
     </div>
 
-
-
-    <!-- =====================================================
-         LATEST HIGHLIGHTS
-    ====================================================== -->
-
     <div class="sidebar-highlights">
-
 
       <h3>
         Latest Highlights
       </h3>
-
 
       <div class="highlight-item">
 
@@ -1712,6 +1188,18 @@
 
       </div>
 
+      <div class="highlight-item">
+
+        <span class="highlight-date">
+          2026
+        </span>
+
+        <span>
+          Best Presentation Award at ICIME 2026,
+          Yokohama, Japan.
+        </span>
+
+      </div>
 
       <div class="highlight-item">
 
@@ -1735,21 +1223,6 @@
 
       </div>
 
-
-      <div class="highlight-item">
-
-        <span class="highlight-date">
-          2026
-        </span>
-
-        <span>
-          Best Presentation Award at ICIME 2026,
-          Yokohama, Japan.
-        </span>
-
-      </div>
-
-
       <div class="highlight-item">
 
         <span class="highlight-date">
@@ -1761,7 +1234,6 @@
         </span>
 
       </div>
-
 
       <div class="highlight-item">
 
@@ -1776,14 +1248,7 @@
 
       </div>
 
-
     </div>
-
-
-
-    <!-- =====================================================
-         VISITOR COUNTER
-    ====================================================== -->
 
     <div
       class="visitor-counter"
@@ -1810,54 +1275,36 @@
 
     </div>
 
-
   </aside>
-
-
-
-  <!-- =======================================================
-       MAIN CONTENT
-  ======================================================== -->
 
   <div
     class="main-content"
     id="mainContent"
   >
 
-
     <h1 class="main-name">
       Usama Zafar
     </h1>
-
-
-
-    <!-- =====================================================
-         ABOUT
-    ====================================================== -->
 
     <section
       class="section"
       id="about"
     >
 
-
       <h2 class="section-title">
 
         <span class="section-icon">
-
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zm-6 8v5c0 3.2 3 5.5 6 5.5s6-2.3 6-5.5v-5l-6 3-6-3z"/>
           </svg>
-
         </span>
 
         About Me
 
       </h2>
-
 
       <p>
 
@@ -1881,100 +1328,73 @@
           Prof. Fan Wu (吳帆)
         </a>.
 
-        My academic interests bring together information systems,
-        artificial intelligence, and data-driven decision-making.
+        My research focuses on the use of artificial intelligence
+        in information systems, particularly for decision support,
+        explainability, trust, and system reliability.
 
       </p>
 
-
     </section>
-
-
-
-    <!-- =====================================================
-         RESEARCH
-    ====================================================== -->
 
     <section
       class="section"
       id="research"
     >
 
-
       <h2 class="section-title">
 
         <span class="section-icon">
-
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
           >
             <path d="M9 2h6v2h-1v5.3l5.6 8.1A3 3 0 0 1 17.1 22H6.9a3 3 0 0 1-2.5-4.6L10 9.3V4H9V2zm2.7 8.4L6.1 18.5c-.4.6 0 1.5.8 1.5h10.2c.8 0 1.2-.9.8-1.5l-5.6-8.1V4h-.6v6.4z"/>
           </svg>
-
         </span>
 
         Research Interests & Expertise
 
       </h2>
 
-
       <p>
-
         My research interests include explainable AI,
         trustworthy AI, machine learning,
         healthcare informatics, information security,
         anomaly detection, and FinTech.
-
       </p>
 
-
       <p>
-
         My current projects cover healthcare decision support,
         fraud detection, AI-generated content,
         e-commerce anomaly detection, and autonomous clinical agents.
         I am also interested in how explanations affect trust and
         decision-making, and how fairness, reliability, and changing
         data affect AI systems over time.
-
       </p>
 
-
     </section>
-
-
-
-    <!-- =====================================================
-         EDUCATION
-    ====================================================== -->
 
     <section
       class="section"
       id="education"
     >
 
-
       <h2 class="section-title">
 
         <span class="section-icon">
-
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zm-6 8v5c0 3.2 3 5.5 6 5.5s6-2.3 6-5.5v-5l-6 3-6-3z"/>
           </svg>
-
         </span>
 
         Education
 
       </h2>
 
-
       <div class="education-list">
-
 
         <div class="education-item">
 
@@ -1996,7 +1416,6 @@
 
         </div>
 
-
         <div class="education-item">
 
           <div class="education-date">
@@ -2016,7 +1435,6 @@
           </div>
 
         </div>
-
 
         <div class="education-item">
 
@@ -2038,44 +1456,31 @@
 
         </div>
 
-
       </div>
 
-
     </section>
-
-
-
-    <!-- =====================================================
-         EXPERIENCE
-    ====================================================== -->
 
     <section
       class="section"
       id="experience"
     >
 
-
       <h2 class="section-title">
 
         <span class="section-icon">
-
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
           >
             <path d="M9 4V2h6v2h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5zm2 0h2V3h-2v1zm-7 5v9h16V9l-8 4-8-4zm0-2 8 4 8-4V6H4v1z"/>
           </svg>
-
         </span>
 
         Experience
 
       </h2>
 
-
       <div class="experience-list">
-
 
         <div class="experience-item">
 
@@ -2097,8 +1502,6 @@
 
         </div>
 
-
-
         <div class="experience-item">
 
           <div class="experience-date">
@@ -2118,8 +1521,6 @@
           </div>
 
         </div>
-
-
 
         <div class="experience-item">
 
@@ -2148,8 +1549,6 @@
 
         </div>
 
-
-
         <div class="experience-item">
 
           <div class="experience-date">
@@ -2175,57 +1574,35 @@
 
         </div>
 
-
       </div>
 
-
     </section>
-
-
-
-    <!-- =====================================================
-         PUBLICATIONS
-    ====================================================== -->
 
     <section
       class="section"
       id="publications"
     >
 
-
       <h2 class="section-title">
 
         <span class="section-icon">
-
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
           >
             <path d="M4 3h7v18H4V3zm9 0h7v18h-7V3zM6 6v2h3V6H6zm0 4v2h3v-2H6zm9-4v2h3V6h-3zm0 4v2h3v-2h-3z"/>
           </svg>
-
         </span>
 
         Publications
 
       </h2>
 
-
-
-      <!-- ===================================================
-           JOURNAL PAPERS
-      ==================================================== -->
-
       <div class="publication-category">
-
 
         <h3 class="category-title">
           Journal
         </h3>
-
-
-
-        <!-- PUBLISHED -->
 
         <div class="status-group">
 
@@ -2233,9 +1610,7 @@
             Published
           </div>
 
-
           <div class="publication-list">
-
 
             <article class="publication">
 
@@ -2274,14 +1649,9 @@
 
             </article>
 
-
           </div>
 
         </div>
-
-
-
-        <!-- UNDER REVIEW -->
 
         <div class="status-group">
 
@@ -2289,9 +1659,7 @@
             Under Review
           </div>
 
-
           <div class="publication-list">
-
 
             <article class="publication">
 
@@ -2301,14 +1669,9 @@
 
             </article>
 
-
           </div>
 
         </div>
-
-
-
-        <!-- WORK IN PROGRESS -->
 
         <div class="status-group">
 
@@ -2316,9 +1679,7 @@
             Work in Progress
           </div>
 
-
           <div class="publication-list">
-
 
             <article class="publication">
 
@@ -2328,8 +1689,6 @@
 
             </article>
 
-
-
             <article class="publication">
 
               <div class="publication-title">
@@ -2338,21 +1697,13 @@
 
             </article>
 
-
-
             <article class="publication">
 
               <div class="publication-title">
                 RefundProof: Calibrated ensemble ranking with cost-sensitive thresholding for AI-inpainted refund fraud
               </div>
 
-              <div class="publication-note">
-                ICIME extended version
-              </div>
-
             </article>
-
-
 
             <article class="publication">
 
@@ -2360,36 +1711,19 @@
                 Attention-Admission Governance for Portfolios of Autonomous Clinical Agents
               </div>
 
-              <div class="publication-note">
-                IMCOM extended version
-              </div>
-
             </article>
-
 
           </div>
 
         </div>
 
-
       </div>
 
-
-
-      <!-- ===================================================
-           CONFERENCES
-      ==================================================== -->
-
       <div class="publication-category">
-
 
         <h3 class="category-title">
           Conferences
         </h3>
-
-
-
-        <!-- PUBLISHED -->
 
         <div class="status-group">
 
@@ -2397,9 +1731,7 @@
             Published
           </div>
 
-
           <div class="publication-list">
-
 
             <article class="publication">
 
@@ -2413,7 +1745,7 @@
 
               <div class="publication-venue">
                 ICIME 2026, Yokohama, Japan
-                (Scopus, EI Compendex)
+                (Springer CCIS, Scopus, EI Compendex)
               </div>
 
               <div class="publication-note">
@@ -2421,8 +1753,6 @@
               </div>
 
             </article>
-
-
 
             <article class="publication">
 
@@ -2453,8 +1783,6 @@
 
             </article>
 
-
-
             <article class="publication">
 
               <div class="publication-title">
@@ -2484,14 +1812,9 @@
 
             </article>
 
-
           </div>
 
         </div>
-
-
-
-        <!-- ACCEPTED -->
 
         <div class="status-group">
 
@@ -2499,9 +1822,7 @@
             Accepted
           </div>
 
-
           <div class="publication-list">
-
 
             <article class="publication">
 
@@ -2511,54 +1832,40 @@
 
               <div class="publication-venue">
                 IMCOM 2027, Taipei, Taiwan
-                (Scopus, EI Compendex)
+                (IEEE Xplore, Scopus, EI Compendex)
               </div>
 
             </article>
-
 
           </div>
 
         </div>
 
-
       </div>
 
-
     </section>
-
-
-
-    <!-- =====================================================
-         TEACHING
-    ====================================================== -->
 
     <section
       class="section"
       id="teaching"
     >
 
-
       <h2 class="section-title">
 
         <span class="section-icon">
-
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
           >
             <path d="M3 3h18v12H3V3zm2 2v8h14V5H5zm2 12h10v2H7v-2zm4-8h2v2h-2V9z"/>
           </svg>
-
         </span>
 
         Teaching & Academic Service
 
       </h2>
 
-
       <div class="teaching-list">
-
 
         <div class="teaching-item">
 
@@ -2579,8 +1886,6 @@
           </div>
 
         </div>
-
-
 
         <div class="teaching-item">
 
@@ -2602,8 +1907,6 @@
 
         </div>
 
-
-
         <div class="teaching-item">
 
           <div class="teaching-date">
@@ -2623,8 +1926,6 @@
           </div>
 
         </div>
-
-
 
         <div class="teaching-item">
 
@@ -2646,8 +1947,6 @@
 
         </div>
 
-
-
         <div class="teaching-item">
 
           <div class="teaching-date">
@@ -2668,44 +1967,31 @@
 
         </div>
 
-
       </div>
 
-
     </section>
-
-
-
-    <!-- =====================================================
-         AWARDS
-    ====================================================== -->
 
     <section
       class="section"
       id="awards"
     >
 
-
       <h2 class="section-title">
 
         <span class="section-icon">
-
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
           >
             <path d="M7 2h10v3h3v3c0 3.1-2 5.7-5 6.6V17h3v2H6v-2h3v-2.4C6 13.7 4 11.1 4 8V5h3V2zm2 2v4c0 2.2 1.3 4 3 4s3-1.8 3-4V4H9zM6 7v1c0 1.6.7 3 1.8 3.9C7.3 10.8 7 9.5 7 8V7H6zm11 0v1c0 1.5-.3 2.8-.8 3.9A4.9 4.9 0 0 0 18 8V7h-1z"/>
           </svg>
-
         </span>
 
         Awards & Scholarships
 
       </h2>
 
-
       <div class="award-list">
-
 
         <div class="award-item">
 
@@ -2725,8 +2011,6 @@
 
         </div>
 
-
-
         <div class="award-item">
 
           <div class="award-date">
@@ -2745,8 +2029,6 @@
 
         </div>
 
-
-
         <div class="award-item">
 
           <div class="award-date">
@@ -2758,8 +2040,6 @@
           </div>
 
         </div>
-
-
 
         <div class="award-item">
 
@@ -2779,8 +2059,6 @@
 
         </div>
 
-
-
         <div class="award-item">
 
           <div class="award-date">
@@ -2798,8 +2076,6 @@
           </div>
 
         </div>
-
-
 
         <div class="award-item">
 
@@ -2819,23 +2095,13 @@
 
         </div>
 
-
       </div>
-
 
     </section>
 
-
   </div>
 
-
 </main>
-
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
 
 <footer>
 
@@ -2849,17 +2115,10 @@
 
 </footer>
 
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
 <script>
 
   document.getElementById("year").textContent =
     new Date().getFullYear();
-
 
   const menuButton =
     document.getElementById("menuButton");
@@ -2867,14 +2126,12 @@
   const navLinks =
     document.getElementById("navLinks");
 
-
   menuButton.addEventListener(
     "click",
     function () {
       navLinks.classList.toggle("active");
     }
   );
-
 
   document
     .querySelectorAll(".nav-links a")
@@ -2889,25 +2146,14 @@
 
     });
 
-
-
-  /* Visitor counter:
-     desktop = sidebar
-     mobile = bottom of page content
-  */
-
   const visitorCounter =
     document.getElementById("visitorCounter");
-
-  const sidebar =
-    document.getElementById("sidebar");
 
   const academicLayout =
     document.querySelector(".academic-layout");
 
   const originalCounterParent =
     visitorCounter.parentNode;
-
 
   function positionVisitorCounter() {
 
@@ -2941,9 +2187,7 @@
 
   }
 
-
   positionVisitorCounter();
-
 
   window.addEventListener(
     "resize",
@@ -2951,7 +2195,6 @@
   );
 
 </script>
-
 
 </body>
 
